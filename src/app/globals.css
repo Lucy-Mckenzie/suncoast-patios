@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  background: #fffbf9;
+}
 @font-face {
   font-family: 'manrope';
   src: url('/fonts/Manrope-Regular.ttf') format('truetype');
