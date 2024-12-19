@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Products from './components/Products'
 import Reviews from './components/Reviews'
 import TradeMark from './components/TradeMark'
+import FAQ from './components/FAQ'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Products />
       <Reviews /> 
       <TradeMark />
+      <FAQ />
     </div>
   )
 }

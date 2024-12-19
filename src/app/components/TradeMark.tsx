@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function TradeMark() {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center pb-10'>
       <h1 className='text-2xl text-center font-manrope mb-6'>
         We are an Authorized Dealer Of Stratco & Ziptrak Outdoor Products
       </h1>
@@ -11,7 +11,7 @@ export default function TradeMark() {
          <Image src='/logos/outback.png' alt='outback logo' width={200} height={100} className="object-contain"/>
          <Image src='/logos/ziptrak.png' alt='ziptrack logo' width={200} height={100} className="object-contain"/>
       </div>
-      <button className='btn btn-wide'>Free Quote</button>
+      <button className='btn btn-wide bg-[#FDB626] text-white hover:bg-[#e09c1f]'>Free Quote</button>
     </div>
   )
 }
