@@ -8,7 +8,7 @@ export default function Navbar() {
 const { changedTheme } = useContext<any>(ThemeContext)
 
   return (
-    <nav className="navbar bg-[#fffbf9] shadow-md">
+    <nav className="navbar shadow-md">
     <div className="flex items-center justify-between w-full">
       <div className="ml-4">
         <Image
@@ -22,19 +22,19 @@ const { changedTheme } = useContext<any>(ThemeContext)
       <div className="flex items-center space-x-8 font-manrope">
         <Link
           href="/"
-          className="hover:underline hover:text-gray-500 transition-colors"
+          className="hover:underline transition-colors"
         >
           HOME
         </Link>
         <Link
           href="/gallery"
-          className="hover:underline hover:text-gray-500 transition-colors"
+          className="hover:underline transition-colors"
         >
           GALLERY
         </Link>
         <Link
           href="/contact"
-          className="hover:underline hover:text-gray-500 transition-colors"
+          className="hover:underline transition-colors"
         >
           CONTACT US
         </Link>
@@ -42,7 +42,7 @@ const { changedTheme } = useContext<any>(ThemeContext)
           Free Measure and Quote
         </button>
         <label className="swap swap-rotate">
-  <input type="checkbox" className="theme-controller" value="synthwave"  onChange={(e) => changedTheme(e.target.checked ? "light" : "dark")}/>
+  <input type="checkbox" className="theme-controller cursor-pointer" value="synthwave"  onChange={(e) => changedTheme(e.target.checked ? "light" : "dark")}/>
   <svg
     className="swap-off h-10 w-10 fill-current"
     xmlns="http://www.w3.org/2000/svg"

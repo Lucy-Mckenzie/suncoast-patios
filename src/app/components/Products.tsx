@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Products() {
   return (
     <div className='flex flex-col items-center py-20 space-y-10'>
-      <h1 className='text-2xl font-bold text-center text-black'>
+      <h1 className='text-2xl text-center'>
         Custom Outdoor Entertaining Solutions
       </h1>
       <div className='flex flex-row flex-wrap justify-center space-x-8'>
