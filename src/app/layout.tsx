@@ -1,5 +1,7 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ClientThemeWrapper from "./context/ClientThemeWrapper";
+import ThemeProvider from "./context/ThemeContext";
 import './globals.css';
 
 export default function RootLayout({
@@ -9,12 +11,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body data-theme='light'>
-        <Navbar />
-        <main>
-        {children}
-        </main>
-        <Footer />
+      <body>
+        <ThemeProvider>
+          <ClientThemeWrapper>
+          <Navbar />
+            <main>
+              {children}
+            </main>
+          <Footer />
+          </ClientThemeWrapper>
+        </ThemeProvider>
       </body>
     </html>
   );

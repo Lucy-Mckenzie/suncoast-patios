@@ -1,8 +1,11 @@
+"use client"
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 import Image from 'next/image'
+import { ThemeContext } from '../context/ThemeContext'
 
 export default function Navbar() {
+const { changedTheme } = useContext<any>(ThemeContext)
 
   return (
     <nav className="navbar bg-[#fffbf9] shadow-md">
@@ -39,7 +42,7 @@ export default function Navbar() {
           Free Measure and Quote
         </button>
         <label className="swap swap-rotate">
-  <input type="checkbox" className="theme-controller" value="synthwave" />
+  <input type="checkbox" className="theme-controller" value="synthwave"  onChange={(e) => changedTheme(e.target.checked ? "light" : "dark")}/>
   <svg
     className="swap-off h-10 w-10 fill-current"
     xmlns="http://www.w3.org/2000/svg"
