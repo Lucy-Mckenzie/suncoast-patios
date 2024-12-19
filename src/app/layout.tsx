@@ -8,8 +8,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="corporate">
-      <body>
+    <html lang="en">
+      <body data-theme='light'>
         <Navbar />
         <main>
         {children}
