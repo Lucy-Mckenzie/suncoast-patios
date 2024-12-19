@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Products from './components/Products'
 import Reviews from './components/Reviews'
+import TradeMark from './components/TradeMark'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </div>
       <Products />
       <Reviews /> 
+      <TradeMark />
     </div>
   )
 }

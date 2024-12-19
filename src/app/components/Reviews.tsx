@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Reviews() {
   return (
     <div className='flex flex-col items-center'>
-    <h1 className='text-2xl font-bold text-center pb-10'>
+    <h1 className='text-2xl text-center pb-10 font-manrope'>
       12+ Years Serving In Hawkes Bay
     </h1>
   
