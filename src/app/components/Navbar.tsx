@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useContext } from 'react'
 import Image from 'next/image'
 import { ThemeContext } from '../context/ThemeContext'
+import EnquiryForm from './EnquiryForm'
 
 export default function Navbar() {
 const context = useContext(ThemeContext)
@@ -58,9 +59,7 @@ const { changedTheme } = context;
           </li>
       </ul>
     </div>
-        <button className="btn bg-[#FDB626] text-white hover:bg-[#e09c1f]">
-          Free Measure and Quote
-        </button>
+      <EnquiryForm />
         <label className="swap swap-rotate">
   <input type="checkbox" className="theme-controller cursor-pointer" value="synthwave"  onChange={(e) => changedTheme(e.target.checked ? "light" : "dark")}/>
   <svg
