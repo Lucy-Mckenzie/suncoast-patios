@@ -7,7 +7,13 @@ interface ThemeProviderProps {
 }
 
 export default function ClientThemeWrapper({children}: ThemeProviderProps) {
-  const {theme} = useContext(ThemeContext) 
+  const context = useContext(ThemeContext)
+
+  if (!context) {
+    throw new Error('ClientThemeWrapper must be used within a ThemeProvider')
+  }
+
+  const { theme } = context;
 
   return <div data-theme={theme}>{children}</div>
 

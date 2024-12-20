@@ -5,12 +5,21 @@ import Image from 'next/image'
 import { ThemeContext } from '../context/ThemeContext'
 
 export default function Navbar() {
-const { changedTheme } = useContext<any>(ThemeContext)
+const context = useContext(ThemeContext)
+
+
+if (!context) {
+  throw new Error('ThemeToggler must be used within a ThemeProvider')
+}
+
+const { changedTheme } = context;
 
   return (
     <nav className="navbar shadow-md">
     <div className="flex items-center justify-between w-full">
       <div className="ml-4">
+         <Link
+          href="/">
         <Image
           src="/suncoastlogo.png"
           alt="Suncoast Patios Logo"
@@ -18,26 +27,37 @@ const { changedTheme } = useContext<any>(ThemeContext)
           height={50}
           className="mr-auto"
         />
+         </Link>
       </div>
       <div className="flex items-center space-x-8 font-manrope">
-        <Link
+         <div className="flex-none">
+    <ul className="menu menu-horizontal px-1">
+      <li><Link
           href="/"
           className="hover:underline transition-colors"
         >
-          HOME
-        </Link>
-        <Link
-          href="/gallery"
-          className="hover:underline transition-colors"
-        >
-          GALLERY
-        </Link>
-        <Link
+          Home
+        </Link></li>
+      <li>
+        <details>
+          <summary>Products</summary>
+          <ul className="bg-base-100 rounded-t-none p-2">
+            <li><a>Louvres</a></li>
+            <li><a>Patios</a></li>
+            <li><a>Outdoor Blinds</a></li>
+            </ul>
+          </details>
+        </li>
+          <li>
+          <Link
           href="/contact"
           className="hover:underline transition-colors"
         >
-          CONTACT US
+          Contact Us
         </Link>
+          </li>
+      </ul>
+    </div>
         <button className="btn bg-[#FDB626] text-white hover:bg-[#e09c1f]">
           Free Measure and Quote
         </button>
