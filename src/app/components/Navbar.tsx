@@ -36,12 +36,12 @@ const { changedTheme } = context;
         >
           HOME
         </Link>
-        <Link
+        {/* <Link
           href="/gallery"
           className="hover:underline transition-colors"
         >
           GALLERY
-        </Link>
+        </Link> */}
         <Link
           href="/contact"
           className="hover:underline transition-colors"
