@@ -18,6 +18,8 @@ const { changedTheme } = context;
     <nav className="navbar shadow-md">
     <div className="flex items-center justify-between w-full">
       <div className="ml-4">
+         <Link
+          href="/">
         <Image
           src="/suncoastlogo.png"
           alt="Suncoast Patios Logo"
@@ -25,6 +27,7 @@ const { changedTheme } = context;
           height={50}
           className="mr-auto"
         />
+         </Link>
       </div>
       <div className="flex items-center space-x-8 font-manrope">
         <Link
