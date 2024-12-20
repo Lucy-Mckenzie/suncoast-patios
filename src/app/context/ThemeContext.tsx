@@ -4,7 +4,12 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export const ThemeContext = createContext()
+interface ThemeContextType {
+  theme: string;
+  changedTheme: (theme: string) => void;
+}
+
+export const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export default function ThemeProvider({children}: ThemeProviderProps) {
   const [theme, setTheme] = useState("light")
@@ -12,7 +17,7 @@ export default function ThemeProvider({children}: ThemeProviderProps) {
 
   useEffect(() => {
     setIsMounted(true)
-    const storedTheme = localStorage.getItem("theme") || "light"
+    const storedTheme = localStorage.getItem('theme') || 'light'
     setTheme(storedTheme)
   }, [])
 

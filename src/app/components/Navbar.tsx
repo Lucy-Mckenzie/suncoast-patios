@@ -5,7 +5,14 @@ import Image from 'next/image'
 import { ThemeContext } from '../context/ThemeContext'
 
 export default function Navbar() {
-const { changedTheme } = useContext<any>(ThemeContext)
+const context = useContext(ThemeContext)
+
+
+if (!context) {
+  throw new Error('ThemeToggler must be used within a ThemeProvider')
+}
+
+const { changedTheme } = context;
 
   return (
     <nav className="navbar shadow-md">
