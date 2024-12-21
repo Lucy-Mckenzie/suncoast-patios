@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 
 export default function EnquiryForm() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className='dropdown dropdown-end relative'>
-    <label tabIndex={0} className='btn bg-[#FDB626] text-white hover:bg-[#e09c1f]'>
-      Free Measure and Quote
+      <label tabIndex={0} className='btn bg-[#FDB626] text-white hover:bg-[#e09c1f]'
+        onClick={() => setIsOpen(!isOpen)}
+      >
+    { isOpen ? 'Close Form' : 'Free Measure and Quote'}
     </label>
+    {isOpen && 
     <div
       tabIndex={0}
-      className=' flex flex-row dropdown-content card card-compact bg-white text-primary-content z-[1] w-[88vw] h-[600px] shadow-xl rounded-lg'
+      className=' flex flex-row dropdown-content card card-compact bg-white text-primary-content z-[20] w-[88vw] h-[600px] shadow-xl rounded-lg'
     >
    
    <div className='w-1/3 text-black px-4 pt-6 items-center'>
@@ -72,6 +78,7 @@ export default function EnquiryForm() {
         </div>
       </form>
     </div>
+    }
   </div>  
   )
 }
