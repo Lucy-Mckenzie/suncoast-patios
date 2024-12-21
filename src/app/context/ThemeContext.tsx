@@ -1,5 +1,5 @@
-"use client"
-import React, { createContext, useState, useEffect, ReactNode } from "react";
+'use client'
+import React, { createContext, useState, useEffect, ReactNode } from 'react';
 interface ThemeProviderProps {
   children: ReactNode;
 }
@@ -12,7 +12,7 @@ interface ThemeContextType {
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export default function ThemeProvider({children}: ThemeProviderProps) {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState('light')
   const [mounted, setIsMounted] = useState(false)
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function ThemeProvider({children}: ThemeProviderProps) {
 
   const changedTheme = (theme: string) => {
     setTheme(theme)
-    localStorage.setItem("theme", theme)
+    localStorage.setItem('theme', theme)
   }
 
   return (

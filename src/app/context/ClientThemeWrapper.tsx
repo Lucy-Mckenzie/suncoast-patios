@@ -1,6 +1,6 @@
-"use client"
-import { ReactNode, useContext } from "react"
-import { ThemeContext } from "./ThemeContext"
+'use client'
+import { ReactNode, useContext } from 'react'
+import { ThemeContext } from './ThemeContext'
 
 interface ThemeProviderProps {
   children: ReactNode;
