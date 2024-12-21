@@ -36,16 +36,16 @@ export default function PhotoCarousel() {
   }
 
   return (
-    <div className="carousel w-full overflow-hidden relative">
-    <div ref={carouselRef} className="carousel-inner flex overflow-x-auto snap-x snap-mandatory">
+    <div className='carousel w-full overflow-hidden relative'>
+    <div ref={carouselRef} className='carousel-inner flex overflow-x-auto snap-x snap-mandatory'>
       {photos.map((photoSrc, index) => (
-        <div key={index} className="carousel-item w-full flex-shrink-0 snap-start">
+        <div key={index} className='carousel-item w-full flex-shrink-0 snap-start'>
           <Image 
             src={photoSrc} 
-            alt="Image carousel" 
+            alt='Image carousel' 
             width={1200} 
             height={400} 
-            className="w-full"
+            className='w-full'
           />
         </div>
       ))}
