@@ -42,10 +42,22 @@ const { changedTheme } = context;
       <li>
         <details>
           <summary>Products</summary>
-          <ul className='bg-base-100 rounded-t-none p-2'>
-            <li><a>Louvres</a></li>
-            <li><a>Patios</a></li>
-            <li><a>Outdoor Blinds</a></li>
+          <ul className='bg-base-100 rounded-t-none p-2 z-50'>
+          <li>
+            <Link href='/products/louvres'>
+            Louvres
+            </Link>
+          </li>
+        <li>
+          <Link href='/products/patios'>
+          Patios
+          </Link>
+        </li>
+        <li>
+          <Link href='/products/blinds'>
+          Blinds
+          </Link>
+        </li>
             </ul>
           </details>
         </li>
