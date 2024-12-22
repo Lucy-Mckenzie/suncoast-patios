@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useContext } from 'react'
 import Image from 'next/image'
 import { ThemeContext } from '../context/ThemeContext'
-import EnquiryForm from './EnquiryForm'
+import EnquiryForm from './form/EnquiryForm'
 
 export default function Navbar() {
 const context = useContext(ThemeContext)
