@@ -33,16 +33,10 @@ const { changedTheme } = context;
       <div className='flex items-center space-x-8 font-manrope'>
          <div className='flex-none'>
     <ul className='menu menu-horizontal px-1'>
-      <li><Link
-          href='/'
-          className='hover:underline transition-colors'
-        >
-          Home
-        </Link></li>
       <li>
         <details>
           <summary>Products</summary>
-          <ul className='bg-base-100 rounded-t-none p-2 z-50'>
+          <ul className='bg-base-100 rounded-t-none dropdown-hover p-2 z-50'>
           <li>
             <Link href='/products/louvres'>
             Louvres
@@ -64,7 +58,7 @@ const { changedTheme } = context;
           <li>
           <Link
           href='/contact'
-          className='hover:underline transition-colors'
+          className='transition-colors'
         >
           Contact Us
         </Link>
