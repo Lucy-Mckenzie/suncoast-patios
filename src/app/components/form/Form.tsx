@@ -6,12 +6,12 @@ export default function Form() {
     <div>
            <form className='lg:w-2/3 bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'>
         <div className='form-control mb-3'>
-          <label className='label' htmlFor="name">
+          <label className='label' htmlFor='name'>
             <span className='label-text'>Full Name*</span>
           </label>
           <input
-            id="name"
-            type="text"
+            id='name'
+            type='text'
             placeholder='Your full name'
             className='input input-bordered w-full'
             required
