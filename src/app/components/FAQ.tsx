@@ -6,7 +6,7 @@ export default function FAQ() {
       <h1 className='text-2xl text-center font-manrope mb-6'>
         Frequently asked questions
       </h1>
-      <div className="w-[70%] space-y-4">
+      <div className='w-[70%] space-y-4'>
 
     <div className='collapse bg-base-200 shadow-md'>
   <input type='checkbox' />
