@@ -12,6 +12,10 @@ export default {
       "corporate", "dark", "synthwave", "light"
     ],
   },
+  fontFamily: {
+    sans: ['Lato', 'sans-serif'],
+    manrope: ['Manrope', 'sans-serif'],
+},
   plugins: [
     daisyui,
   ],
