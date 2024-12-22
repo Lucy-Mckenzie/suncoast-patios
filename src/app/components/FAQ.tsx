@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FAQ() {
   return (
-    <div className='flex flex-col items-center pb-10'>
+    <div className='flex flex-col items-center my-20 '>
       <h1 className='text-2xl text-center font-manrope mb-6'>
         Frequently asked questions
       </h1>

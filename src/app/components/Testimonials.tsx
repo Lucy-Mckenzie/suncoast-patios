@@ -30,11 +30,11 @@ export default function Reviews() {
   }
 
   return (
- <section className="py-10 bg-gray-100 sm:py-16 lg:py-16"> 
+ <section className="py-10 bg-base-200 sm:py-16 lg:py-16"> 
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div className='flex flex-col items-center justify-center py-20'>
         <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold font-manrope leading-tight text-gray-800 sm:text-4xl lg:text-5xl">Trusted by <span className="text-blue-600">Hawkes Bay</span> for more than 12+ years </h2>
+            <h2 className="text-3xl font-bold font-manrope leading-tight sm:text-4xl lg:text-5xl">Trusted by <span className="text-blue-600">Hawkes Bay</span> for more than 12+ years </h2>
             </div>
   
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-4 space-x-4 justify-items-center mx-auto pt-10'>

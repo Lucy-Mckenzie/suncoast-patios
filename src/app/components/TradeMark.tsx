@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function TradeMark() {
   return (
-    <div className="flex flex-col items-center text-center bg-gray-50 py-10 px-4 rounded-lg shadow-md">
+    <div className="flex flex-col items-center text-center bg-base-100 py-10 px-4 rounded-lg">
     <h1 className="text-2xl md:text-3xl font-bold font-manrope mb-8">
       We are an Authorized Dealer Of Stratco & Ziptrak Outdoor Products
     </h1>
