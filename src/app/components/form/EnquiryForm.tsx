@@ -24,11 +24,11 @@ export default function EnquiryForm() {
       
    <div className='flex flex-col items-center space-y-8'>
    <div className='w-full lg:w-2/3 text-center lg:text-left'>
-  <h1 className='text-2xl font-bold font-manrope mb-4'>
+  <h1 className='text-2xl font-bold font-manrope mb-16'>
     The road to comfortable outdoor living starts here. We just need a few details.
   </h1>
 
-  <div className='flex items-start space-x-3 mb-4'>
+  <div className='flex items-start space-x-3 mb-8'>
   <Image
     src='/logos/phone.png'
     alt='enquiry form'
@@ -36,11 +36,10 @@ export default function EnquiryForm() {
     height={20}
     className='object-contain'
   />
-  <div className='flex flex-col'>
     <h2 className='font-medium text-lg'>Call us directly:</h2>
     <p className='text-gray-700 text-md mb-2'>047589365639</p>
   </div>
-</div>
+
 
 <div className='flex items-start space-x-3'>
   <Image
@@ -50,11 +49,9 @@ export default function EnquiryForm() {
     height={20}
     className='object-contain'
   />
-  <div className='flex flex-col justify'>
     <h2 className='font-medium text-lg'>Email:</h2>
     <p className='text-gray-700 text-md'>info@suncoastpatios.co.nz</p>
   </div>
-</div>
 </div>
 
     <div>
@@ -114,8 +111,7 @@ export default function EnquiryForm() {
           </label>
           <textarea
             id='message'
-            placeholder='Your message here'
-            className='textarea textarea-bordered w-full'
+            className='textarea textarea-ghost w-full border-b-[1px] border-white'
           ></textarea>
         </div>
         

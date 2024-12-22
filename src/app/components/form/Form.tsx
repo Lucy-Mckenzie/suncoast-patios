@@ -49,7 +49,7 @@ export default function Form() {
           <textarea
             id='message'
             placeholder='Your message here'
-            className='textarea textarea-bordered w-full'
+            className='textarea textarea-ghost w-full'
           ></textarea>
         </div>
         
