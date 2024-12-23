@@ -4,16 +4,16 @@ import Image from 'next/image'
 
 const photos = [
   '/demo.png',
+  '/demo1.png',
   '/demo.png',
+  '/demo1.png',
   '/demo.png',
-  '/demo.png',
-  '/demo.png',
-  '/demo.png'
+  '/demo1.png'
 ]
 
 export default function PhotoCarousel() {
   return (
-    <div className="carousel w-[1100px] mx-auto relative">
+    <div className="carousel w-[1100px] h-[600px] mx-auto relative">
       {photos.map((photoSrc, index) => {
         const prevSlide = (index - 1 + photos.length) % photos.length + 1
         const nextSlide = (index + 1) % photos.length + 1

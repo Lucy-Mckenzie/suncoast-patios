@@ -1,78 +1,49 @@
 'use client'
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 
 const photos = [
   '/demo.png',
+  '/demo1.png',
   '/demo.png',
+  '/demo1.png',
   '/demo.png',
-  '/demo.png',
-  '/demo.png',
-  '/demo.png'
+  '/demo1.png'
 ]
 
 export default function PhotoCarousel() {
-  const [photo, setPhoto] = useState(0)
-  const carouselRef = useRef<HTMLDivElement | null>(null)
-
-  const nextImage = () => {
-    setPhoto((photo) => (photo + 1) % photos.length)
-    if (carouselRef.current) {
-    carouselRef.current.scrollTo({
-      left: photo * carouselRef.current.offsetWidth,
-      behavior: 'smooth'
-    })
-  }
-  }
-
-  const prevImage = () => {
-    setPhoto((photo) => (photo - 1 + photos.length) % photos.length)
-    if (carouselRef.current) {
-    carouselRef.current.scrollTo({
-      left: photo * carouselRef.current.offsetWidth,
-      behavior: 'smooth'
-    })
-  }
-  }
-
   return (
-    <div className='carousel w-full overflow-hidden relative'>
-    <div ref={carouselRef} className='carousel-inner flex overflow-x-auto snap-x snap-mandatory'>
-      {photos.map((photoSrc, index) => (
-        <div key={index} className='carousel-item w-full flex-shrink-0 snap-start'>
-          <Image 
-            src={photoSrc} 
-            alt='Image carousel' 
-            width={1200} 
-            height={400} 
-            className='w-full'
-          />
+<div className="carousel w-full h-auto max-h-[1000px] overflow-hidden mx-auto relative">
+  {photos.map((photoSrc, index) => {
+    const prevSlide = (index - 1 + photos.length) % photos.length + 1
+    const nextSlide = (index + 1) % photos.length + 1
+
+    return (
+      <div
+        key={index}
+        id={`slide${index + 1}`}
+        className="carousel-item relative w-full"
+      >
+        <Image
+          src={photoSrc}
+          alt={`Slide ${index + 1}`}
+          width={1200}
+          height={400}
+          className="w-full"
+        />
+
+        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href={`#slide${prevSlide}`} className="btn btn-circle">
+            ❮
+          </a>
+          <a href={`#slide${nextSlide}`} className="btn btn-circle">
+            ❯
+          </a>
         </div>
-      ))}
-    </div>
-
-    <div className=''>
-      <button 
-        className='carousel-control-prev absolute top-1/2 left-60 transform -translate-y-1/2 px-4 py-2 bg-gray-800/70 text-white rounded-full'
-        onClick={prevImage}
-      >
-        <span className='carousel-control-prev-icon'>&lt;</span>
-      </button>
-    </div>
-
-    <h1 className='text-6xl absolute z-10 text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-manrope'>
-      Ultimate Outdoor Living
-    </h1>
-
-    <div className=''>
-      <button 
-        className='carousel-control-next absolute top-1/2 right-60 transform -translate-y-1/2 px-4 py-2 bg-gray-800/70 text-white rounded-full'
-        onClick={nextImage}
-      >
-        <span className='carousel-control-next-icon'>&gt;</span>
-      </button>
-    </div>
-  </div>
-  )
+      </div>
+    )
+  })}
+</div>
+)
 }
 

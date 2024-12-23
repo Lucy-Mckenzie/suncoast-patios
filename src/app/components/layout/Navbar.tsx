@@ -16,7 +16,7 @@ if (!context) {
 const { changedTheme } = context;
 
   return (
-    <nav className='navbar shadow-md'>
+    <nav className='navbar shadow-md z-100'>
     <div className='flex items-center justify-between w-full'>
       <div className='ml-4'>
          <Link
