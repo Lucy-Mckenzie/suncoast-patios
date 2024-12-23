@@ -38,7 +38,7 @@ export default function EnquiryForm() {
     className='object-contain'
   />
     <h2 className='font-medium text-lg'>Call us directly:</h2>
-    <p className='text-gray-700 text-md mb-2'>047589365639</p>
+    <p className='text-gray-700 text-md mb-2'>+64 22 170 9933</p>
   </div>
 
 
