@@ -8,7 +8,7 @@ export default function EnquiryForm() {
 
   return (
     <div className='dropdown dropdown-end relative'>
-      <label tabIndex={0} className='btn bg-[#FDB626] text-white hover:bg-[#e09c1f] transition-all duration-300 font-manrope'
+      <label tabIndex={0} className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope'
         onClick={() => setIsOpen(!isOpen)}
       >
     { isOpen ? 'Close Form' : 'Free Measure and Quote'}
@@ -19,7 +19,7 @@ export default function EnquiryForm() {
      onClick={() => setIsOpen(false)}
    >
      <div
-       className='relative bg-white text-black flex flex-col lg:flex-row rounded-lg shadow-lg w-full max-w-5xl h-auto p-6 space-y-6 lg:space-y-0 lg:space-x-6'
+       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg w-full max-w-5xl h-auto p-6 space-y-6 lg:space-y-0 lg:space-x-6'
        onClick={(e) => e.stopPropagation()}
      >
       
@@ -38,7 +38,7 @@ export default function EnquiryForm() {
     className='object-contain'
   />
     <h2 className='font-medium text-lg'>Call us directly:</h2>
-    <p className='text-gray-700 text-md mb-2'>+64 22 170 9933</p>
+    <p className='text-base text-md mb-2'>+64 22 170 9933</p>
   </div>
 
 
@@ -51,7 +51,7 @@ export default function EnquiryForm() {
     className='object-contain'
   />
     <h2 className='font-medium text-lg'>Email:</h2>
-    <p className='text-gray-700 text-md'>info@suncoastpatios.co.nz</p>
+    <p className='text-base text-md'>info@suncoastpatios.co.nz</p>
   </div>
 </div>
 

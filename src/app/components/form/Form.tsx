@@ -52,7 +52,7 @@ export default function Form() {
         </div>
         
         <div className='form-control'>
-          <button className='btn bg-white text-[#FDB626] hover:bg-[#e09c1f] w-[150px] shadow-lg hover:scale-105'>Submit</button>
+          <button className='btn bg-base text-base hover:bg-base-100 w-[150px] shadow-lg hover:scale-105 font-manrope'>Submit</button>
         </div>
       </form>
     </div>
