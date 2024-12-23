@@ -1,10 +1,9 @@
-'use client'
 import React from 'react'
 
 export default function Form() {
   return (
     <div>
-           <form className='lg:w-2/3 bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'>
+       <form className='bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'>
         <div className='form-control mb-3'>
           <label className='label' htmlFor='name'>
             <span className='label-text'>Full Name*</span>
@@ -48,13 +47,12 @@ export default function Form() {
           </label>
           <textarea
             id='message'
-            placeholder='Your message here'
-            className='textarea textarea-ghost w-full'
+            className='textarea textarea-ghost w-full border-b-[1px] border-white'
           ></textarea>
         </div>
         
         <div className='form-control'>
-          <button className='btn bg-white text-[#FDB626] hover:bg-[#e09c1f] w-[150px] shadow-lg hover:scale-105'>Submit</button>
+          <button className='btn bg-base text-base hover:bg-base-100 w-[150px] shadow-lg hover:scale-105 font-manrope'>Submit</button>
         </div>
       </form>
     </div>

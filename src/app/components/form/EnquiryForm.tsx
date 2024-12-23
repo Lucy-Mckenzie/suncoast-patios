@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Timeline from './Timeline'
+import Form from './Form'
 
 export default function EnquiryForm() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div className='dropdown dropdown-end relative'>
-      <label tabIndex={0} className='btn bg-[#FDB626] text-white hover:bg-[#e09c1f] transition-all duration-300 font-manrope'
+      <label tabIndex={0} className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope'
         onClick={() => setIsOpen(!isOpen)}
       >
     { isOpen ? 'Close Form' : 'Free Measure and Quote'}
@@ -18,7 +19,7 @@ export default function EnquiryForm() {
      onClick={() => setIsOpen(false)}
    >
      <div
-       className='relative bg-white text-black flex flex-col lg:flex-row rounded-lg shadow-lg w-full max-w-5xl h-auto p-6 space-y-6 lg:space-y-0 lg:space-x-6'
+       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg w-full max-w-5xl h-auto p-6 space-y-6 lg:space-y-0 lg:space-x-6'
        onClick={(e) => e.stopPropagation()}
      >
       
@@ -37,7 +38,7 @@ export default function EnquiryForm() {
     className='object-contain'
   />
     <h2 className='font-medium text-lg'>Call us directly:</h2>
-    <p className='text-gray-700 text-md mb-2'>047589365639</p>
+    <p className='text-base text-md mb-2'>+64 22 170 9933</p>
   </div>
 
 
@@ -50,7 +51,7 @@ export default function EnquiryForm() {
     className='object-contain'
   />
     <h2 className='font-medium text-lg'>Email:</h2>
-    <p className='text-gray-700 text-md'>info@suncoastpatios.co.nz</p>
+    <p className='text-base text-md'>info@suncoastpatios.co.nz</p>
   </div>
 </div>
 
@@ -67,61 +68,11 @@ export default function EnquiryForm() {
           </div> */}
    <Timeline />
     </div>
-           <form className='lg:w-2/3 bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'>
-        <div className='form-control mb-3'>
-          <label className='label' htmlFor='name'>
-            <span className='label-text'>Full Name*</span>
-          </label>
-          <input
-            id='name'
-            type='text'
-            placeholder='Your full name'
-            className='input input-bordered w-full'
-            required
-          />
-        </div>
-        <div className='form-control mb-3'>
-          <label className='label'>
-            <span className='label-text'>Email*</span>
-          </label>
-          <input
-            id='email'
-            type='email'
-            placeholder='Your email'
-            className='input input-bordered w-full'
-            required
-          />
-        </div>
-
-        <div className='form-control mb-3'>
-          <label className='label'>
-            <span className='label-text'>Phone Number*</span>
-          </label>
-          <input
-            id='number'
-            type='tel'
-            placeholder='Your phone number'
-            className='input input-bordered w-full'
-            required
-          />
-        </div>
-        <div className='form-control mb-3'>
-          <label className='label'>
-            <span className='label-text'>Message</span>
-          </label>
-          <textarea
-            id='message'
-            className='textarea textarea-ghost w-full border-b-[1px] border-white'
-          ></textarea>
-        </div>
-        
-        <div className='form-control'>
-          <button className='btn bg-white text-[#FDB626] hover:bg-[#e09c1f] w-[150px] shadow-lg hover:scale-105'>Submit</button>
-        </div>
-      </form>
+    <div className='lg:w-2/3'>
+          <Form />
+      </div>
     </div>
     </div>
-   
     }
   </div>  
   )

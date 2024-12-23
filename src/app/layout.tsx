@@ -1,5 +1,5 @@
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Footer from './components/layout/Footer';
+import Navbar from './components/layout/Navbar';
 import ClientThemeWrapper from './context/ClientThemeWrapper';
 import ThemeProvider from './context/ThemeContext';
 import './globals.css';
