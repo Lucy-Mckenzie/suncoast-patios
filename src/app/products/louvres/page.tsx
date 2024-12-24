@@ -1,9 +1,20 @@
 'use client'
 import PhotoCarousel from '@/app/components/PhotoCarouselProducts'
 import React from 'react'
+import { useState } from 'react';
+import Image from 'next/image'
+
+const features = [
+  { id: 1, name: 'Colours', image: '/demo1.png' },
+  { id: 2, name: '165 Degree Rotation', image: '/demo.png' },
+  { id: 3, name: 'Remote Opening', image: '/demo1.png' },
+  { id: 4, name: 'Guaranteed 15 Years', image: '/demo.png' },
+  { id: 5, name: 'Auto Closures in Rain', image: '/demo1.png' },
+  { id: 6, name: 'Any Size Achievable', image: '/demo.png' },
+];
 
 export default function Louvres() {
-
+  const [activeFeature, setActiveFeature] = useState(features[0])
 
   return (
     <>
@@ -14,25 +25,46 @@ export default function Louvres() {
       </h1>
       <PhotoCarousel />
     </div>
-    <section className='py-10 bg-base-200 sm:py-16 lg:py-24'>
+    <section className='py-10 bg-base sm:py-16 lg:py-24'>
     <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>
         <div className='max-w-2xl mx-auto text-center'>
-            <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>Stratco Louvre roofs</h2>
-            <p className='max-w-xl mx-auto mt-4 text-base leading-relaxed'>We use Stratco products because they are the best Louvres on market</p>
+            <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
+              Stratco Louvre roofs
+            </h2>
+            <p className='max-w-xl mx-auto mt-4 text-base leading-relaxed'>
+              We use Stratco products because they are the best Louvres on market
+            </p>
         </div>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-    <div className="h-32 rounded-lg bg-gray-200">
-    
-    </div>
-    <div className="h-32 rounded-lg bg-gray-200 lg:col-span-2">
+      <div className="max-w-7xl mx-auto p-8 bg-base shadow-lg rounded-lg">
+<div className="flex flex-col lg:flex-row">
 
+        <div className="flex flex-col gap-1 lg:w-1/3 bg-base-200 rounded-md">
+          {features.map((feature) => (
+            <button
+              key={feature.id}
+              className={`p-4 text-left rounded-sm ${
+                activeFeature.id === feature.id
+                  ? 'bg-base-300'
+                  : 'bg-base-200 hover:bg-base-100'
+              }`}
+              onClick={() => setActiveFeature(feature)}
+            >
+              {feature.name}
+            </button>
+          ))}
+        </div>
+
+        <div className="mt-8 lg:mt-0 lg:w-2/3 lg:pl-8 flex justify-center items-center">
+          <Image
+            src={activeFeature.image}
+            alt={activeFeature.name}
+            className="h-[414px] rounded-lg shadow-md"
+            width={1500}
+            height={1500}
+          />
+        </div>
+      </div>
     </div>
-    </div>
-        <div className='max-w-7xl mx-auto mt-12 sm:mt-16'>
-            <div className='grid grid-cols-1 gap-6 px-8 text-center md:px-0 md:grid-cols-2'>
-              
-            </div>
-         </div>
     </div>
     </section>
     
