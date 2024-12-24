@@ -1,8 +1,9 @@
 'use client'
-import PhotoCarousel from '@/app/components/PhotoCarouselProducts'
+import PhotoCarousel from '@/app/components/products/PhotoCarouselProducts'
 import React from 'react'
 import { useState } from 'react';
 import Image from 'next/image'
+import EnquiryForm from '@/app/components/form/EnquiryForm';
 
 const features = [
   { id: 1, name: 'Colours', image: '/demo1.png' },
@@ -35,14 +36,14 @@ export default function Louvres() {
               We use Stratco products because they are the best Louvres on market
             </p>
         </div>
-      <div className="max-w-7xl mx-auto p-8 bg-base shadow-lg rounded-lg">
+      <div className="max-w-7xl mx-auto p-8 bg-base shadow-lg rounded-md">
 <div className="flex flex-col lg:flex-row">
 
-        <div className="flex flex-col gap-1 lg:w-1/3 bg-base-200 rounded-md">
+        <div className="flex flex-col gap-4 lg:w-1/3 bg-base-200 rounded-md">
           {features.map((feature) => (
             <button
               key={feature.id}
-              className={`p-4 text-left rounded-sm ${
+              className={`p-4 text-left rounded-md ${
                 activeFeature.id === feature.id
                   ? 'bg-base-300'
                   : 'bg-base-200 hover:bg-base-100'
@@ -54,16 +55,19 @@ export default function Louvres() {
           ))}
         </div>
 
-        <div className="mt-8 lg:mt-0 lg:w-2/3 lg:pl-8 flex justify-center items-center">
+        <div className="mt-8 lg:mt-0 lg:w-2/3 lg:pl-4 flex justify-center items-center">
           <Image
             src={activeFeature.image}
             alt={activeFeature.name}
-            className="h-[414px] rounded-lg shadow-md"
+            className="h-[414px] rounded-md shadow-md"
             width={1500}
             height={1500}
           />
         </div>
       </div>
+    </div>
+    <div className='pt-5'>
+    <EnquiryForm />
     </div>
     </div>
     </section>
