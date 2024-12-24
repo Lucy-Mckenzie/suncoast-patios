@@ -4,6 +4,7 @@ import React from 'react'
 import { useState } from 'react';
 import Image from 'next/image'
 import EnquiryForm from '@/app/components/form/EnquiryForm';
+import FAQ from '@/app/components/products/FAQ';
 
 const features = [
   { id: 1, name: 'Colours', image: '/demo1.png' },
@@ -36,10 +37,10 @@ export default function Louvres() {
               We use Stratco products because they are the best Louvres on market
             </p>
         </div>
-      <div className="max-w-7xl mx-auto p-8 bg-base shadow-lg rounded-md">
-<div className="flex flex-col lg:flex-row">
+      <div className='max-w-7xl mx-auto p-8 bg-base shadow-lg rounded-md'>
+<div className='flex flex-col lg:flex-row'>
 
-        <div className="flex flex-col gap-4 lg:w-1/3 bg-base-200 rounded-md">
+        <div className='flex flex-col gap-4 lg:w-1/3 bg-base-200 rounded-md'>
           {features.map((feature) => (
             <button
               key={feature.id}
@@ -55,11 +56,11 @@ export default function Louvres() {
           ))}
         </div>
 
-        <div className="mt-8 lg:mt-0 lg:w-2/3 lg:pl-4 flex justify-center items-center">
+        <div className='mt-8 lg:mt-0 lg:w-2/3 lg:pl-4 flex justify-center items-center'>
           <Image
             src={activeFeature.image}
             alt={activeFeature.name}
-            className="h-[414px] rounded-md shadow-md"
+            className='h-[414px] rounded-md shadow-md'
             width={1500}
             height={1500}
           />
@@ -68,6 +69,9 @@ export default function Louvres() {
     </div>
     <div className='pt-5'>
     <EnquiryForm />
+    </div>
+    <div className='pt-5'>
+    <FAQ />
     </div>
     </div>
     </section>
