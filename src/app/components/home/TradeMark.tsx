@@ -1,5 +1,7 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import EnquiryForm from '../form/EnquiryForm'
 
 export default function TradeMark() {
   return (
@@ -25,9 +27,7 @@ export default function TradeMark() {
       />
     </div>
     
-    <button className='btn btn-wide bg-[#FDB626] text-white hover:bg-[#e09c1f] py-3 px-6 rounded-md text-lg'>
-      Free Quote
-    </button>
+  <EnquiryForm />
   </div>
   
   

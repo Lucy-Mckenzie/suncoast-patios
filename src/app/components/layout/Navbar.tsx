@@ -16,7 +16,7 @@ if (!context) {
 const { changedTheme } = context;
 
   return (
-    <nav className='navbar shadow-md z-100'>
+    <nav className='navbar shadow-sm z-50 '>
     <div className='flex items-center justify-between w-full'>
       <div className='ml-4'>
          <Link
@@ -24,12 +24,13 @@ const { changedTheme } = context;
         <Image
           src='/suncoastlogo.png'
           alt='Suncoast Patios Logo'
-          width={160}
-          height={50}
+          width={170}
+          height={70}
           className='mr-auto'
         />
          </Link>
       </div>
+      
       <div className='flex items-center space-x-8 font-manrope'>
          <div className='flex-none'>
     <ul className='menu menu-horizontal px-1'>
