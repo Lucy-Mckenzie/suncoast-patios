@@ -4,6 +4,7 @@
 
 :root, html {
   @apply bg-base-100;
+  scroll-behavior: smooth;
 }
 
 
