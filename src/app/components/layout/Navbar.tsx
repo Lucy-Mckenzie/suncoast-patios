@@ -24,8 +24,8 @@ const { changedTheme } = context;
         <Image
           src='/suncoastlogo.png'
           alt='Suncoast Patios Logo'
-          width={160}
-          height={50}
+          width={170}
+          height={70}
           className='mr-auto'
         />
          </Link>

@@ -35,39 +35,6 @@ export default function PhotoCarousel() {
   const handleNext = () => {
     if (sliderRef.current) sliderRef.current.slickNext()
   }
-
-//   return (
-// <div className='carousel w-full max-w-[1450px] h-auto max-h-[1000px] mx-auto relative rounded-lg'>
-//   {photos.map((photoSrc, index) => {
-//     const prevSlide = (index - 1 + photos.length) % photos.length + 1
-//     const nextSlide = (index + 1) % photos.length + 1
-
-//     return (
-//       <div
-//         key={index}
-//         id={`slide${index + 1}`}
-//         className='carousel-item relative w-full'
-//       >
-//         <Image
-//           src={photoSrc}
-//           alt={`Slide ${index + 1}`}
-//           width={1200}
-//           height={400}
-//           className='w-full h-auto object-cover'
-//         />
-
-//         <div className='absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between'>
-//           <a href={`#slide${prevSlide}`} className='btn btn-circle'>
-//             ❮
-//           </a>
-//           <a href={`#slide${nextSlide}`} className='btn btn-circle'>
-//             ❯
-//           </a>
-//         </div>
-//       </div>
-//     )
-//   })}
-// </div>
 return (
   <div className='slider-container relative w-full max-w-[1450px] h-auto max-h-[1000px] mx-auto rounded-lg overflow-hidden'>
     <Slider {...settings} ref={sliderRef}>
