@@ -13,7 +13,7 @@ const photos = [
 
 export default function PhotoCarousel() {
   return (
-<div className='carousel max-w-[1450px] h-auto max-h-[1000px] overflow-hidden mx-auto relative rounded-lg'>
+<div className='carousel w-full max-w-[1450px] h-auto max-h-[1000px] overflow-hidden mx-auto relative rounded-lg'>
   {photos.map((photoSrc, index) => {
     const prevSlide = (index - 1 + photos.length) % photos.length + 1
     const nextSlide = (index + 1) % photos.length + 1
@@ -29,14 +29,14 @@ export default function PhotoCarousel() {
           alt={`Slide ${index + 1}`}
           width={1200}
           height={400}
-          className='w-full'
+          className='w-full h-auto object-cover'
         />
 
         <div className='absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between'>
-          <a href={`#slide${prevSlide}`} className='btn btn-circle'>
+          <a href={`#slide${prevSlide}`} className='btn btn-circle text-lg md:text-xl'>
             ❮
           </a>
-          <a href={`#slide${nextSlide}`} className='btn btn-circle'>
+          <a href={`#slide${nextSlide}`} className='btn btn-circle text-lg md:text-xl'>
             ❯
           </a>
         </div>
