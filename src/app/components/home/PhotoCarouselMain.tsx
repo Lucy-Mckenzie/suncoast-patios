@@ -45,7 +45,7 @@ return (
             alt={`Slide ${index + 1}`}
             width={1200}
             height={400}
-            className='w-full h-auto object-cover'
+            className='w-full h-auto object-cover max-h-[800px] overflow-hidden rounded-lg'
           />
         </div>
       ))}
