@@ -8,10 +8,10 @@ export default function EnquiryForm() {
 
   return (
     <div className='dropdown dropdown-end relative'>
-      <label tabIndex={0} className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope'
+      <label tabIndex={0} className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
         onClick={() => setIsOpen(!isOpen)}
       >
-    { isOpen ? 'Close Form' : 'Free Measure and Quote'}
+    { isOpen ? 'Close Form' : 'Free Measure'}
     </label>
     {isOpen && 
      <div
