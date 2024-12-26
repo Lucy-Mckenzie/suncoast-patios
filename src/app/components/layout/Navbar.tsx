@@ -17,7 +17,7 @@ const { changedTheme } = context;
 
   return (
 <div className='navbar bg-base-100'>
-  <div className='navbar-start flex items-center'>
+  <div className='navbar flex items-end'>
   <div className='dropdown'>
       <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
         <svg
@@ -57,7 +57,7 @@ const { changedTheme } = context;
         </li>
       </ul>
     </div>
-    <div className='ml-4'>
+    <div className='flex-1'>
       <Link href='/'>
         <Image
           src='/logos/suncoastlogo.png'
@@ -68,15 +68,10 @@ const { changedTheme } = context;
       </Link>
     </div>
   </div>
-   <div className='navbar-center hidden lg:flex'>
+
+  <div className='navbar-end flex items-center space-x-4'>
+  <div className=' hidden lg:flex'>
     <ul className='menu menu-horizontal px-1'>
-      <li>
-        <Link
-         href='/contact' 
-         className='transition'>
-      Contact Us
-    </Link>
-    </li>
       <li>
         <details>
           <summary>Products</summary>
@@ -95,10 +90,15 @@ const { changedTheme } = context;
           </ul>
         </details>
       </li>
+      <li>
+        <Link
+         href='/contact' 
+         className='transition'>
+      Contact Us
+    </Link>
+    </li>
     </ul>
   </div>
-
-  <div className='navbar-end flex items-center space-x-4'>
   <EnquiryForm />
     <label className='swap swap-rotate'>
       <input
