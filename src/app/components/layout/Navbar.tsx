@@ -60,7 +60,7 @@ const { changedTheme } = context;
     <div className='ml-4'>
       <Link href='/'>
         <Image
-          src='/suncoastlogo.png'
+          src='/logos/suncoastlogo.png'
           alt='Suncoast Patios Logo'
           width={170}
           height={70}
