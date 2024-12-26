@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Timeline from './Timeline'
+// import Timeline from './Timeline'
 import Form from './Form'
 
 export default function EnquiryForm() {
@@ -19,17 +19,17 @@ export default function EnquiryForm() {
      onClick={() => setIsOpen(false)}
    >
      <div
-       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg w-full max-w-5xl h-auto p-6 space-y-6 lg:space-y-0 lg:space-x-6'
+       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg w-full sm:max-w-md lg:max-w-5xl lg:max-h-full sm:max-h-[70vh] lg:p-6 sm:p-6 sm:space-y-6 lg:space-y-0 lg:space-x-6 sm:overflow-y-auto'
        onClick={(e) => e.stopPropagation()}
      >
       
-   <div className='flex flex-col items-center space-y-8'>
+   <div className='flex flex-col items-center lg:space-y-4 sm:space-y-6'>
    <div className='w-full lg:w-2/3 text-center lg:text-left'>
   <h1 className='text-2xl font-bold font-manrope mb-16'>
     The road to comfortable outdoor living starts here. We just need a few details.
   </h1>
 
-  <div className='flex items-start space-x-3 mb-8'>
+  <div className='w-full flex-1 sm:overflow-y-auto sm:max-h-[70vh] p-2 sm:p-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100'>
   <Image
     src='/logos/phone.png'
     alt='enquiry form'
@@ -57,7 +57,7 @@ export default function EnquiryForm() {
 
     <div>
       </div>
-      {/* <div className='w-full text-center'>
+      <div className='w-full text-center'>
             <Image
               src='/logos/form.png'
               alt='enquiry form'
@@ -65,8 +65,8 @@ export default function EnquiryForm() {
               height={200}
               className='object-contain mx-auto' 
             />
-          </div> */}
-   <Timeline />
+          </div>
+   {/* <Timeline /> */}
     </div>
     <div className='lg:w-2/3'>
           <Form />
@@ -77,3 +77,4 @@ export default function EnquiryForm() {
   </div>  
   )
 }
+
