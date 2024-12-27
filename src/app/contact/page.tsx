@@ -7,7 +7,7 @@ export default function Contact() {
 <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>
     <div className='max-w-2xl mx-auto text-center'>
         <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>Contact us</h2>
-        <p className='max-w-xl mx-auto mt-4 text-base leading-relaxed'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+        <p className='max-w-xl mx-auto mt-4 text-base leading-relaxed'>To organize a free quote, ask a general question or find out about a product and how it would suit your home</p>
     </div>
 
     <div className='max-w-5xl mx-auto mt-12 sm:mt-16'>
@@ -41,7 +41,7 @@ export default function Contact() {
                         <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='1' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z' />
                         <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='1' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z' />
                     </svg>
-                    <p className='mt-6 text-md font-medium leading-relaxed text-base'>Hawkes Bay</p>
+                    <p className='mt-6 text-md font-medium leading-relaxed text-base'>Located in Napier, Hawkes Bay</p>
                 </div>
             </div>
         </div>

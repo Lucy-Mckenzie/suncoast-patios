@@ -10,7 +10,7 @@ export default function EnquiryForm() {
       <label tabIndex={0} className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
         onClick={() => setIsOpen(!isOpen)}
       >
-    { isOpen ? 'Close Form' : 'Free Measure'}
+    { isOpen ? 'Close Form' : 'Free Quote'}
     </label>
     {isOpen && 
      <div
