@@ -18,7 +18,7 @@ export default function EnquiryForm() {
      onClick={() => setIsOpen(false)}
    >
      <div
-       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg lg:w-full overflow-scroll lg:max-w-5xl lg:max-h-full max-h-[100vh] max-w-xs p-6 space-y-6 lg:space-y-0 lg:space-x-6 py-5'
+       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg lg:w-full overflow-scroll lg:max-w-5xl lg:max-h-full max-h-[90vh] max-w-xs p-6 space-y-6 lg:space-y-0 lg:space-x-6 my-5'
        onClick={(e) => e.stopPropagation()}
      >
       
