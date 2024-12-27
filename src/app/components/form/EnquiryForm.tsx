@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-// import Timeline from './Timeline'
 import Form from './Form'
 
 export default function EnquiryForm() {
@@ -19,39 +18,39 @@ export default function EnquiryForm() {
      onClick={() => setIsOpen(false)}
    >
      <div
-       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg w-full sm:max-w-md lg:max-w-5xl lg:max-h-full sm:max-h-[70vh] lg:p-6 sm:p-6 sm:space-y-6 lg:space-y-0 lg:space-x-6 sm:overflow-y-auto'
+       className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg lg:w-full overflow-scroll lg:max-w-5xl lg:max-h-full max-h-[100vh] max-w-xs p-6 space-y-6 lg:space-y-0 lg:space-x-6 py-5'
        onClick={(e) => e.stopPropagation()}
      >
       
-   <div className='flex flex-col items-center lg:space-y-4 sm:space-y-6'>
-   <div className='w-full lg:w-2/3 text-center lg:text-left'>
-  <h1 className='text-2xl font-bold font-manrope mb-16'>
+   <div className='lg:flex lg:flex-col items-center lg:space-y-4'>
+   <div className='lg:w-2/3 text-center lg:text-left'>
+  <h1 className='lg:text-2xl text-lg font-bold font-manrope lg:mb-16'>
     The road to comfortable outdoor living starts here. We just need a few details.
   </h1>
 
-  <div className='w-full flex-1 sm:overflow-y-auto sm:max-h-[70vh] p-2 sm:p-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100'>
+  <div className='flex items-center lg:space-x-3 space-x-2 mt-4 mb-2'>
   <Image
     src='/logos/phone.png'
     alt='enquiry form'
     width={20}
     height={20}
-    className='object-contain'
+    className='object-contain lg:h-5 lg:w-5 h-3 w-3'
   />
-    <h2 className='font-medium text-lg'>Call us directly:</h2>
-    <p className='text-base text-md mb-2'>+64 22 170 9933</p>
+    <h2 className='font-medium lg:text-xl text-md'>Call us directly:</h2>
+    <p className='text-content lg:text-lg text-sm'>+64 22 170 9933</p>
   </div>
 
 
-<div className='flex items-start space-x-3'>
+<div className='flex items-center lg:space-x-3 space-x-2 mb-4'>
   <Image
     src='/logos/mail.png'
     alt='enquiry form'
     width={20}
     height={20}
-    className='object-contain'
+    className='object-contain lg:h-5 lg:w-5 h-3 w-3'
   />
-    <h2 className='font-medium text-lg'>Email:</h2>
-    <p className='text-base text-md'>info@suncoastpatios.co.nz</p>
+    <h2 className='font-medium lg:text-xl text-md'>Email:</h2>
+    <p className='text-content lg:text-lg text-sm'>info@suncoastpatios.co.nz</p>
   </div>
 </div>
 
@@ -63,10 +62,9 @@ export default function EnquiryForm() {
               alt='enquiry form'
               width={200}
               height={200}
-              className='object-contain mx-auto' 
+              className='object-contain mx-auto lg:h-52 lg:w-52 h-28 w-28' 
             />
           </div>
-   {/* <Timeline /> */}
     </div>
     <div className='lg:w-2/3'>
           <Form />
