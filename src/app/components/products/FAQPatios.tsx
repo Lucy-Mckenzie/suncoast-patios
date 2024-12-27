@@ -2,24 +2,24 @@ import React from 'react'
 
 const faqs = [
   {
-    question: 'What is a louvre?',
-    answer: 'A louvre is a type of outdoor structure with adjustable slats that provide shade and ventilation, making it ideal for patios.'
+    question: 'What is the difference between a patio and a deck?',
+    answer: 'Patios are typically built on the ground level, often made of stone, concrete, or pavers, while decks are elevated, made from wood or composite materials.'
   },
   {
-    question: 'How do I clean my patio louvres?',
-    answer: 'To clean your patio louvres, use a soft brush and soapy water. Avoid harsh chemicals that could damage the surface.'
+    question: 'How long does it take to build a patio?',
+    answer: 'Patio construction typically takes a few days to a week, depending on size, materials, and weather conditions.'
   },
   {
-    question: 'Are your blinds motorized?',
-    answer: 'Yes, we offer motorized blinds for ease of use, especially for larger windows or hard-to-reach areas.'
+    question: 'Can I install a patio myself?',
+    answer: 'While its possible to install a patio yourself, professional installation is recommended for complex designs to ensure durability and proper drainage.'
   },
   {
-    question: 'Can I install a patio louvre myself?',
-    answer: 'We recommend professional installation to ensure the structure is safe and functional, although DIY options are available for some products.'
+    question: 'Do I need a permit to build a patio?',
+    answer: 'Permits may be required depending on your location, the size of the patio, and local regulations. Check with your local council for specific requirements.'
   },
   {
     question: 'How do I maintain my patio?',
-    answer: 'Regular cleaning and occasional checks on the structure and blinds will ensure your patio remains in excellent condition.'
+    answer: 'Regular cleaning, sealing, and checking for any cracks or damages will help maintain the look and functionality of your patio over time.'
   }
 ]
 

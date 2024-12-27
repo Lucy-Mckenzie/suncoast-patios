@@ -1,26 +1,26 @@
 import React from 'react'
 
 const faqs = [
-      {
-        question: 'What is the difference between a patio and a deck?',
-        answer: 'Patios are typically built on the ground level, often made of stone, concrete, or pavers, while decks are elevated, made from wood or composite materials.'
-      },
-      {
-        question: 'How long does it take to build a patio?',
-        answer: 'Patio construction typically takes a few days to a week, depending on size, materials, and weather conditions.'
-      },
-      {
-        question: 'Can I install a patio myself?',
-        answer: 'While its possible to install a patio yourself, professional installation is recommended for complex designs to ensure durability and proper drainage.'
-      },
-      {
-        question: 'Do I need a permit to build a patio?',
-        answer: 'Permits may be required depending on your location, the size of the patio, and local regulations. Check with your local council for specific requirements.'
-      },
-      {
-        question: 'How do I maintain my patio?',
-        answer: 'Regular cleaning, sealing, and checking for any cracks or damages will help maintain the look and functionality of your patio over time.'
-      }
+  {
+    question: 'What types of blinds are available?',
+    answer: 'Common types of blinds include roller blinds, Venetian blinds, vertical blinds, and wooden or faux wood blinds, each offering different aesthetic and functional benefits.'
+  },
+  {
+    question: 'Can blinds be customized to fit unusual windows?',
+    answer: 'Yes, blinds can be custom-made to fit any window size or shape, ensuring a perfect fit for both standard and non-standard windows.'
+  },
+  {
+    question: 'Are blinds easy to clean?',
+    answer: 'Most blinds are relatively easy to clean. Roller and Venetian blinds can be wiped down, while fabric blinds may require vacuuming or occasional washing.'
+  },
+  {
+    question: 'Can blinds help with energy efficiency?',
+    answer: 'Yes, blinds can help insulate your home by blocking out heat in summer and retaining warmth in winter, contributing to better energy efficiency.'
+  },
+  {
+    question: 'Can I automate my blinds?',
+    answer: 'Yes, many modern blinds can be motorized and automated, allowing you to control them remotely or set schedules for opening and closing.'
+  }
   ]
 
 

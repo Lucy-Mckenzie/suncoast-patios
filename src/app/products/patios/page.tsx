@@ -1,10 +1,10 @@
 'use client'
 import PhotoCarousel from '@/app/components/products/PhotoCarouselProducts'
 import React from 'react'
-import { useState } from 'react';
+import { useState } from 'react'
 import Image from 'next/image'
-import EnquiryForm from '@/app/components/form/EnquiryForm';
-import FAQ from '@/app/components/products/FAQLouvres';
+import EnquiryForm from '@/app/components/form/EnquiryForm'
+import FAQ from '@/app/components/products/FAQPatios'
 
 const features = [
   { id: 1, name: 'Colours', image: '/demo1.png' },
