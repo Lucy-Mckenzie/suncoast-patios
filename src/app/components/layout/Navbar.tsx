@@ -19,7 +19,7 @@ const { changedTheme } = context;
 <div className='navbar bg-base-100'>
   <div className='navbar flex items-end'>
   <div className='dropdown'>
-      <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
+      <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden pb-4'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           className='h-5 w-5'
@@ -69,7 +69,7 @@ const { changedTheme } = context;
     </div>
   </div>
 
-  <div className='navbar-end flex items-center space-x-4'>
+  <div className='navbar-end flex items-center lg:space-x-4 space-x-2'>
   <div className=' hidden lg:flex'>
     <ul className='menu menu-horizontal px-1'>
       <li>
