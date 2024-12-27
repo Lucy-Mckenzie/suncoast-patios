@@ -22,7 +22,7 @@ export default function Louvres() {
     <>
     <div className='max-w-[1100px] mx-auto'>
       <h1 
-      className='text-4xl text-left font-manrope'>
+      className='text-6xl text-left font-manrope'>
        Louvres
       </h1>
       <PhotoCarousel />

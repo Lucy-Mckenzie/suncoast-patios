@@ -22,7 +22,7 @@ export default function Blinds() {
     <>
     <div className='max-w-[1100px] mx-auto'>
       <h1 
-      className='text-4xl text-left font-manrope'>
+      className='text-6xl text-left font-manrope'>
        Blinds
       </h1>
       <PhotoCarousel />
