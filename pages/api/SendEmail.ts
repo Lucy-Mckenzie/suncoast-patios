@@ -33,7 +33,18 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             },
           ],
           Subject: 'Quote Enquriy',
-          TextPart: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+          HTMLPart: `
+          <html>
+          <head>
+            <link rel="icon" href="https://suncoast-patios-4ecd1fa1b515.herokuapp.com/logos/suncoastlogo.png" type="image/png">
+            <title>Quote Enquiry</title>
+          </head>
+          <body>
+          <h1>Quote Enquiry</h1>
+          <p>You've received a new enquiry from ${name}.</p>
+          <p>Name: ${name}<br>Email: ${email}<br>Message: ${message}</p>
+          </body>
+        `,
         },
       ],
     })
