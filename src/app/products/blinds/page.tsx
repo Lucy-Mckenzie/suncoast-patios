@@ -4,7 +4,7 @@ import React from 'react'
 import { useState } from 'react';
 import Image from 'next/image'
 import EnquiryForm from '@/app/components/form/EnquiryForm';
-import FAQ from '@/app/components/products/FAQ';
+import FAQ from '@/app/components/products/FAQLouvres';
 
 const features = [
   { id: 1, name: 'Colours', image: '/demo1.png' },
