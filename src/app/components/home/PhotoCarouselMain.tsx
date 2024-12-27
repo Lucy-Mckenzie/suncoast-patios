@@ -19,9 +19,9 @@ const settings = {
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
-  speed: 2000,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  speed: 1500,
+  autoplaySpeed: 3000,
   cssEase: 'linear',
   afterChange: () => {} 
 }
@@ -43,7 +43,7 @@ export default function PhotoCarousel() {
   }
 
 return (
-  <div className='slider-container relative w-full lg:h-auto h-[500px] mx-auto rounded-lg'>
+  <div className='slider-container relative w-full lg:h-[900px] h-[500px] mx-auto rounded-lg overflow-hidden'>
     <Slider {...settings} ref={sliderRef} afterChange={UseDisplay}>
       {photos.map((photoSrc, index) => (
         <div key={index} className='carousel-item relative w-full'>
@@ -52,7 +52,7 @@ return (
             alt={`Slide ${index + 1}`}
             width={1200}
             height={400}
-            className='w-full lg:h-auto object-cover lg:max-h-[800px] h-[400px] overflow-hidden rounded-lg'
+            className='w-full lg:h-auto object-cover lg:max-h-[800px] h-[400px] rounded-lg'
           />
         </div>
       ))}
