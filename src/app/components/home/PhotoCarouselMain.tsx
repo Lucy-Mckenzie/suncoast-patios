@@ -43,7 +43,7 @@ export default function PhotoCarousel() {
   }
 
 return (
-  <div className='slider-container relative w-full max-w-[1450px] h-auto max-h-[1000px] mx-auto rounded-lg overflow-hidden'>
+  <div className='slider-container relative w-full lg:h-auto h-[500px] mx-auto rounded-lg'>
     <Slider {...settings} ref={sliderRef} afterChange={UseDisplay}>
       {photos.map((photoSrc, index) => (
         <div key={index} className='carousel-item relative w-full'>
@@ -52,26 +52,26 @@ return (
             alt={`Slide ${index + 1}`}
             width={1200}
             height={400}
-            className='w-full h-auto object-cover max-h-[800px] overflow-hidden rounded-lg'
+            className='w-full lg:h-auto object-cover lg:max-h-[800px] h-[400px] overflow-hidden rounded-lg'
           />
         </div>
       ))}
     </Slider>
     {sliderText && (
-        <h1 className='absolute top-1/2 left-1/2 text-white lg:text-8xl sm:text-4xl font-normal manrope transform -translate-x-1/2 -translate-y-1/2'>
+        <h1 className='absolute top-1/2 left-1/2 text-white lg:text-8xl text-4xl font-normal manrope transform -translate-x-1/2 -translate-y-1/2'>
           Ultimate Outdoor Living
         </h1>
       )}
-    <div className='absolute left-10 right-10 top-1/2 flex -translate-y-1/2 transform justify-between'>
+    <div className='absolute lg:left-10 lg:right-10 left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between'>
       <button
         onClick={handlePrev}
-        className='btn btn-circle p-2 text-lg sm:text-base'
+        className='btn btn-circle p-2 lg:text-lg text-content text-sm'
       >
         ❮
       </button>
       <button
         onClick={handleNext}
-        className='btn btn-circle p-2 text-lg sm:text-base'
+        className='btn btn-circle p-2 lg:text-lg text-content text-sm'
       >
         ❯
       </button>
