@@ -11,11 +11,11 @@ type Review = {
 }
 
 const reviews: Review[] = [
-  { id: 1, imageSrc: '/demo.png', alt: 'Patio Image', author: 'Alex Kay', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { id: 2, imageSrc: '/demo.png', alt: 'Louvers Image', author: 'Alex Kay', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { id: 3, imageSrc: '/demo.png', alt: 'Blinds Image', author: 'Alex Kay', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { id: 4, imageSrc: '/demo.png', alt: 'Patio Image 2', author: 'Alex Kay', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { id: 5, imageSrc: '/demo.png', alt: 'Patio Image', author: 'Alex Kay', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { id: 1, imageSrc: '/demo.png', alt: 'Patio Image', author: 'Tanya Upritchard', description: 'Absolutely awesome service from quoting right through to the completion of the job.  I have used Suncoast Patios 4 times (blinds and patios), and each time they have exceeded my expectations,  friendly, super professional,  great workmanship, and fantastic after sales service. Highly recommended.' },
+  { id: 2, imageSrc: '/demo1.png', alt: 'Louvers Image', author: 'Robert Miller', description: 'Suncoast Patio covered our new deck with a fixed patio a couple weeks before promised. This enabled us to enjoy our new covered deck for Christmas day. They went over and beyond to deliver and it looks amazing.  Thanks so much. I would highly recommend.' },
+  { id: 3, imageSrc: '/demo2.png', alt: 'Blinds Image', author: 'John Walker', description: 'I couldn’t be happier with the work done by Suncoast Patios! From the initial consultation to the final installation, the team was professional and attentive to every detail. I’ve had both a patio and louvres installed, and each time the quality and service were exceptional. Highly recommend them for anyone looking to enhance their outdoor space.' },
+  { id: 4, imageSrc: '/demo4.png', alt: 'Patio Image 2', author: 'Emily Roberts', description: 'The service from Suncoast Patios was nothing short of amazing! They went above and beyond to ensure we were happy with our new louvres and patio. The team was always polite, punctual, and professional throughout the entire process. The finished product looks stunning, and we’ve received so many compliments from friends and family. Highly recommend their services!' },
+  { id: 5, imageSrc: '/demo5.png', alt: 'Patio Image', author: 'Alex Kay', description: 'Suncoast Patios has done a fantastic job on our new outdoor space! From the first meeting to the final install, the communication was clear, the team was friendly, and the attention to detail was second to none. We’re so happy with the results and would gladly recommend them to anyone looking for quality work and excellent customer service.' },
 ]
 
 export default function Reviews() {
@@ -48,7 +48,7 @@ export default function Reviews() {
             alt={review.alt}
              width={500} 
              height={300}
-             className='object-cover'
+             className='object-cover h-[12rem]'
              />
           </figure>
           <div className='card-body'>

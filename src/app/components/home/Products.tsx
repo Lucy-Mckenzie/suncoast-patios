@@ -12,7 +12,7 @@ export default function Products() {
       <div className='card bg-base-100 w-96 shadow-md rounded-md'>
   <figure className='px-10 pt-10'>
       <Image
-       src='/demo.png' 
+       src='/demo2.png' 
        alt='suncoast patios louvre'
        width={1200}
        height={400}
@@ -40,7 +40,7 @@ export default function Products() {
   <figure className='px-10 pt-10'>
       <Image
        src='/demo.png'
-       alt='suncoast patios louvre'
+       alt='suncoast patios patio'
        width={1200}
        height={400}
        />
@@ -66,8 +66,8 @@ export default function Products() {
 <div className='card bg-base-100 w-96 shadow-md rounded-md'>
   <figure className='px-10 pt-10'>
       <Image
-       src='/demo.png'
-       alt='suncoast patios louvre'
+       src='/blinds.png'
+       alt='suncoast patios blinds'
        width={1200}
        height={400}
        />
