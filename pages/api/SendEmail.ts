@@ -6,29 +6,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { name, email, message, number, recaptchaToken } = req.body
+  const { name, email, message, number } = req.body
 
 
   if (!name || !email || !number) {
     return res.status(400).json({ error: 'Name, email, and phone number are required' })
-  }
-
-  if (!recaptchaToken) {
-    return res.status(400).json({ error: 'reCAPTCHA token is required' })
-  }
-
-  const secretKey = process.env.RECAPTCHA_SECRET_KEY
-  const recaptchaResponse = await fetch(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptchaToken}`,
-    {
-      method: 'POST',
-    }
-  )
-  
-  const recaptchaResult = await recaptchaResponse.json()
-
-  if (!recaptchaResult.success) {
-    return res.status(400).json({ error: 'Failed reCAPTCHA verification' })
   }
 
   try {

@@ -3,6 +3,7 @@ import Navbar from './components/layout/Navbar';
 import ClientThemeWrapper from './context/ClientThemeWrapper';
 import ThemeProvider from './context/ThemeContext';
 import './globals.css';
+import Script from 'next/script';
 
 import { Manrope } from 'next/font/google'
 
@@ -19,6 +20,10 @@ export default function RootLayout({
   return (
     <html lang='en' className={manrope.className}>
     <body>
+    <Script
+          src={`https://www.google.com/recaptcha/enterprise.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_KEY}`}
+          strategy="beforeInteractive"
+        />
       <ThemeProvider>
         <ClientThemeWrapper>
           <Navbar />

@@ -8,22 +8,13 @@ export default function Form() {
   const [number, setNumber] = useState('')
   const [message, setMessage] = useState('')
   const [statusMessage, setStatusMessage] = useState('')
-  const [recaptchaToken, setRecaptchaToken] = useState('')
-
-  const onRecaptchaChange = (token: string | null) => {
-    setRecaptchaToken(token || '');
-  }
+  const publicKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY!
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
 
     if (!name || !email || !number) {
       setStatusMessage('Please fill out all required fields.')
-      return
-    }
-
-    if (!recaptchaToken) {
-      alert('Please verify the reCAPTCHA.')
       return
     }
 
@@ -118,8 +109,7 @@ export default function Form() {
           ></textarea>
         </div>
         <ReCAPTCHA 
-        sitekey='6LfBnagqAAAAAALLFxvMEGGpUV7xKwi5T7tz5b44'
-        onChange={onRecaptchaChange}
+        sitekey={`${publicKey}`}
         />
         <div className='form-control'>
           <button 
