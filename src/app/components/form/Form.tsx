@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function Form() {
   const [name, setName] = useState('')
@@ -7,13 +8,23 @@ export default function Form() {
   const [number, setNumber] = useState('')
   const [message, setMessage] = useState('')
   const [statusMessage, setStatusMessage] = useState('')
+  const [recaptchaToken, setRecaptchaToken] = useState('')
+
+  const onRecaptchaChange = (token: string | null) => {
+    setRecaptchaToken(token || '');
+  }
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
 
     if (!name || !email || !number) {
-      setStatusMessage('Please fill out all required fields.');
-      return;
+      setStatusMessage('Please fill out all required fields.')
+      return
+    }
+
+    if (!recaptchaToken) {
+      alert('Please verify the reCAPTCHA.')
+      return
     }
 
     const formData = {
@@ -21,7 +32,7 @@ export default function Form() {
       email,
       number,
       message,
-    };
+    }
 
     try {
       const res = await fetch('/api/SendEmail', {
@@ -106,7 +117,10 @@ export default function Form() {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        
+        <ReCAPTCHA 
+        sitekey='6LfBnagqAAAAAALLFxvMEGGpUV7xKwi5T7tz5b44'
+        onChange={onRecaptchaChange}
+        />
         <div className='form-control'>
           <button 
           className='btn bg-base text-base hover:bg-base-100 w-[150px] shadow-lg hover:scale-105 font-manrope'
