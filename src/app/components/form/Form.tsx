@@ -8,32 +8,42 @@ export default function Form() {
   const [number, setNumber] = useState('')
   const [message, setMessage] = useState('')
   const [statusMessage, setStatusMessage] = useState('')
-  const publicKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY!
+  const [token, setToken] = useState<string | null>(null)
+  const publicKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY
+
+  const handleRecaptchaChange = (value: string | null) => {
+    setToken(value)
+  }
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
-
+  
+    if (!token) {
+      alert('Please complete the reCAPTCHA')
+      return
+    }
+  
     if (!name || !email || !number) {
       setStatusMessage('Please fill out all required fields.')
       return
     }
-
+  
     const formData = {
       name,
       email,
       number,
       message,
     }
-
+  
     try {
       const res = await fetch('/api/SendEmail', {
         method: 'POST',
+        body: JSON.stringify({ token, ...formData }), 
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
       })
-
+  
       if (res.ok) {
         setStatusMessage('Message sent successfully!')
         setName('')
@@ -48,7 +58,6 @@ export default function Form() {
       setStatusMessage('An error occurred. Please try again later.')
     }
   }
-
   return (
     <div>
        <form className='bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'
@@ -110,6 +119,7 @@ export default function Form() {
         </div>
         <ReCAPTCHA 
         sitekey={`${publicKey}`}
+        onChange={handleRecaptchaChange}
         />
         <div className='form-control'>
           <button 
@@ -121,7 +131,7 @@ export default function Form() {
         </div>
       </form>
       {statusMessage && (
-        <div className="mt-4 text-center text-lg font-semibold">
+        <div className='mt-4 text-center text-lg font-semibold'>
           {statusMessage}
         </div>
       )}
