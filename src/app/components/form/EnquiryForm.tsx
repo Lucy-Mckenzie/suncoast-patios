@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Form from './Form'
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 
 export default function EnquiryForm() {
   const [isOpen, setIsOpen] = useState(false)
+  const publicKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY || ''
 
   return (
     <div className='dropdown dropdown-end relative'>
@@ -67,7 +69,11 @@ export default function EnquiryForm() {
           </div>
     </div>
     <div className='lg:w-2/3'>
-          <Form />
+    <GoogleReCaptchaProvider
+      reCaptchaKey={publicKey}
+    >
+      <Form />
+    </GoogleReCaptchaProvider>
       </div>
     </div>
     </div>
