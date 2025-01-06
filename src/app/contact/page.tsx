@@ -1,8 +1,17 @@
 import React from 'react'
 import Form from '../components/form/Form'
+import Head from 'next/head'
 
 export default function Contact() {
   return (
+    <>
+    <Head>
+    <title>Contact - Suncoast Patios</title>
+    <meta
+      name='description'
+      content='Contact the friendly team at Suncoast Patios. Get in touch for premium outdoor living solutions in Hawke"s Bay and Gisborne.'
+    />
+  </Head>
 <section className='py-10 bg-base-200 sm:py-16 lg:py-24'>
 <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>
     <div className='max-w-2xl mx-auto text-center'>
@@ -55,6 +64,6 @@ export default function Contact() {
     </div>
 </div>
 </section>
-
+</>
   )
 }
