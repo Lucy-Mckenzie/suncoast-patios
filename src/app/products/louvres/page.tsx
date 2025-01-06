@@ -1,10 +1,11 @@
 'use client'
 import PhotoCarousel from '@/app/components/products/PhotoCarouselProducts'
 import React from 'react'
-import { useState } from 'react';
+import { useState } from 'react'
 import Image from 'next/image'
-import EnquiryForm from '@/app/components/form/EnquiryForm';
-import FAQ from '@/app/components/products/FAQLouvres';
+import EnquiryForm from '@/app/components/form/EnquiryForm'
+import FAQ from '@/app/components/products/FAQLouvres'
+import Head from 'next/head'
 
 const features = [
   { id: 1, name: 'Colours', image: '/demo1.png' },
@@ -13,13 +14,20 @@ const features = [
   { id: 4, name: 'Guaranteed 15 Years', image: '/demo.png' },
   { id: 5, name: 'Auto Closures in Rain', image: '/demo1.png' },
   { id: 6, name: 'Any Size Achievable', image: '/demo.png' },
-];
+]
 
 export default function Louvres() {
   const [activeFeature, setActiveFeature] = useState(features[0])
 
   return (
     <>
+      <Head>
+      <title>Louvres - Suncoast Patios</title>
+      <meta
+        name='description'
+        content='Explore our range of high-quality louvres for enhanced outdoor living spaces.'
+      />
+    </Head>
     <div className='max-w-[1100px] mx-auto'>
       <h1 
       className='text-6xl text-left font-manrope'>

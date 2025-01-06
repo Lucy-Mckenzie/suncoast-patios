@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import EnquiryForm from '@/app/components/form/EnquiryForm'
 import FAQ from '@/app/components/products/FAQBlinds'
+import Head from 'next/head'
 
 const features = [
   { id: 1, name: 'Colours', image: '/demo1.png' },
@@ -20,6 +21,13 @@ export default function Blinds() {
 
   return (
     <>
+       <Head>
+        <title>Blinds - Suncoast Patios</title>
+        <meta
+          name='description'
+          content='Explore our range of high-quality blinds for enhanced outdoor living spaces.'
+        />
+      </Head>
     <div className='max-w-[1100px] mx-auto'>
       <h1 
       className='text-6xl text-left font-manrope'>
