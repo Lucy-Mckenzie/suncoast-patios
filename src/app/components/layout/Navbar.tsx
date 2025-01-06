@@ -65,6 +65,7 @@ const { changedTheme } = context;
           width={170}
           height={70}
           priority
+          style={{ width: 'auto', height: 'auto' }}
         />
       </Link>
     </div>
