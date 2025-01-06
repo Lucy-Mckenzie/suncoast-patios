@@ -18,11 +18,7 @@ export const metadata: Metadata = {
     template: '%s - Suncoast Patios',
   },
   description:
-    'Transform your outdoor spaces with Suncoast Patios Ltd, serving Hawke"s Bay and Gisborne. Specializing in high-quality patio roofs, louvre roofs, and outdoor blinds, we provide Stratco and Ziptrak solutions for year-round comfort and style. Enhance your outdoor living today!',
-  viewport: 'width=device-width, initial-scale=1.0',
-  icons: {
-    icon: '/favicon.ico',
-  },
+    'Transform your outdoor spaces with Suncoast Patios Ltd, serving Hawke"s Bay and Gisborne. Specializing in high-quality patio roofs, louvre roofs, and outdoor blinds, we provide Stratco and Ziptrak solutions for year-round comfort and style. Enhance your outdoor living today!'
 }
 
 export default function RootLayout({

@@ -64,6 +64,7 @@ const { changedTheme } = context;
           alt='Suncoast Patios Logo'
           width={170}
           height={70}
+          priority
         />
       </Link>
     </div>
