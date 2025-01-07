@@ -2,27 +2,14 @@
 import Link from 'next/link'
 import React from 'react'
 import EnquiryForm from '../form/EnquiryForm'
-import Image from 'next/image'
 
 export default function Footer() {
   return (
-<footer className='footer bg-base text-base items-center p-6'>
-  <aside className='flex flex-col sm:flex-row items-center sm:justify-between w-full'>
-    <Link href='/'>
-      <Image
-        src='/logos/suncoastlogo.png'
-        alt='Suncoast Patios Logo'
-        width={170}
-        height={70}
-        className='hover:opacity-70 transition-opacity duration-300'
-      />
-    </Link>
-    <p className='mt-4 sm:mt-0 text-sm'>
+<footer className='footer bg-base text-base flex flex-col items-center justify-center p-6'>
+<nav className='flex items-center text-center justify-center sm:justify-end space-x-6 mt-4 sm:mt-0'>
+    <p className='mt-4 sm:mt-0 text-sm text-center'>
       © {new Date().getFullYear()} Suncoast Patios - All rights reserved.
     </p>
-  </aside>
-
-  <nav className='flex items-center justify-center sm:justify-end space-x-6 mt-4 sm:mt-0'>
     <EnquiryForm />
     <Link href='https://www.facebook.com/SuncoastLtd/' target='_blank'  aria-label="Visit Suncoast Ltd's Facebook page">
       <svg
