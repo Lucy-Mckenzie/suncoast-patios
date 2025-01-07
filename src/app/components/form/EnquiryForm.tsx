@@ -14,10 +14,11 @@ export default function EnquiryForm() {
        id='dropdown-button'
        tabIndex={0} 
        className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
-       aria-expanded={isOpen}
+       aria-expanded={isOpen ? 'true' : 'false'} 
        htmlFor='dropdown-toggle'
        onClick={() => setIsOpen(!isOpen)} 
        aria-controls='dropdown-content'
+        aria-haspopup='true'
        onKeyDown={(e) => {
         if (e.key === 'Escape' && isOpen) setIsOpen(false)
       }}

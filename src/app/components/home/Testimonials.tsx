@@ -66,7 +66,7 @@ export default function Reviews() {
             type='radio' 
             name='rating-2'
             id='star1'
-            className='mask mask-star-2 bg-orange-400'
+            className='mask mask-star-2 bg-orange-400  px-2.5'
             checked readOnly
             aria-label='Star 1'
             />
@@ -74,7 +74,7 @@ export default function Reviews() {
             type='radio' 
             name='rating-2'
             id='star2'
-            className='mask mask-star-2 bg-orange-400'
+            className='mask mask-star-2 bg-orange-400  px-2.5'
             checked readOnly
             aria-label='Star 2' 
             />
@@ -82,7 +82,7 @@ export default function Reviews() {
             type='radio' 
             name='rating-2'
             id='star3'
-            className='mask mask-star-2 bg-orange-400'
+            className='mask mask-star-2 bg-orange-400  px-2.5'
             checked readOnly
             aria-label='Star 3' 
             />
@@ -90,7 +90,7 @@ export default function Reviews() {
             type='radio' 
             name='rating-2'
             id='star4'
-            className='mask mask-star-2 bg-orange-400'
+            className='mask mask-star-2 bg-orange-400  px-2.5'
             checked readOnly
             aria-label='Star 4' 
             />
@@ -98,7 +98,7 @@ export default function Reviews() {
             type='radio' 
             name='rating-2'
             id='star5'
-            className='mask mask-star-2 bg-orange-400'
+            className='mask mask-star-2 bg-orange-400 px-2.5'
             checked readOnly
             aria-label='Star 5' 
             />
