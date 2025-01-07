@@ -13,7 +13,7 @@ if (!context) {
   throw new Error('ThemeToggler must be used within a ThemeProvider')
 }
 
-const { changedTheme } = context;
+const { changedTheme } = context
 
   return (
 <div className='navbar bg-base-100'>
