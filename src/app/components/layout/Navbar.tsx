@@ -103,6 +103,7 @@ const { changedTheme } = context;
   </div>
   <EnquiryForm />
     <label className='swap swap-rotate'>
+    <span className='sr-only'>Toggle Dark Mode</span> 
       <input
         type='checkbox'
         className='theme-controller'

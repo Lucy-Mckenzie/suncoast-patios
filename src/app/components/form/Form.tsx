@@ -65,7 +65,9 @@ export default function Form() {
        >
         <div className='form-control mb-3'>
           <label className='label' htmlFor='name'>
-            <span className='label-text'>Full Name*</span>
+            <span className='label-text'>
+              Full Name*
+              </span>
           </label>
           <input
             id='name'
@@ -75,10 +77,11 @@ export default function Form() {
             value={name} 
             onChange={(e) => setName(e.target.value)}
             required
+            aria-required='true'
           />
         </div>
         <div className='form-control mb-3'>
-          <label className='label'>
+          <label className='label' htmlFor='email'>
             <span className='label-text'>Email*</span>
           </label>
           <input
@@ -89,11 +92,12 @@ export default function Form() {
             value={email} 
             onChange={(e) => setEmail(e.target.value)}
             required
+            aria-required='true'
           />
         </div>
 
         <div className='form-control mb-3'>
-          <label className='label'>
+          <label className='label' htmlFor='number'>
             <span className='label-text'>Phone Number*</span>
           </label>
           <input
@@ -104,10 +108,11 @@ export default function Form() {
             value={number} 
             onChange={(e) => setNumber(e.target.value)}
             required
+            aria-required='true'
           />
         </div>
         <div className='form-control mb-3'>
-          <label className='label'>
+          <label className='label' htmlFor='message'>
             <span className='label-text'>Message</span>
           </label>
           <textarea
@@ -121,13 +126,18 @@ export default function Form() {
           <button 
           className='btn bg-base text-base hover:bg-base-100 w-[150px] shadow-lg hover:scale-105 font-manrope'
           type='submit'
+          aria-label='Submit Form'
           >
             Submit
           </button>
         </div>
       </form>
       {statusMessage && (
-        <div className='mt-4 text-center text-lg font-semibold'>
+        <div 
+        className='mt-4 text-center text-lg font-semibold'
+        role='alert'
+        aria-live='polite'
+        >
           {statusMessage}
         </div>
       )}

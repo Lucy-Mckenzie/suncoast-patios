@@ -34,10 +34,13 @@ export default function FAQ() {
         <div className='w-[70%] space-y-4'>
           {faqs.map((faq, index) => (
             <div key={index} className='collapse bg-base-200 shadow-md'>
-              <input type='checkbox' />
-              <div className='collapse-title text-xl font-medium'>
+              <input 
+              type='checkbox'
+              id={`checkbox-${index}`}
+              />
+              <label htmlFor={`checkbox-${index}`}  className='collapse-title text-xl font-medium'>
                 {faq.question}
-              </div>
+              </label>
               <div className='collapse-content'>
                 <p>{faq.answer}</p>
               </div>
