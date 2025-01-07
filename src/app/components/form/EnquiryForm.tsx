@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Form from './Form'
@@ -14,14 +15,16 @@ export default function EnquiryForm() {
        tabIndex={0} 
        className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
        aria-expanded={isOpen}
-       htmlFor="dropdown-toggle"
+       htmlFor='dropdown-toggle'
+       onClick={() => setIsOpen(!isOpen)} 
        aria-controls='dropdown-content'
        onKeyDown={(e) => {
         if (e.key === 'Escape' && isOpen) setIsOpen(false)
-      }}>
+      }}
+      >
     { isOpen ? 'Close Form' : 'Free Quote'}
     </label>
-    {isOpen && 
+    {isOpen && (
      <div
      id='dropdown-content'
      className='fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center z-50'
@@ -99,7 +102,7 @@ export default function EnquiryForm() {
       </div>
     </div>
     </div>
-    }
+    )}
   </div>  
   )
 }
