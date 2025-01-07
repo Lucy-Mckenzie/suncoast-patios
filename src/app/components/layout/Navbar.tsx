@@ -42,7 +42,7 @@ const { changedTheme } = context;
         Contact Us
         </Link>
         <li>
-          <a>Products</a>
+          <summary>Products</summary>
           <ul className='p-2'>
           <li>
           <Link href='/products/louvres'>Louvres</Link>
@@ -64,6 +64,8 @@ const { changedTheme } = context;
           alt='Suncoast Patios Logo'
           width={170}
           height={70}
+          priority
+          style={{ width: 'auto', height: 'auto' }}
         />
       </Link>
     </div>
@@ -101,6 +103,7 @@ const { changedTheme } = context;
   </div>
   <EnquiryForm />
     <label className='swap swap-rotate'>
+    <span className='sr-only'>Toggle Dark Mode</span> 
       <input
         type='checkbox'
         className='theme-controller'
