@@ -30,18 +30,41 @@ export default function Form() {
       return
     }
 
-    resetForm()
     if (!name || !email || !number) {
       setStatusMessage('Please fill out all required fields.')
       return
     }
-    if (ref.current) {
-      const formData = new FormData(ref.current)
-      formData.append('captcha', captchaToken)
-      setStatusMessage('Form submitted successfully!')
-    } else {
-      setStatusMessage('Form reference is invalid.')
+
+    const formData = {
+      name,
+      email,
+      message,
+      number,
+      captcha: captchaToken
     }
+
+    try {
+      const response = await fetch('/api/SendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+  
+      const result = await response.json()
+  
+      if (response.ok) {
+        setStatusMessage('Form submitted successfully!')
+      } else {
+        setStatusMessage(result.error || 'An error occurred.')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setStatusMessage('Failed to submit the form.')
+    }
+
+    resetForm()
 }
 
 
