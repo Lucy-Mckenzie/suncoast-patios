@@ -13,7 +13,7 @@ export default function EnquiryForm() {
       <button 
        id='dropdown-button'
        tabIndex={0} 
-       className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
+       className='btn bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
        aria-expanded={isOpen ? 'true' : 'false'} 
        onClick={() => setIsOpen(!isOpen)} 
        aria-controls='dropdown-content'
