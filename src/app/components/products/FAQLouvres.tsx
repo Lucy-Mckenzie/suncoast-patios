@@ -26,25 +26,28 @@ const faqs = [
 export default function FAQ() {
   return (
     <div>
-      <div className='flex flex-col items-center my-20'>
-        <h1 className='text-2xl text-center font-manrope mb-6'>
-          Frequently Asked Questions
-        </h1>
-        <div className='w-[70%] space-y-4'>
-          {faqs.map((faq, index) => (
-            <div key={index} className='collapse bg-base-200 shadow-md'>
-              <input type='checkbox' />
-              <div className='collapse-title text-xl font-medium'>
-                {faq.question}
-              </div>
-              <div className='collapse-content'>
-                <p>{faq.answer}</p>
-              </div>
+    <div className='flex flex-col items-center my-20'>
+      <h1 className='text-2xl text-center font-manrope mb-6'>
+        Frequently Asked Questions
+      </h1>
+      <div className='w-[70%] space-y-4'>
+        {faqs.map((faq, index) => (
+          <div key={index} className='collapse bg-base-200 shadow-md'>
+            <input 
+            type='checkbox'
+            id={`checkbox-${index}`}
+            />
+            <label htmlFor={`checkbox-${index}`}  className='collapse-title text-xl font-medium'>
+              {faq.question}
+            </label>
+            <div className='collapse-content'>
+              <p>{faq.answer}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
+  </div>
   )
 }
 
