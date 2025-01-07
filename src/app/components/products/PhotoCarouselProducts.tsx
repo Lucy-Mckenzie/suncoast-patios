@@ -1,18 +1,13 @@
 'use client'
 import React, { useRef } from 'react'
 import Image from 'next/image'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
-const photos = [
-  '/demo.png',
-  '/demo1.png',
-  '/demo.png',
-  '/demo1.png',
-  '/demo.png',
-  '/demo1.png'
-]
+interface PhotoCarouselProps {
+  photos: string[]
+}
 
   const settings = {
     dots: true,
@@ -21,11 +16,11 @@ const photos = [
     slidesToScroll: 1,
     autoplay: true,
     speed: 1500,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     cssEase: 'linear'
   }
 
-export default function PhotoCarousel() {
+export default function PhotoCarousel({ photos }: PhotoCarouselProps) {
   const sliderRef = useRef<Slider | null>(null)
 
   const handlePrev = () => {

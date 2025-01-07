@@ -5,6 +5,12 @@ import FAQ from '@/app/components/products/FAQLouvres'
 import Head from 'next/head'
 import FeaturesLouvres from '@/app/components/products/FeaturesLouvres'
 
+const louvrePhotos: string[] = [
+  '/demo.png',
+  '/demo.png',
+  '/demo.png'
+  ]
+
 export default function Louvres() {
 
   return (
@@ -21,7 +27,7 @@ export default function Louvres() {
       className='text-6xl text-left font-manrope'>
        Louvres
       </h1>
-      <PhotoCarousel />
+      <PhotoCarousel photos={louvrePhotos}/>
     </div>
     <section className='py-10 bg-base sm:py-16 lg:py-24'>
     <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>

@@ -5,6 +5,12 @@ import FAQ from '@/app/components/products/FAQBlinds'
 import Head from 'next/head'
 import FeaturesBlinds from '@/app/components/products/FeaturesBlinds'
 
+const blindsPhotos: string[] = [
+  '/demo.png',
+  '/demo.png',
+  '/demo.png'
+  ]
+
 export default function Blinds() {
 
   return (
@@ -21,7 +27,7 @@ export default function Blinds() {
       className='text-6xl text-left font-manrope'>
        Blinds
       </h1>
-      <PhotoCarousel />
+      <PhotoCarousel photos={blindsPhotos}/>
     </div>
     <section className='py-10 bg-base sm:py-16 lg:py-24'>
     <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>

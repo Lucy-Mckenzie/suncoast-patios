@@ -5,6 +5,19 @@ import FAQ from '@/app/components/products/FAQPatios'
 import Head from 'next/head'
 import FeaturesPatios from '@/app/components/products/FeaturesPatios'
 
+const patioPhotos: string[] = [
+'/patios/patios.webp',
+'/patios/patios1.webp',
+'/patios/patios2.webp',
+'/patios/patios3.webp',
+'/patios/patios4.webp',
+'/patios/patios5.webp',
+'/patios/patios6.webp',
+'/patios/patios7.webp',
+'/patios/patios8.webp',
+'/patios/patios9.webp'
+]
+
 export default function Patios() {
 
   return (
@@ -21,7 +34,7 @@ export default function Patios() {
       className='text-6xl text-left font-manrope'>
        Patios
       </h1>
-      <PhotoCarousel />
+      <PhotoCarousel photos={patioPhotos}/>
     </div>
     <section className='py-10 bg-base sm:py-16 lg:py-24'>
     <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>
