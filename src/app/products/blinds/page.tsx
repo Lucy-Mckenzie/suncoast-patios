@@ -6,9 +6,12 @@ import Head from 'next/head'
 import FeaturesBlinds from '@/app/components/products/FeaturesBlinds'
 
 const blindsPhotos: string[] = [
-  '/demo.png',
-  '/demo.png',
-  '/demo.png'
+  '/blinds/blinds3.webp',
+  '/blinds/blinds1.webp',
+  '/blinds/blinds.webp',
+  '/blinds/blinds2.webp',
+  '/blinds/blinds4.webp',
+  '/blinds/blinds5.webp',
   ]
 
 export default function Blinds() {

@@ -6,9 +6,13 @@ import Head from 'next/head'
 import FeaturesLouvres from '@/app/components/products/FeaturesLouvres'
 
 const louvrePhotos: string[] = [
-  '/demo.png',
-  '/demo.png',
-  '/demo.png'
+  '/louvres/louvres.webp',
+  '/louvres/louvres1.webp',
+  '/louvres/louvres2.webp',
+  '/louvres/louvres3.webp',
+  '/louvres/louvres4.webp',
+  '/louvres/louvres5.webp',
+  '/louvres/louvres6.webp',
   ]
 
 export default function Louvres() {
