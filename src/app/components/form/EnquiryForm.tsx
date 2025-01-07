@@ -8,18 +8,17 @@ export default function EnquiryForm() {
   const publicKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY || ''
 
   return (
-    <div className='dropdown dropdown-end relative'>
+<div className='dropdown dropdown-end relative'>
       <label 
        id='dropdown-button'
        tabIndex={0} 
        className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
        aria-expanded={isOpen}
+       htmlFor="dropdown-toggle"
        aria-controls='dropdown-content'
-       onClick={() => setIsOpen(!isOpen)}
        onKeyDown={(e) => {
         if (e.key === 'Escape' && isOpen) setIsOpen(false)
-      }}
-      >
+      }}>
     { isOpen ? 'Close Form' : 'Free Quote'}
     </label>
     {isOpen && 
