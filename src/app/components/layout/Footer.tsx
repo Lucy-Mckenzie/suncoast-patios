@@ -24,7 +24,7 @@ export default function Footer() {
 
   <nav className='flex items-center justify-center sm:justify-end space-x-6 mt-4 sm:mt-0'>
     <EnquiryForm />
-    <Link href='https://www.facebook.com/SuncoastLtd/' target='_blank'>
+    <Link href='https://www.facebook.com/SuncoastLtd/' target='_blank'  aria-label="Visit Suncoast Ltd's Facebook page">
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='24'
