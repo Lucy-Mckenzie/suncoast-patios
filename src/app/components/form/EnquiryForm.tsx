@@ -10,12 +10,11 @@ export default function EnquiryForm() {
 
   return (
 <div className='dropdown dropdown-end relative'>
-      <label 
+      <button 
        id='dropdown-button'
        tabIndex={0} 
        className='btn bg-[#FDB626] text-base-200 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-full'
        aria-expanded={isOpen ? 'true' : 'false'} 
-       htmlFor='dropdown-toggle'
        onClick={() => setIsOpen(!isOpen)} 
        aria-controls='dropdown-content'
         aria-haspopup='true'
@@ -24,7 +23,7 @@ export default function EnquiryForm() {
       }}
       >
     { isOpen ? 'Close Form' : 'Free Quote'}
-    </label>
+    </button>
     {isOpen && (
      <div
      id='dropdown-content'
