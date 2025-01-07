@@ -1,16 +1,19 @@
 'use client'
-import React, { useState } from 'react'
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
-import axios from 'axios'
+import React, { useRef, useState } from 'react'
+import HCaptcha from '@hcaptcha/react-hcaptcha'
 
 export default function Form() {
+  const ref = useRef<HTMLFormElement>(null)
+  const captchaRef = useRef<HCaptcha | null>(null)
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [number, setNumber] = useState('')
   const [message, setMessage] = useState('')
   const [statusMessage, setStatusMessage] = useState('')
 
-  const { executeRecaptcha } = useGoogleReCaptcha()
+  const onCaptchaChange = (token: string) => setCaptchaToken(token)
+  const onCaptchaExpire = () => setCaptchaToken(null)
 
   const resetForm = () => {
     setName('')
@@ -21,46 +24,30 @@ export default function Form() {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
-  
+
+    if (!captchaToken) {
+      setStatusMessage('Please complete the captcha.')
+      return
+    }
+
+    resetForm()
     if (!name || !email || !number) {
       setStatusMessage('Please fill out all required fields.')
       return
     }
-
-    if (!executeRecaptcha) {
-      console.log('ReCAPTCHA is not available yet.')
-      setStatusMessage('ReCAPTCHA failed. Please try again.')
-      return
+    if (ref.current) {
+      const formData = new FormData(ref.current)
+      formData.append('captcha', captchaToken)
+      setStatusMessage('Form submitted successfully!')
+    } else {
+      setStatusMessage('Form reference is invalid.')
     }
-  
-    try {
-      const gReCaptchaToken = await executeRecaptcha('enquirySubmit')
-      console.log('reCAPTCHA Token:', gReCaptchaToken)
-  
-      const response = await axios.post('/api/submitForm', {
-        name,
-        email,
-        number,
-        message,
-        gReCaptchaToken,
-      })
-  
-      if (response.data.success) {
-        setStatusMessage('Form submitted successfully!')
-        resetForm()
-      } else {
-        setStatusMessage('Failed to submit form. Please try again.')
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error)
-      setStatusMessage('An error occurred. Please try again later.')
-    }
-  }
+}
 
 
   return (
     <div>
-       <form className='bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'
+       <form ref={ref} className='bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'
        onSubmit={handleSubmit}
        >
         <div className='form-control mb-3'>
@@ -121,6 +108,14 @@ export default function Form() {
             value={message} 
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
+        </div>
+        <div className='form-control mb-3'>
+        <HCaptcha
+        sitekey='639e7b42-77c4-4168-8208-0d7af4a22fea'
+        onVerify={onCaptchaChange}
+        ref={captchaRef}
+        onExpire={onCaptchaExpire}
+      />
         </div>
         <div className='form-control'>
           <button 
