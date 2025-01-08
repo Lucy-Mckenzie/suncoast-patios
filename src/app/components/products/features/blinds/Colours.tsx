@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Tooltip from './Tooltip'
+import Tooltip from '../Tooltip'
 
 const photos = [
   '/blinds/blinds.webp',

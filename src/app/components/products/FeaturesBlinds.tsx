@@ -1,21 +1,28 @@
 'use client'
 import React, { JSX } from 'react'
 import { useState } from 'react'
-import Colours from './features/Colours'
+import Colours from './features/blinds/Colours'
+import Fabrics from './features/blinds/Fabrics'
+import Warranty from './features/blinds/Warranty'
+import Privacy from './features/blinds/Privacy'
+import Weather from './features/blinds/Weather'
+import GoodToKnow from './features/blinds/GoodToKnow'
 
 const FeatureComponents: { [key: string]: () => JSX.Element } = {
 Colours: () =>  <Colours />,
-'Guaranteed 15 Years': () => <div>Guaranteed 15 Years Component</div>,
-'Size Recomendations': () => <div>Size Recomendations Component</div>,
-'Fabric Types': () => <div>Fabric Types Component</div>,
-'Good to Know': () => <div>Good to Know Component</div>,
+'Fabrics': () => <Fabrics />,
+'Warranty': () => <Warranty />,
+'Privacy': () => <Privacy />,
+'Weather': () => <Weather />,
+'Good to Know': () => <GoodToKnow />,
 }
 
 const features = [
   { id: 1, name: 'Colours',  description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 2, name: 'Fabric Types', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 3, name: 'Guaranteed 15 Years', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 4, name: 'Size Recomendations', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 1, name: 'Fabrics',  description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 2, name: 'Warranty', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 3, name: 'Privacy', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 4, name: 'Weather', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
   { id: 5, name: 'Good to Know', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
 ]
 
@@ -25,7 +32,7 @@ export default function FeaturesBlinds ()  {
 
   return (
 <div>
-<div className='max-w-7xl mx-auto p-8 bg-base shadow-lg rounded-md'>
+<div className='max-w-7xl mx-auto p-8 bg-base shadow-lg border-[1px] rounded-md'>
   <div className='flex flex-col lg:flex-row'>
   
           <div className='flex flex-col gap-4 lg:w-1/3 bg-base-100 rounded-md'>
@@ -44,7 +51,7 @@ export default function FeaturesBlinds ()  {
             ))}
           </div>
   
-          <div className='w-auto px-4'>
+          <div className='px-4 w-2/3'>
           <h2 className='text-xl font-semibold my-1'>{activeFeature.name}</h2>
           <p className='text-md text-base mb-4'>{activeFeature.description}</p>
           <ActiveFeatureComponent />
