@@ -19,11 +19,11 @@ Colours: () =>  <Colours />,
 
 const features = [
   { id: 1, name: 'Colours',  description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 1, name: 'Fabrics',  description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 2, name: 'Warranty', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 3, name: 'Privacy', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 4, name: 'Weather', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 5, name: 'Good to Know', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 2, name: 'Fabrics',  description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 3, name: 'Warranty', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 4, name: 'Privacy', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 5, name: 'Weather', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 6, name: 'Good to Know', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
 ]
 
 export default function FeaturesBlinds ()  {

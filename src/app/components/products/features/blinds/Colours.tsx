@@ -4,13 +4,12 @@ import Tooltip from '../Tooltip'
 
 const photos = [
   '/blinds/blinds.webp',
-  '/blinds/blinds2.webp',
   '/blinds/blinds1.webp',
   '/blinds/blinds3.webp',
+  '/blinds/blinds4.webp',
+  '/blinds/blinds6.webp',
   '/blinds/blinds5.webp',
 ]
-
-const extendedPhotos = [...photos, ...photos]
 
 export default function Colours() {
   return (
@@ -43,15 +42,15 @@ export default function Colours() {
   </div>
 </div>
   </div>
-  <div className='marquee-container relative w-full overflow-hidden rounded-md'>
-  <div className='marquee-content flex'>
-    {extendedPhotos.map((photoSrc, index) => (
-      <div key={index} className='flex-shrink-0'>
+  <div className='relative w-full overflow-hidden rounded-md'>
+  <div className='grid grid-cols-3 grid-rows-2 gap-1'>
+    {photos.map((photoSrc, index) => (
+      <div key={index} className='w-full h-auto'>
       <Image
         src={photoSrc}
         alt={`Slide ${index + 1}`}
-        width={760}
-        height={400}
+        width={400}
+        height={200}
         className='rounded-md'
       />
     </div>
