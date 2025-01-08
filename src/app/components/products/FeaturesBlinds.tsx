@@ -18,8 +18,8 @@ Colours: () =>  <Colours />,
 }
 
 const features = [
-  { id: 1, name: 'Colours',  description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
-  { id: 2, name: 'Fabrics',  description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 1, name: 'Colours',  description: 'Check out six of our most popular colours to blend seamlessly into your house.'  },
+  { id: 2, name: 'Fabrics',  description: 'Choose from 11 different colours to match or contrast with your existing décor.'  },
   { id: 3, name: 'Warranty', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
   { id: 4, name: 'Privacy', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
   { id: 5, name: 'Weather', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
@@ -51,7 +51,7 @@ export default function FeaturesBlinds ()  {
             ))}
           </div>
   
-          <div className='px-4 w-2/3'>
+          <div className='px-4 min-w-4xl max-w-4xl bd-base-300'>
           <h2 className='text-xl font-semibold my-1'>{activeFeature.name}</h2>
           <p className='text-md text-base mb-4'>{activeFeature.description}</p>
           <ActiveFeatureComponent />
