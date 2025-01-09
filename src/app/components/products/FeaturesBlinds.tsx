@@ -20,7 +20,7 @@ Colours: () =>  <Colours />,
 const features = [
   { id: 1, name: 'Colours',  description: 'Check out six of our most popular colours to blend seamlessly into your house.'  },
   { id: 2, name: 'Fabrics',  description: 'Choose from 11 different colours to match or contrast with your existing décor.'  },
-  { id: 3, name: 'Warranty', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
+  { id: 3, name: 'Warranty', description: 'We are always quick to help out if you are facing problems.'  },
   { id: 4, name: 'Privacy', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
   { id: 5, name: 'Weather', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
   { id: 6, name: 'Good to Know', description: 'All Ambient Blinds are available in six popular colours to blend seamlessly into your house.'  },
