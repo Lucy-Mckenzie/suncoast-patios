@@ -3,24 +3,27 @@ import Image from 'next/image'
 
 export default function Privacy() {
   return (
-    <div>
     <div className='relative grid grid-cols-2 items-center justify-center w-full h-[550px]'>
-       <Image
-         src='/blinds/blinds5.webp'
-         alt='privacy inside'
-         width={400}
-         height={500}
-         className='object-cover w-full h-full rounded-md'
-       />
-        <Image
-         src='/blinds/blinds7.webp'
-         alt='privacy outside'
-         width={400}
-         height={500}
-         className='object-cover w-full h-full rounded-md'
-       />
-     </div>  
-   
-    </div>
+    <figure className='relative'>
+      <Image
+        src='/blinds/blinds8.webp'
+        alt='Privacy inside view'
+        width={400}
+        height={500}
+        className='object-cover w-full h-full rounded-md'
+      />
+      <figcaption className='text-center mt-2 text-sm'>Inside View</figcaption>
+    </figure>
+    <figure className='relative'>
+      <Image
+        src='/blinds/blinds9.webp'
+        alt='Privacy outside view'
+        width={400}
+        height={500}
+        className='object-cover w-full h-full rounded-md'
+      />
+      <figcaption className='text-center mt-2 text-sm'>Outside View</figcaption>
+    </figure>
+  </div>
   )
 }
