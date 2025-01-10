@@ -7,11 +7,11 @@ const photos = [
   '/blinds/blinds1.webp',
   '/blinds/blinds3.webp',
   '/blinds/blinds4.webp',
-  '/blinds/blinds6.webp',
+  '/blinds/blinds10.webp',
   '/blinds/blinds5.webp',
 ]
 
-export default function Colours() {
+export default function FrameColours() {
   return (
 <div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
 <div className='space-y-4 my-6'>

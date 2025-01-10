@@ -1,7 +1,7 @@
 'use client'
 import React, { JSX } from 'react'
 import { useState } from 'react'
-import Colours from './features/blinds/Colours'
+import FrameColours from './features/blinds/FrameColours'
 import Fabrics from './features/blinds/Fabrics'
 import Warranty from './features/blinds/Warranty'
 import Privacy from './features/blinds/Privacy'
@@ -9,7 +9,7 @@ import Weather from './features/blinds/Weather'
 import GoodToKnow from './features/blinds/GoodToKnow'
 
 const FeatureComponents: { [key: string]: () => JSX.Element } = {
-Colours: () =>  <Colours />,
+"Frame Colours": () =>  <FrameColours />,
 Fabrics: () => <Fabrics />,
 Warranty: () => <Warranty />,
 Privacy: () => <Privacy />,
@@ -18,7 +18,7 @@ Weather: () => <Weather />,
 }
 
 const features = [
-  { id: 1, name: 'Colours',  description: "Check out six of our most popular colours to blend seamlessly into your house."  },
+  { id: 1, name: "Frame Colours",  description: "Check out six of our most popular frame colours to blend seamlessly into your house."  },
   { id: 2, name: "Fabrics",  description: "Choose from 11 different colours to match or contrast with your existing décor."  },
   { id: 3, name: "Warranty", description: "Enjoy peace of mind with our quick and reliable support whenever you need it."  },
   { id: 4, name: "Privacy", description: "Maintain your privacy with innovative designs that let you see out without being seen in."  },
@@ -51,7 +51,7 @@ export default function FeaturesBlinds ()  {
             ))}
           </div>
   
-          <div className='px-4 max-w-4xl bd-base-300'>
+          <div className='max-w-4xl bd-base-300 flex flex-col items-center justify-center w-full h-[620px] pl-6 space-y-2'>
           <h2 className='text-xl font-semibold my-1'>{activeFeature.name}</h2>
           <p className='text-md text-base mb-4'>{activeFeature.description}</p>
           <ActiveFeatureComponent />

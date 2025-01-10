@@ -8,9 +8,9 @@ export default function Privacy() {
       <Image
         src='/blinds/blinds8.webp'
         alt='Privacy inside view'
-        width={400}
-        height={500}
-        className='object-cover w-full h-full rounded-md'
+        width={300}
+        height={200}
+        className='object-cover w-[400px] h-[530px] rounded-md'
       />
       <figcaption className='text-center mt-2 text-sm'>Inside View</figcaption>
     </figure>
@@ -18,9 +18,9 @@ export default function Privacy() {
       <Image
         src='/blinds/blinds9.webp'
         alt='Privacy outside view'
-        width={400}
-        height={500}
-        className='object-cover w-full h-full rounded-md'
+        width={300}
+        height={200}
+        className='object-cover w-[400px] h-[530px] rounded-md'
       />
       <figcaption className='text-center mt-2 text-sm'>Outside View</figcaption>
     </figure>
