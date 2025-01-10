@@ -10,7 +10,7 @@ export default function Privacy() {
         alt='Privacy inside view'
         width={300}
         height={200}
-        className='object-cover w-[400px] h-[530px] rounded-md'
+        className='object-cover w-[430px] h-[530px] rounded-md'
       />
       <figcaption className='text-center mt-2 text-sm'>Inside View</figcaption>
     </figure>
@@ -20,7 +20,7 @@ export default function Privacy() {
         alt='Privacy outside view'
         width={300}
         height={200}
-        className='object-cover w-[400px] h-[530px] rounded-md'
+        className='object-cover w-[430px] h-[530px] rounded-md'
       />
       <figcaption className='text-center mt-2 text-sm'>Outside View</figcaption>
     </figure>

@@ -12,10 +12,10 @@ export default function Weather() {
           className='object-cover w-full h-full rounded-md'
         />
     <div className='absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-md'></div> 
-  <h1 className='absolute top-16 px-4 text-center text-white text-2xl font-bold w-3/4'>
+  <h1 className='absolute lg:top-16 top-10 px-4 text-center text-white lg:text-2xl text-xl font-bold w-3/4'>
     Why Stratco Ambient® Outdoor Blinds Are Great for Weather Protection:
   </h1>
-  <ul className='absolute top-40 px-4 text-left items-center text-white text-lg w-3/4 space-y-2 list-disc list-inside'>
+  <ul className='absolute lg:top-40 top-48 px-4 text-left items-center text-white lg:text-lg text-sm w-3/4 space-y-2 list-disc list-inside'>
     <li>
       <strong>Sun Shielding:</strong> Block harmful UV rays while staying cool.
     </li>

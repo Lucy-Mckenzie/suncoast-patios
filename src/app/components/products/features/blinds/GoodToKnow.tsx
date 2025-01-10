@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function GoodToKnow() {
   return (
-<div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
+<div className='relative flex flex-col items-center justify-center w-full h-[550px] overflow-y-scroll'>
   <Image
     src='/louvres/louvres2.webp'
     alt='weather inside view'
