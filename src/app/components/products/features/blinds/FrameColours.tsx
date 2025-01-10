@@ -13,37 +13,37 @@ const photos = [
 
 export default function FrameColours() {
   return (
-<div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
+<div className='relative flex flex-col items-center justify-center w-full lg:h-[550px] h-auto'>
 <div className='space-y-4 my-6'>
     <div className='flex gap-4 items-center justify-center'>
   <div className='relative group'>
-    <div className='bg-[#f2f4f5] w-14 h-14 rounded-full shadow-sm'></div>
+    <div className='bg-[#f2f4f5] lg:w-14 lg:h-14 w-9 h-9 rounded-full shadow-sm'></div>
     <Tooltip tooltip={'Apline'} />
   </div>
   <div className='relative group'>
-    <div className='bg-[#f9e9ca] w-14 h-14 rounded-full shadow-sm'></div>
+    <div className='bg-[#f9e9ca] lg:w-14 lg:h-14 w-9 h-9 rounded-full shadow-sm'></div>
     <Tooltip tooltip={'Sand Dune'} />
   </div>
   <div className='relative group'>
-    <div className='bg-[#e5d2b4] w-14 h-14 rounded-full shadow-sm'></div>
+    <div className='bg-[#e5d2b4] lg:w-14 lg:h-14 w-9 h-9 rounded-full shadow-sm'></div>
     <Tooltip tooltip={'Desert'} />
   </div>
   <div className='relative group'>
-    <div className='bg-[#4f5650] w-14 h-14 rounded-full shadow-sm'></div>
+    <div className='bg-[#4f5650] lg:w-14 lg:h-14 w-9 h-9 rounded-full shadow-sm'></div>
     <Tooltip tooltip={'Storm'} />
   </div>
   <div className='relative group'>
-    <div className='bg-[#404641] w-14 h-14 rounded-full shadow-sm'></div>
+    <div className='bg-[#404641] lg:w-14 lg:h-14 w-9 h-9 rounded-full shadow-sm'></div>
     <Tooltip tooltip={'Thunder'} />
   </div>
   <div className='relative group'>
-    <div className='bg-[#001722] w-14 h-14 rounded-full shadow-sm'></div>
+    <div className='bg-[#001722] lg:w-14 lg:h-14 w-9 h-9 rounded-full shadow-sm'></div>
     <Tooltip tooltip={'Deep Space'} />
   </div>
 </div>
   </div>
   <div className='relative w-full overflow-hidden rounded-md'>
-  <div className='grid grid-cols-3 grid-rows-2 gap-1'>
+  <div className='grid grid-cols-3 grid-rows-2 sm:grid-cols-3 gap-1'>
     {photos.map((photoSrc, index) => (
       <div key={index} className='w-full h-auto'>
       <Image

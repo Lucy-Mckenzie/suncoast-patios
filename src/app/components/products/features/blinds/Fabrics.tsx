@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Fabrics() {
   return (
     <div className='overflow-x-auto relative flex flex-col items-center justify-center w-full h-[550px]'>
-    <table className='w-full table-fixed border-collapse border border-base-300 bg-base'>
+    <table className='w-full table-fixed border-collapse border border-base-300 bg-base min-w-[800px]'>
       <thead>
         <tr className='bg-base-300 text-left text-sm font-semibold text-content'>
           <th className='border border-base-300 px-4 py-2'>Openness Factor</th>

@@ -32,7 +32,7 @@ export default function FeaturesBlinds ()  {
 
   return (
 <div>
-<div className='mx-auto p-8 bg-base shadow-lg border-[1px] rounded-md'>
+<div className='mx-auto lg:p-8 p-4 bg-base shadow-lg border-[1px] rounded-md'>
   <div className='flex flex-col lg:flex-row'>
   
           <div className='flex flex-col gap-4 bg-base-100 rounded-md'>
@@ -41,8 +41,8 @@ export default function FeaturesBlinds ()  {
                 key={feature.id}
                 className={`p-4 text-left rounded-md w-64
                   ${ activeFeature.id === feature.id
-                    ? 'bg-base-300'
-                    : 'bg-base-200 hover:bg-base-100'
+                  ? 'bg-base-300 text- font-bold shadow-md border-[1px]'
+                  : 'bg-base-200 hover:bg-base-100 text-base-content' 
                 }`}
                 onClick={() => setActiveFeature(feature)}
               >
@@ -51,7 +51,7 @@ export default function FeaturesBlinds ()  {
             ))}
           </div>
   
-          <div className='max-w-4xl bd-base-300 flex flex-col items-center justify-center w-full h-[620px] pl-6 space-y-2'>
+          <div className='max-w-4xl bd-base-300 flex flex-col items-center justify-center w-full lg:h-[620px] h-auto lg:pl-6 space-y-2 lg:pt-0 pt-4'>
           <h2 className='text-xl font-semibold my-1'>{activeFeature.name}</h2>
           <p className='text-md text-base mb-4'>{activeFeature.description}</p>
           <ActiveFeatureComponent />
