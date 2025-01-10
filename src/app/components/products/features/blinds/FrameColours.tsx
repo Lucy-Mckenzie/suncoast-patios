@@ -8,7 +8,7 @@ const photos = [
   '/blinds/blinds3.webp',
   '/blinds/blinds4.webp',
   '/blinds/blinds10.webp',
-  '/blinds/blinds5.webp',
+  '/blinds/blinds12.webp',
 ]
 
 export default function FrameColours() {
