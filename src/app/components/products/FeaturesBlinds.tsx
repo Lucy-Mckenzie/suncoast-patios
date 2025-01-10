@@ -10,10 +10,10 @@ import GoodToKnow from './features/blinds/GoodToKnow'
 
 const FeatureComponents: { [key: string]: () => JSX.Element } = {
 Colours: () =>  <Colours />,
-'Fabrics': () => <Fabrics />,
-'Warranty': () => <Warranty />,
-'Privacy': () => <Privacy />,
-'Weather': () => <Weather />,
+Fabrics: () => <Fabrics />,
+Warranty: () => <Warranty />,
+Privacy: () => <Privacy />,
+Weather: () => <Weather />,
 'Good to Know': () => <GoodToKnow />,
 }
 
@@ -32,15 +32,15 @@ export default function FeaturesBlinds ()  {
 
   return (
 <div>
-<div className='max-w-7xl mx-auto p-8 bg-base shadow-lg border-[1px] rounded-md'>
+<div className='mx-auto p-8 bg-base shadow-lg border-[1px] rounded-md'>
   <div className='flex flex-col lg:flex-row'>
   
-          <div className='flex flex-col gap-4 lg:w-1/3 bg-base-100 rounded-md'>
+          <div className='flex flex-col gap-4 bg-base-100 rounded-md'>
             {features.map((feature) => (
               <button
                 key={feature.id}
-                className={`p-4 text-left rounded-md ${
-                  activeFeature.id === feature.id
+                className={`p-4 text-left rounded-md w-64
+                  ${ activeFeature.id === feature.id
                     ? 'bg-base-300'
                     : 'bg-base-200 hover:bg-base-100'
                 }`}
@@ -51,7 +51,7 @@ export default function FeaturesBlinds ()  {
             ))}
           </div>
   
-          <div className='px-4 min-w-4xl max-w-4xl bd-base-300'>
+          <div className='px-4 max-w-4xl bd-base-300'>
           <h2 className='text-xl font-semibold my-1'>{activeFeature.name}</h2>
           <p className='text-md text-base mb-4'>{activeFeature.description}</p>
           <ActiveFeatureComponent />

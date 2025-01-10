@@ -13,8 +13,8 @@ const photos = [
 
 export default function Colours() {
   return (
-<div className=''>
-<div className='flex flex-col space-y-4 my-6'>
+<div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
+<div className='space-y-4 my-6'>
     <div className='flex gap-4 items-center justify-center'>
   <div className='relative group'>
     <div className='bg-[#f2f4f5] w-14 h-14 rounded-full shadow-sm'></div>

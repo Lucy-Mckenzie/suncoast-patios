@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export default function Warranty() {
   return (
-    <div className='relative flex items-center justify-center w-full h-[550px]'>
+    <div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
     <Image
       src='/blinds/blinds4.webp'
       alt='warranty description'
-      width={400}
-      height={500}
+      width={900}
+      height={600}
       className='object-cover w-full h-full rounded-md'
     />
     <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-md'></div> 
@@ -16,7 +16,6 @@ export default function Warranty() {
       All Ambient Blinds up to 12m² are covered by a 5-year parts and materials warranty.
     </h1>
   </div>  
-
   )
 }
 
