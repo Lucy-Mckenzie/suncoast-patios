@@ -9,7 +9,7 @@ import Weather from './features/blinds/Weather'
 import GoodToKnow from './features/blinds/GoodToKnow'
 
 const FeatureComponents: { [key: string]: () => JSX.Element } = {
-"Frame Colours": () =>  <FrameColours />,
+'Frame Colours': () =>  <FrameColours />,
 Fabrics: () => <Fabrics />,
 Warranty: () => <Warranty />,
 Privacy: () => <Privacy />,
