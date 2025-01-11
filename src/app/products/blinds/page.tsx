@@ -39,7 +39,7 @@ export default function Blinds() {
               Stratco Blinds
             </h2>
             <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
-              We use Stratco blinds because they are the best outdoor blinds on market
+              We use Stratco blinds because they are the best outdoor blinds on the market
             </p>
         </div>
     <FeaturesBlinds />

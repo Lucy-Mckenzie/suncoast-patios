@@ -3,24 +3,24 @@ import Image from 'next/image'
 import Tooltip from '../Tooltip'
 
 const photos = [
-  { photo: '/blinds/blinds.webp',  colour: 'Gull Grey'},
-  { photo: '/blinds/blinds1.webp', colour: 'Basalt'},
-  { photo: '/blinds/blinds3.webp', colour: 'Blackstone'},
-  { photo: '/blinds/blinds4.webp', colour: 'Mocha'},
-  { photo: '/blinds/blinds10.webp', colour: 'Platinum'},
-  { photo: '/blinds/blinds12.webp', colour: 'Storm'}
+  { photo: '/blinds/blinds.webp',  colour: 'Alpine'},
+  { photo: '/blinds/blinds1.webp', colour: 'Gull Grey'},
+  { photo: '/blinds/blinds3.webp', colour: 'Champagne'},
+  { photo: '/blinds/blinds4.webp', colour: 'Winsor Grey'},
+  { photo: '/blinds/blinds10.webp', colour: 'Monument'},
+  { photo: '/blinds/blinds12.webp', colour: 'Black'}
 ]
 
 export default function FrameColours() {
   const [selectedColor, setSelectedColor] = useState<string | null>(null)
 
   const frameColours = [
-    { colour: '#f2f4f5', label: 'Gull Grey' },
-    { colour: '#f9e9ca', label: 'Basalt' },
-    { colour: '#e5d2b4', label: 'Blackstone' },
-    { colour: '#4f5650', label: 'Mocha' },
-    { colour: '#404641', label: 'Platinum' },
-    { colour: '#001722', label: 'Storm' },
+    { colour: '#f2f4f5', label: 'Alpine' },
+    { colour: '#cdd9df', label: 'Gull Grey' },
+    { colour: '#fff6d6', label: 'Champagne' },
+    { colour: '#e8eeee', label: 'Winsor Grey' },
+    { colour: '#e1ceb4', label: 'Monument' },
+    { colour: '#485156', label: 'Black' },
   ]
 
   const handleColorSelect = (colorLabel: string) => {

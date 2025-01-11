@@ -5,7 +5,7 @@ export default function GoodToKnow() {
   return (
 <div className='relative flex flex-col items-center justify-center w-full h-[550px] overflow-y-scroll'>
   <Image
-    src='/louvres/louvres2.webp'
+    src='/blinds/blinds11.webp'
     alt='weather inside view'
     width={900}
     height={700}
