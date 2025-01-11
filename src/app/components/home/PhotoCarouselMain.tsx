@@ -6,12 +6,14 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const photos = [
-  '/demo.png',
-  '/demo1.png',
-  '/demo.png',
-  '/demo1.png',
-  '/demo.png',
-  '/demo1.png'
+'/louvres/louvres.webp',
+'/louvres/louvres3.webp',
+'/louvres/louvres2.webp',
+'/patios/patios.webp',
+'/patios/patios5.webp',
+'/patios/patios3.webp',
+'/blinds/blinds11.webp',
+'/blinds/blinds2.webp',
 ]
 
 const settings = {

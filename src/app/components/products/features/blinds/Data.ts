@@ -1,0 +1,123 @@
+const data = [
+  {
+    openness: '',
+    name: 'Cinder',
+    img: '/blinds/fabrics/cinder.png',
+    weave: '1 x 1',
+    privacy: '✔✔✔',
+    viewClarity: '✔',
+    rainProtection: '✔✔✔✔',
+    shading: '✔✔✔✔✔',
+  },
+  {
+    openness: '1% - 99% UV Blockout',
+    name: 'Flagstone',
+    img: '/blinds/fabrics/flagstone.png',
+    weave: '1 x 1',
+    privacy: '✔✔✔',
+    viewClarity: '✔',
+    rainProtection: '✔✔✔✔',
+    shading: '✔✔✔✔✔',
+  },
+  {
+    openness: '',
+    name: 'Cocoa-Bean',
+    img: '/blinds/fabrics/cocoabean.png',
+    weave: '1 x 1',
+    privacy: '✔✔✔',
+    viewClarity: '✔',
+    rainProtection: '✔✔✔✔',
+    shading: '✔✔✔✔✔',
+    border: '1px solid',
+  },
+  {
+    openness: '',
+    name: 'Blackstone',
+    img: '/blinds/fabrics/blackstone.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+  {
+    openness: '',
+    name: 'Mocha',
+    img: '/blinds/fabrics/mocha.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+  {
+    openness: '',
+    name: 'Basalt',
+    img: '/blinds/fabrics/basalt.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+  {
+    openness: '5% - 95% UV Blockout',
+    name: 'Gull Grey',
+    img: '/blinds/fabrics/gullgrey.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+  {
+    openness: '',
+    name: 'Slate Grey',
+    img: '/blinds/fabrics/slategrey.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+  {
+    openness: '',
+    name: 'Champagne',
+    img: '/blinds/fabrics/champagne.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+  {
+    openness: '',
+    name: 'Platinum',
+    img: '/blinds/fabrics/platinum.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+  {
+    openness: '',
+    name: 'Monument',
+    img: '/blinds/fabrics/monument.png',
+    weave: '2 x 2',
+    privacy: '✔✔',
+    viewClarity: '✔✔',
+    rainProtection: '✔✔✔',
+    shading: '✔✔✔✔',
+    bg: 'bg-base-200'
+  },
+]
+
+export default data

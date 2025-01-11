@@ -10,12 +10,13 @@ export default function Products() {
       </h1>
       <div className='flex flex-row flex-wrap justify-center space-x-8'>
       <div className='card bg-base-100 w-96 shadow-md rounded-md'>
-  <figure className='px-10 pt-10'>
+  <figure className='px-5'>
       <Image
-       src='/demo2.png' 
+       src='/louvres/louvres.webp' 
        alt='suncoast patios louvre'
-       width={1200}
-       height={400}
+       width={400}
+       height={300}
+       className='rounded-md'
        />
   </figure>
   <div className='card-body items-center text-center'>
@@ -23,7 +24,7 @@ export default function Products() {
       Louvres
       </h2>
     <p>
-    Louvre roofs in the sunny Hawke’s Bay create a combination to shape our ideal form of outdoor living. 
+    Louvre roofs in the sunny Hawke&apos;s Bay create a combination to shape our ideal form of outdoor living. 
     </p>
     <div className='card-actions'>
     <Link
@@ -37,12 +38,13 @@ export default function Products() {
   </div>
 </div>
 <div className='card bg-base-100 w-96 shadow-md rounded-md'>
-  <figure className='px-10 pt-10'>
+  <figure className='px-5'>
       <Image
-       src='/demo.png'
+       src='/patios/patios7.webp'
        alt='suncoast patios patio'
-       width={1200}
-       height={400}
+       width={400}
+       height={300}
+       className='rounded-md'
        />
   </figure>
   <div className='card-body items-center text-center'>
@@ -64,19 +66,20 @@ export default function Products() {
   </div>
 </div>
 <div className='card bg-base-100 w-96 shadow-md rounded-md'>
-  <figure className='px-10 pt-10'>
+  <figure className='px-5'>
       <Image
-       src='/blinds.png'
+       src='/blinds/blinds.webp'
        alt='suncoast patios blinds'
-       width={1200}
-       height={400}
+       width={400}
+       height={300}
+       className='rounded-md'
        />
   </figure>
   <div className='card-body items-center text-center'>
     <h2 className='card-title'>
       Blinds
     </h2>
-    <p>
+    <p className='pb-2'>
     We believe the addition of outdoor blinds can completely transform any outdoor living space.
     </p>
     <div className='card-actions'>
