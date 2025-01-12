@@ -47,7 +47,7 @@ export default function FeaturesBlinds ()  {
   
           <div className={`lg:max-w-4xl bd-base-300 flex flex-col items-start justify-center w-full lg:h-[620px] h-auto lg:pl-6  lg:pt-0 pt-4`}>
           <h2 className='text-xl font-semibold my-1 text-left'>{activeFeature.name}</h2>
-          <p className='text-md text-base mb-4 text-left'>{activeFeature.description}</p>
+          <p className='text-md text-base mb-4 text-left border-b-[1px]'>{activeFeature.description}</p>
           <ActiveFeatureComponent />
           </div>
         </div>

@@ -4,7 +4,7 @@ import data from './Data'
 export default function Fabrics() {
   return (
   <div className='overflow-x-scroll lg:overflow-y-hidden overflow-y-auto relative flex flex-col items-center justify-center w-full lg:h-[560px]'>
-  <table className=' w-full lg:table-fixed table-auto border-collapse border border-base-300 bg-base'>
+  <table className='w-full lg:table-fixed table-auto border-collapse border border-base-300 bg-base'>
     <thead>
       <tr className='bg-base-300 text-left text-sm font-semibold text-content'>
         <th className='border border-base-300 lg:px-4 lg:py-2 p-2'>Openness Factor</th>

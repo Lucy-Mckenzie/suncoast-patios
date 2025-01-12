@@ -3,11 +3,12 @@ import Image from 'next/image'
 
 const photos = [
 '/patios/structure/structure.webp',
-'/patios/structure/structure7.webp',
+'/patios/structure/structure1.webp',
 '/patios/structure/structure2.webp',
 '/patios/structure/structure3.webp',
 '/patios/structure/structure4.webp',
-'/patios/structure/structure5.webp'
+'/patios/structure/structure5.webp',
+'/patios/structure/structure6.webp',
 ]
 
 export default function Quality() {
@@ -15,8 +16,8 @@ export default function Quality() {
 
   return (
   <div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
-     <div className='relative w-full overflow-hidden rounded-md'>
-          <div className='grid lg:grid-cols-3 grid-rows-2 grid-cols-2 gap-2'>
+     <div className='relative w-full rounded-md overflow-scroll'>
+          <div className='grid lg:grid-cols-2 grid-rows-3 grid-cols-2 gap-1'>
             {photos.map((photo, index) => (
               <div
                 key={index}
@@ -26,7 +27,7 @@ export default function Quality() {
                 <Image
                   src={photo}
                   alt={`Structure of a patio ${index + 1}`}
-                  width={400}
+                  width={500}
                   height={200}
                   className='rounded-md'
                 />
@@ -39,7 +40,7 @@ export default function Quality() {
           className='fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-70'
           onClick={() => setSelectedPhoto(null)} 
         >
-          <div className='relative '>
+          <div className='relative'>
             <Image
               src={selectedPhoto}
               alt='Enlarged patio structure'
