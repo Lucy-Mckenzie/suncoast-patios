@@ -15,7 +15,9 @@ const patioPhotos: string[] = [
 '/patios/patios6.webp',
 '/patios/patios7.webp',
 '/patios/patios8.webp',
-'/patios/patios9.webp'
+'/patios/patios9.webp',
+'/patios/patios12.webp',
+'/patios/patios13.webp',
 ]
 
 export default function Patios() {

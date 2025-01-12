@@ -13,7 +13,7 @@ export default function Warranty() {
     />
     <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-md'></div> 
     <h1 className='absolute px-4 text-center text-white text-2xl w-3/4'>
-   Protected by our own <strong>15 year structural warranty</strong> (conditions apply).
+   Protected by Stratco&apos;s <strong>15 year structural warranty</strong> (conditions apply).
    </h1>
   </div>  
   )
