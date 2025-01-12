@@ -26,10 +26,10 @@ export default function Blinds() {
         />
       </Head>
     <div className='max-w-[1100px] mx-auto'>
-      <h1 
-      className='text-6xl text-left font-manrope'>
-       Blinds
-      </h1>
+    <h1 
+      className='text-6xl font-bold text-left font-manrope leading-tight tracking-tight'>
+      Blinds
+    </h1>
       <PhotoCarousel photos={blindsPhotos}/>
     </div>
     <section className='py-10 bg-base sm:py-16 lg:py-24'>
