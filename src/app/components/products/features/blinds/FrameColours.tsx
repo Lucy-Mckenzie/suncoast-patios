@@ -13,6 +13,7 @@ const photos = [
 
 export default function FrameColours() {
   const [selectedColor, setSelectedColor] = useState<string | null>(null)
+  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null)
 
   const frameColours = [
     { colour: '#f2f4f5', label: 'Alpine' },
@@ -51,9 +52,10 @@ export default function FrameColours() {
         {photos.map((photo, index) => (
           <div
             key={index}
-            className={`w-full h-auto ${
+            className={`w-full h-auto hover:cursor-pointer ${
               selectedColor === photo.colour ? 'border-4 rounded-lg border-[#FDB626]' : ''
             }`} 
+            onClick={() => setSelectedPhoto(photo.photo)}
           >
             <Image
               src={photo.photo}
@@ -66,6 +68,23 @@ export default function FrameColours() {
         ))}
       </div>
     </div>
+
+    {selectedPhoto && (
+            <div
+              className='fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-70 hover:cursor-pointer'
+              onClick={() => setSelectedPhoto(null)} 
+            >
+              <div className='relative '>
+                <Image
+                  src={selectedPhoto}
+                  alt='Enlarged patio structure'
+                  width={800}
+                  height={600}
+                  className='rounded-md'
+                />
+              </div>
+            </div>
+          )}
   </div>
   )
 }

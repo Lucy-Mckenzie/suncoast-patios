@@ -1,26 +1,23 @@
 'use client'
 import React, { JSX } from 'react'
 import { useState } from 'react'
-import FrameColours from './features/blinds/FrameColours'
-import Warranty from './features/blinds/Warranty'
-import Privacy from './features/blinds/Privacy'
-import Weather from './features/blinds/Weather'
-import GoodToKnow from './features/blinds/GoodToKnow'
+import Weather from './features/patios/Weather'
+import Quality from './features/patios/Quality'
+import Warranty from './features/patios/Warranty'
+import Colours from './features/patios/Colours'
 
 const FeatureComponents: { [key: string]: () => JSX.Element } = {
-'Frame Colours': () =>  <FrameColours />,
+Colours: () => <Colours />,
 Warranty: () => <Warranty />,
-Privacy: () => <Privacy />,
 Weather: () => <Weather />,
-'Good to Know': () => <GoodToKnow />,
+Quality: () => <Quality />,
 }
 
 const features = [
-  { id: 1, name: "Frame Colours",  description: "Check out six of our most popular frame colours to blend seamlessly into your house."  },
+  { id: 1, name: "Colours", description: "Maintain your privacy with innovative designs that let you see out without being seen in."  },
   { id: 2, name: "Warranty", description: "Enjoy peace of mind with our quick and reliable support whenever you need it."  },
-  { id: 3, name: "Privacy", description: "Maintain your privacy with innovative designs that let you see out without being seen in."  },
-  { id: 4, name: "Weather", description: "Weather-ready blinds that add style and durability to any space, no matter the conditions."  },
-  { id: 5, name: "Good to Know", description: "All our blinds are crafted to meet your needs for aesthetics, privacy, and functionality."  },
+  { id: 3, name: "Weather", description: "Weather-ready blinds that add style and durability to any space, no matter the conditions."  },
+  { id: 4, name: "Quality", description: "All our blinds are crafted to meet your needs for aesthetics, privacy, and functionality."  },
 ]
 
 export default function FeaturesBlinds ()  {
