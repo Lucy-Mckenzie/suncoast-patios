@@ -15,7 +15,7 @@ export default function Weather() {
   <h1 className='absolute lg:top-16 top-10 px-4 text-center text-white lg:text-2xl text-xl font-bold w-3/4'>
     Why Stratco Patios Are Great for Weather Protection:
   </h1>
-  <ul className='absolute lg:top-40 top-48 px-4 text-left items-center text-white lg:text-lg text-sm w-3/4 space-y-2 list-disc list-inside'>
+  <ul className='absolute lg:top-40 top-40 px-4 text-left items-center text-white lg:text-lg text-sm w-3/4 space-y-2 list-disc list-inside'>
   <li>
     <strong>Protect:</strong> Stratco patios offer excellent UV protection, shielding your outdoor space from harmful sun rays.
   </li>
