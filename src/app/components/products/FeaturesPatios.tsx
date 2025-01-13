@@ -4,20 +4,20 @@ import { useState } from 'react'
 import Weather from './features/patios/Weather'
 import Quality from './features/patios/Quality'
 import Warranty from './features/patios/Warranty'
-import Colours from './features/patios/Colours'
+import Light from './features/patios/Light'
 
 const FeatureComponents: { [key: string]: () => JSX.Element } = {
-Colours: () => <Colours />,
+Light: () => <Light />,
 Warranty: () => <Warranty />,
 Weather: () => <Weather />,
 Quality: () => <Quality />,
 }
 
 const features = [
-  { id: 1, name: "Colours", description: "Maintain your privacy with innovative designs that let you see out without being seen in."  },
-  { id: 2, name: "Warranty", description: "Enjoy peace of mind with our quick and reliable support whenever you need it."  },
-  { id: 3, name: "Weather", description: "Weather-ready blinds that add style and durability to any space, no matter the conditions."  },
-  { id: 4, name: "Quality", description: "All our blinds are crafted to meet your needs for aesthetics, privacy, and functionality."  },
+  { id: 1, name: "Light", description: "With the addition of the Stratco Outback Rooflite™ you can supply filtered light to the underside."  },
+  { id: 2, name: "Warranty", description: "Built to last and backed by a comprehensive warranty for long-term reliability and peace of mind."  },
+  { id: 3, name: "Weather", description: "Designed to withstand harsh weather conditions while providing shade and comfort all year round."  },
+  { id: 4, name: "Quality", description: "Engineered with premium materials and craftsmanship for lasting performance and timeless appeal."  },
 ]
 
 export default function FeaturesBlinds ()  {
