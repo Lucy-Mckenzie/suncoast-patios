@@ -15,7 +15,9 @@ const patioPhotos: string[] = [
 '/patios/patios6.webp',
 '/patios/patios7.webp',
 '/patios/patios8.webp',
-'/patios/patios9.webp'
+'/patios/patios9.webp',
+'/patios/patios12.webp',
+'/patios/patios13.webp',
 ]
 
 export default function Patios() {
@@ -31,7 +33,7 @@ export default function Patios() {
     </Head>
     <div className='max-w-[1100px] mx-auto'>
       <h1 
-      className='text-6xl text-left font-manrope'>
+      className='text-6xl text-left font-manrope leading-tight tracking-tight mb-1'>
        Patios
       </h1>
       <PhotoCarousel photos={patioPhotos}/>
