@@ -11,7 +11,7 @@ export default function Weather() {
           height={700}
           className='object-cover w-full h-full rounded-md'
         />
-    <div className='absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-md'></div> 
+    <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-md'></div> 
   <h1 className='absolute lg:top-16 top-10 px-4 text-center text-white lg:text-2xl text-xl font-bold w-3/4'>
     Why Stratco Patios Are Great for Weather Protection:
   </h1>
