@@ -44,7 +44,7 @@ export default function Patios() {
             <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
               Stratco Patios
             </h2>
-            <p className='max-w-xl mx-auto mt-4 text-base leading-relaxed'>
+            <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
               We use Stratco products because they are the best Patios on market
             </p>
         </div>
