@@ -29,7 +29,7 @@ export default function FeaturesBlinds ()  {
 <div className='mx-auto lg:p-8 p-4 bg-base shadow-lg border-[1px] rounded-md'>
   <div className='flex flex-col lg:flex-row'>
   
-          <div className='flex flex-col gap-4 bg-base-100 rounded-md'>
+          <div className='flex flex-col items-center gap-4 bg-base-100 rounded-md'>
             {features.map((feature) => (
               <button
                 key={feature.id}
