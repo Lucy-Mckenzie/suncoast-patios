@@ -33,8 +33,8 @@ export default function Patios() {
     </Head>
     <div className='max-w-[1100px] mx-auto'>
       <h1 
-      className='text-6xl text-left font-manrope leading-tight tracking-tight mb-1'>
-       Patios
+      className='text-8xl text-left leading-tight tracking-tight mb-1'>
+       Patio Roofs
       </h1>
       <PhotoCarousel photos={patioPhotos}/>
     </div>

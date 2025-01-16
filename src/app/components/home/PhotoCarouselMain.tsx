@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -30,7 +30,6 @@ const settings = {
 
 export default function PhotoCarousel() {
   const sliderRef = useRef<Slider | null>(null)
-  const [sliderText, useSliderText] = useState(true)
 
   const handlePrev = () => {
     if (sliderRef.current) sliderRef.current.slickPrev()
@@ -40,13 +39,11 @@ export default function PhotoCarousel() {
     if (sliderRef.current) sliderRef.current.slickNext()
   }
 
-  const UseDisplay = () => {
-    useSliderText(false)
-  }
+
 
 return (
   <div className='slider-container relative w-full lg:h-[900px] h-[500px] mx-auto rounded-lg overflow-hidden'>
-    <Slider {...settings} ref={sliderRef} afterChange={UseDisplay}>
+    <Slider {...settings} ref={sliderRef}>
       {photos.map((photoSrc, index) => (
         <div key={index} className='carousel-item relative w-full'>
           <Image
@@ -59,11 +56,9 @@ return (
         </div>
       ))}
     </Slider>
-    {sliderText && (
         <h1 className='absolute top-1/2 left-1/2 text-white lg:text-8xl text-4xl font-normal manrope transform -translate-x-1/2 -translate-y-1/2'>
           Ultimate Outdoor Living
         </h1>
-      )}
     <div className='absolute lg:left-10 lg:right-10 left-3 right-3 top-1/2 flex -translate-y-1/2 transform justify-between'>
       <button
         onClick={handlePrev}

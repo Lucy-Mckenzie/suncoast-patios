@@ -21,7 +21,7 @@ export default function Products() {
   </figure>
   <div className='card-body items-center text-center'>
     <h2 className='card-title'>
-      Louvres
+      Louvre Roofs
       </h2>
     <p>
     Louvre roofs in the sunny Hawke&apos;s Bay create a combination to shape our ideal form of outdoor living. 
@@ -49,7 +49,7 @@ export default function Products() {
   </figure>
   <div className='card-body items-center text-center'>
     <h2 className='card-title'>
-      Patios
+    Flat Patio Roofs
     </h2>
     <p>
     The protection from the elements, stylish aesthetics and build quality designed to stand the test of time.
@@ -77,7 +77,7 @@ export default function Products() {
   </figure>
   <div className='card-body items-center text-center'>
     <h2 className='card-title'>
-      Blinds
+      Outdoor Blinds
     </h2>
     <p className='pb-2'>
     We believe the addition of outdoor blinds can completely transform any outdoor living space.

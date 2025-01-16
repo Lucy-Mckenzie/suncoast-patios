@@ -52,13 +52,13 @@ const { changedTheme } = context
           <summary>Products</summary>
           <ul className='p-2'>
           <li>
-          <Link href='/products/louvres'>Louvres</Link>
+          <Link href='/products/louvres'>Louvre Roofs</Link>
         </li>
         <li>
-          <Link href='/products/patios'>Patios</Link>
+          <Link href='/products/patios'>Flat Patio Roofs</Link>
         </li>
         <li>
-          <Link href='/products/blinds'>Blinds</Link>
+          <Link href='/products/blinds'>Outdoor Blinds</Link>
         </li>
           </ul>
         </li>
@@ -88,13 +88,13 @@ const { changedTheme } = context
         tabIndex={0}
         className='dropdown-content menu menu-sm rounded-box z-[1] mt-2 w-40 bg-base-100 p-2 shadow'>
           <li>
-          <Link href='/products/louvres'>Louvres</Link>
+          <Link href='/products/louvres'>Louvre Roofs</Link>
         </li>
         <li>
-          <Link href='/products/patios'>Patios</Link>
+          <Link href='/products/patios'>Flat Patio Roofs</Link>
         </li>
         <li>
-          <Link href='/products/blinds'>Blinds</Link>
+          <Link href='/products/blinds'>Outdoor Blinds</Link>
         </li>
           </ul>
         </details>
