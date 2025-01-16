@@ -6,9 +6,9 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const photos = [
-'/louvres/louvres1.webp',
-'/patios/patios2.webp',
 '/louvres/louvres10.webp',
+'/patios/patios2.webp',
+'/louvres/louvres1.webp',
 '/blinds/blinds11.webp',
 '/louvres/louvres13.webp',
 '/patios/patios4.webp',
@@ -22,7 +22,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 1500,
+  speed: 1000,
   autoplaySpeed: 3000,
   cssEase: 'linear',
   afterChange: () => {} 
