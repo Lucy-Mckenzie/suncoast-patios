@@ -114,7 +114,7 @@ export default function Reviews() {
       {visibleReviews < reviews.length ? (
         <button 
         onClick={showMore}
-        className='btn btn-primary'
+        className='btn bg-[#005694] text-base-300'
         aria-expanded={visibleReviews < reviews.length}
           >
             View More
@@ -122,7 +122,7 @@ export default function Reviews() {
        ) : (
         <button 
         onClick={showLess}
-        className='btn btn-primary'
+        className='btn bg-[#005694] text-base-300'
         aria-expanded={visibleReviews === reviews.length}
           >
             View Less

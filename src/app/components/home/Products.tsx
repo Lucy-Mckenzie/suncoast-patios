@@ -30,7 +30,7 @@ export default function Products() {
     <Link
        href='/products/louvres'>
         <button
-         className='btn btn-primary'>
+         className='btn bg-[#005694] text-base-300'>
           View Product
         </button>
       </Link>
@@ -58,7 +58,7 @@ export default function Products() {
     <Link
        href='/products/patios'>
         <button
-         className='btn btn-primary'>
+         className='btn bg-[#005694] text-base-300'>
           View Product
         </button>
       </Link>
@@ -86,7 +86,7 @@ export default function Products() {
       <Link
        href='/products/blinds'>
         <button
-         className='btn btn-primary'>
+         className='btn bg-[#005694] text-base-300'>
           View Product
         </button>
       </Link>

@@ -27,7 +27,7 @@ export default function Blinds() {
       </Head>
     <div className='max-w-[1100px] mx-auto'>
     <h1 
-      className='text-8xl text-left leading-tight tracking-tight mb-1'>
+      className='text-7xl text-left leading-tight tracking-tight mb-1'>
       Outdoor Blinds
     </h1>
       <PhotoCarousel photos={blindsPhotos}/>

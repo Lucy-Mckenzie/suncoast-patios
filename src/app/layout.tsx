@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s - Suncoast Patios',
   },
   description:
-    'Transform your outdoor spaces with Suncoast Patios Ltd, serving Hawke"s Bay and Gisborne. Specializing in high-quality patio roofs, louvre roofs, and outdoor blinds, we provide Stratco and Ziptrak solutions for year-round comfort and style. Enhance your outdoor living today!'
+    "Transform your outdoor spaces with Suncoast Patios Ltd, serving Hawke's Bay and Gisborne. Specializing in high-quality patio roofs, louvre roofs, and outdoor blinds, we provide Stratco and Ziptrak solutions for year-round comfort and style. Enhance your outdoor living today!"
 }
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className={manrope.className}>
+  <html lang='en' className={manrope.className}>
     <body>
       <ThemeProvider>
         <ClientThemeWrapper>

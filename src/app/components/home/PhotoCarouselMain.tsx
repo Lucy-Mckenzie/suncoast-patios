@@ -42,7 +42,7 @@ export default function PhotoCarousel() {
 
 
 return (
-  <div className='slider-container relative w-full lg:h-[900px] h-[500px] mx-auto rounded-lg overflow-hidden'>
+  <div className='slider-container relative w-full lg:h-[900px] md:h-[700px] h-[500px] mx-auto rounded-lg overflow-hidden'>
     <Slider {...settings} ref={sliderRef}>
       {photos.map((photoSrc, index) => (
         <div key={index} className='carousel-item relative w-full'>
@@ -51,7 +51,7 @@ return (
             alt={`Slide ${index + 1}`}
             width={1200}
             height={400}
-            className='w-full lg:h-auto object-cover lg:max-h-[800px] h-[400px] rounded-lg'
+            className='w-full lg:h-auto object-cover lg:max-h-[800px] md:h-[600px] h-[400px] rounded-lg'
           />
         </div>
       ))}
