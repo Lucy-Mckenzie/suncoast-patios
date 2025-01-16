@@ -50,7 +50,9 @@ return (
             src={photoSrc}
             alt={`Slide ${index + 1}`}
             width={1200}
-            height={400}
+            height={800}
+            loading='eager'
+            priority={true}
             className='w-full lg:h-auto object-cover lg:max-h-[800px] md:h-[600px] h-[400px] rounded-lg'
           />
         </div>
