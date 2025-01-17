@@ -27,9 +27,12 @@ export default function Blinds() {
       </Head>
     <div className='max-w-[1100px] mx-auto'>
     <h1 
-      className='text-7xl text-left leading-tight tracking-tight mb-1'>
+      className='text-7xl text-left text-slate-800 leading-tight tracking-tight mb-1'>
       Outdoor Blinds
     </h1>
+    <p className='text-lg mb-6 max-w-4xl text-slate-500'>
+    Outdoor blinds are great for weather protection and privacy to make the most of your outdoor space. Below are some blinds we’ve installed around Hawkes bay
+    </p>
       <PhotoCarousel photos={blindsPhotos}/>
     </div>
     <section className='py-10 bg-base sm:py-16 lg:py-24'>
@@ -46,12 +49,11 @@ export default function Blinds() {
     <div className='pt-5'>
     <EnquiryForm />
     </div>
-    <div className='pt-5'>
-    <FAQ />
-    </div>
+      <div className='pt-5'>
+        <FAQ />
+      </div>
     </div>
     </section>
-    
     </>
   )
 }
