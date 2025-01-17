@@ -1,7 +1,7 @@
 import PhotoCarousel from '@/app/components/products/PhotoCarouselProducts'
 import React from 'react'
 import EnquiryForm from '@/app/components/form/EnquiryForm'
-import FAQ from '@/app/components/products/FAQPatios'
+import FAQ from '@/app/components/products/FAQProducts'
 import Head from 'next/head'
 import FeaturesPatios from '@/app/components/products/FeaturesPatios'
 
@@ -18,6 +18,29 @@ const patioPhotos: string[] = [
 '/patios/patios9.webp',
 '/patios/patios12.webp',
 '/patios/patios13.webp',
+]
+
+const faqs = [
+  {
+    question: 'What is the difference between a patio and a deck?',
+    answer: 'Patios are typically built on the ground level, often made of stone, concrete, or pavers, while decks are elevated, made from wood or composite materials.'
+  },
+  {
+    question: 'How long does it take to build a patio?',
+    answer: 'Patio construction typically takes a few days to a week, depending on size, materials, and weather conditions.'
+  },
+  {
+    question: 'Can I install a patio myself?',
+    answer: 'While its possible to install a patio yourself, professional installation is recommended for complex designs to ensure durability and proper drainage.'
+  },
+  {
+    question: 'Do I need a permit to build a patio?',
+    answer: 'Permits may be required depending on your location, the size of the patio, and local regulations. Check with your local council for specific requirements.'
+  },
+  {
+    question: 'How do I maintain my patio?',
+    answer: 'Regular cleaning, sealing, and checking for any cracks or damages will help maintain the look and functionality of your patio over time.'
+  }
 ]
 
 export default function Patios() {
@@ -53,8 +76,13 @@ export default function Patios() {
     <EnquiryForm />
     </div>
     <div className='pt-5'>
-    <FAQ />
-    </div>
+      <h1 className='text-2xl text-center font-manrope mb-6'>
+        Frequently Asked Questions
+      </h1>
+      {faqs.map((faq, index) => (
+    <FAQ key={index} question={faq.question} answer={faq.answer} />
+      ))}
+      </div>
     </div>
     </section>
     

@@ -1,7 +1,7 @@
 import PhotoCarousel from '@/app/components/products/PhotoCarouselProducts'
 import React from 'react'
 import EnquiryForm from '@/app/components/form/EnquiryForm'
-import FAQ from '@/app/components/products/FAQLouvres'
+import FAQ from '@/app/components/products/FAQProducts'
 import Head from 'next/head'
 import FeaturesLouvres from '@/app/components/products/FeaturesLouvres'
 
@@ -14,6 +14,29 @@ const louvrePhotos: string[] = [
   '/louvres/louvres5.webp',
   '/louvres/louvres6.webp',
   ]
+
+const faqs = [
+  {
+    question: 'What is a louvre?',
+    answer: 'A louvre is a type of outdoor structure with adjustable slats that provide shade and ventilation, making it ideal for patios.'
+  },
+  {
+    question: 'How do I clean my patio louvres?',
+    answer: 'To clean your patio louvres, use a soft brush and soapy water. Avoid harsh chemicals that could damage the surface.'
+  },
+  {
+    question: 'Are your blinds motorized?',
+    answer: 'Yes, we offer motorized blinds for ease of use, especially for larger windows or hard-to-reach areas.'
+  },
+  {
+    question: 'Can I install a patio louvre myself?',
+    answer: 'We recommend professional installation to ensure the structure is safe and functional, although DIY options are available for some products.'
+  },
+  {
+    question: 'How do I maintain my patio?',
+    answer: 'Regular cleaning and occasional checks on the structure and blinds will ensure your patio remains in excellent condition.'
+  }
+]
 
 export default function Louvres() {
 
@@ -48,8 +71,13 @@ export default function Louvres() {
     <EnquiryForm />
     </div>
     <div className='pt-5'>
-    <FAQ />
-    </div>
+      <h1 className='text-2xl text-center font-manrope mb-6'>
+        Frequently Asked Questions
+      </h1>
+      {faqs.map((faq, index) => (
+    <FAQ key={index} question={faq.question} answer={faq.answer} />
+      ))}
+      </div>
     </div>
     </section>
     

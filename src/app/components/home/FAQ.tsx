@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const faqs = [
   {
@@ -34,9 +36,13 @@ export default function FAQ() {
     <h1 className='text-4xl text-center font-manrope mb-6'>
       Frequently asked questions
     </h1>
-    <div className='w-[70%] space-y-4'>
+    <motion.div className='w-[70%] space-y-4'>
       {faqs.map((faq, index) => (
-        <div key={index} className='collapse bg-base-200 shadow-md'>
+        <motion.div key={index} className='collapse bg-base-200 shadow-md'
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.3, delay: index * 0.1 }} 
+        >
           <input type='checkbox'
            id={`checkbox-${index}`}/>
           <label 
@@ -48,9 +54,11 @@ export default function FAQ() {
           <div className='collapse-content'>
             <p>{faq.answer}</p>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   </div>
 )
 }
+
+
