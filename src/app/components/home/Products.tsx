@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function Products() {
   return (
@@ -9,7 +11,12 @@ export default function Products() {
         Custom Outdoor Entertaining Solutions
       </h1>
       <div className='flex flex-row flex-wrap justify-center space-x-8'>
-      <div className='card bg-base-100 w-96 shadow-md rounded-md'>
+      <motion.div className='card bg-base-100 w-96 shadow-md rounded-md'
+      whileHover={{ scale: 1.05 }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      >
   <figure className='px-5'>
       <Image
        src='/louvres/louvres.webp' 
@@ -36,8 +43,13 @@ export default function Products() {
       </Link>
     </div>
   </div>
-</div>
-<div className='card bg-base-100 w-96 shadow-md rounded-md'>
+</motion.div>
+<motion.div className='card bg-base-100 w-96 shadow-md rounded-md'
+whileHover={{ scale: 1.05 }}
+initial={{ opacity: 0, y: 50 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.5, delay: 0.2 }}
+>
   <figure className='px-5'>
       <Image
        src='/patios/patios7.webp'
@@ -64,8 +76,13 @@ export default function Products() {
       </Link>
     </div>
   </div>
-</div>
-<div className='card bg-base-100 w-96 shadow-md rounded-md'>
+</motion.div>
+<motion.div className='card bg-base-100 w-96 shadow-md rounded-md'
+whileHover={{ scale: 1.05 }}
+initial={{ opacity: 0, y: 50 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.5, delay: 0.2 }}
+>
   <figure className='px-5'>
       <Image
        src='/blinds/blinds.webp'
@@ -92,7 +109,7 @@ export default function Products() {
       </Link>
     </div>
   </div>
-</div>
+</motion.div>
     </div>
     </div>
   )

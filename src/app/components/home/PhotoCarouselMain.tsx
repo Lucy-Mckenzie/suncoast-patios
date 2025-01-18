@@ -42,7 +42,7 @@ export default function PhotoCarousel() {
 
 
 return (
-  <div className='slider-container relative w-full lg:h-[900px] md:h-[700px] h-[500px] mx-auto rounded-lg overflow-hidden'>
+  <div className='slider-container relative w-full lg:h-[900px] md:h-[700px] h-[500px] mx-auto rounded-lg overflow-hidden pb-20'>
     <Slider {...settings} ref={sliderRef}>
       {photos.map((photoSrc, index) => (
         <div key={index} className='carousel-item relative w-full'>
