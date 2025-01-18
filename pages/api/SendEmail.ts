@@ -23,8 +23,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       Messages: [
         {
           From: {
-            Email: email, 
-            Name: name,
+            Email: 'lucymckenzie62@gmail.com', 
+            Name: 'Suncoast Patios',
           },
           To: [
             {
@@ -32,6 +32,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
               Name: 'Admin',
             },
           ],
+          ReplyTo: {
+            Email: email, 
+            Name: name,
+          },
           Subject: 'Quote Enquriy',
           HTMLPart: `
           <html>
