@@ -1,7 +1,7 @@
 # Suncoast Patios - An outdoor company building Louvres, Patios, and Blinds.
 
 # Design Brief:
-Suncoast Patios needed a website revamp. The outdated design was being left behind in the digital graveyard, gradually slipping down the search engine rankings.The new design prioritises SEO optimisation, user-friendly interface design, and enhanced user experience to better serve their audience. 
+Suncoast Patios needed a website revamp. The outdated design was being left behind in the digital graveyard, gradually slipping down the search engine rankings. The new design prioritises SEO optimisation, user-friendly interface design, and enhanced user experience to better serve their audience. 
 
 # Built With:
 * [![Next][Next.js]][Next-url]
