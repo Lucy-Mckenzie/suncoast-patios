@@ -3,7 +3,7 @@ import React, { JSX } from 'react'
 import { useState } from 'react'
 import ColourRange from './features/louvres/ColourRange'
 import Warranty from './features/Warranty'
-import KudosLouvres from './features/louvres/kudos'
+import KudosLouvres from './features/louvres/KudosLouvres'
 import RainSensor from './features/louvres/RainSensor'
 
 const louvresData = {
