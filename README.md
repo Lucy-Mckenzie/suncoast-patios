@@ -1,21 +1,17 @@
 # Suncoast Patios - An outdoor company building Louvres, Patios, and Blinds.
-  <img src='/logos/suncoastlogo.png' alt='Suncoast Patios Logo' width='300'>
 
 # Design Brief:
 Suncoast Patios needed a website revamp. The outdated design was being left behind in the digital graveyard, gradually slipping down the search engine rankings.The new design prioritises SEO optimisation, user-friendly interface design, and enhanced user experience to better serve their audience. 
 
 # Built With:
-<p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="50" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Typescript_logo_2020.svg" alt="TypeScript" width="50" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_and_wordmark.svg" alt="HTML" width="50" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" width="50" />
-  <img src="https://cdn.worldvectorlogo.com/logos/nextjs.svg" alt="Next.js" width="50" />
-  <img src="https://cdn.worldvectorlogo.com/logos/mailjet-1.svg" alt="Mailjet" width="50" />
-  <img src='/svg/daisyui.svg' alt="DaisyUI" width="50" />
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![TypeScript][TypeScript-logo]][TypeScript-url]
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!--   <img src='/svg/daisyui.svg' alt="DaisyUI" width="50" />
   <img src='/svg/hcaptcha.svg' alt="hCaptcha" width="50" />
-  <img src='/svg/herroku.svg' alt="Heroku" width="50" />
-</p>
+  <img src='/svg/herroku.svg' alt="Heroku" width="50" /> -->
+
 
 ## Installation
 1. Clone the repository:
@@ -39,3 +35,13 @@ npm run dev
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[TypeScript-logo]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+
