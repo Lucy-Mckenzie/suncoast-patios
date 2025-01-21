@@ -69,7 +69,7 @@ const { changedTheme } = context
         <Image
           src='/logos/suncoastlogo.png'
           alt='Suncoast Patios Logo'
-          width={170}
+          width={160}
           height={70}
           priority
           style={{ width: 'auto', height: 'auto' }}

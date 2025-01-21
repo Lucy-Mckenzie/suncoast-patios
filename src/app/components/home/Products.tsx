@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function Products() {
   return (
-    <div className='flex flex-col items-center py-20 space-y-10 overflow-hidden'>
+    <div className='flex flex-col items-center pb-20 space-y-10 overflow-hidden'>
       <h1 className='text-center font-manrope text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl pb-5'>
         Custom Outdoor Entertaining Solutions
       </h1>
