@@ -5,12 +5,7 @@ Suncoast Patios needed a website revamp. The outdated design was being left behi
 ![Suncoast logo](/public/logos/suncoastlogo.png)
 
 # Built With:
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![TypeScript][TypeScript-logo]][TypeScript-url]
-<!--   <img src='/svg/daisyui.svg' alt="DaisyUI" width="50" />
-  <img src='/svg/hcaptcha.svg' alt="hCaptcha" width="50" />
-  <img src='/svg/herroku.svg' alt="Heroku" width="50" /> -->
+Next.js, React, Typescript, Herroku.
 
 
 ## Installation
@@ -52,11 +47,5 @@ npm run dev
 This project is licensed under the [MIT License](LICENSE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- MARKDOWN LINKS & IMAGES -->
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[TypeScript-logo]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
-[TypeScript-url]: https://www.typescriptlang.org/
+
 
