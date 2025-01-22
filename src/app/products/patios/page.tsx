@@ -5,20 +5,25 @@ import FAQ from '@/app/components/products/FAQProducts'
 import Head from 'next/head'
 import FeaturesPatios from '@/app/components/products/FeaturesPatios'
 
-const patioPhotos: string[] = [
-'/patios/patios.webp',
-'/patios/patios1.webp',
-'/patios/patios2.webp',
-'/patios/patios3.webp',
-'/patios/patios4.webp',
-'/patios/patios5.webp',
-'/patios/patios6.webp',
-'/patios/patios7.webp',
-'/patios/patios8.webp',
-'/patios/patios9.webp',
-'/patios/patios12.webp',
-'/patios/patios13.webp',
-]
+  const patioPhotos: string[] = [
+    '/patios/patios.webp',
+    '/patios/patios1.webp',
+    '/patios/patios2.webp',
+    '/patios/patios3.webp',
+    '/patios/patios4.webp',
+    '/patios/patios5.webp',
+    '/patios/patios6.webp',
+    '/patios/patios7.webp',
+    '/patios/patios8.webp',
+    '/patios/patios9.webp',
+    '/patios/patios12.webp',
+    '/patios/patios13.webp',
+  ]
+
+  const button = {
+    text: 'Get a free quote',
+    style: 'bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-[500ms] ease-in-out border' 
+  }
 
 const faqs = [
   {
@@ -73,7 +78,7 @@ export default function Patios() {
         </div>
         <FeaturesPatios />
     <div className='pt-5'>
-    <EnquiryForm />
+    <EnquiryForm text={button.text} style={button.style} />
     </div>
     <div className='pt-5'>
       <h1 className='text-2xl text-center font-manrope mb-6'>

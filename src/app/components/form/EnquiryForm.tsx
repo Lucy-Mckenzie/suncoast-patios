@@ -3,16 +3,20 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Form from './Form'
 
-export default function EnquiryForm() {
-  const [isOpen, setIsOpen] = useState(false)
+interface ButtonProps {
+  text: string
+  style: string
+}
 
+export default function EnquiryForm({ style, text }: ButtonProps) {
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
 <div className='dropdown dropdown-end relative'>
       <button 
        id='dropdown-button'
        tabIndex={0} 
-       className='btn bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-300 font-manrope rounded-lg'
+       className={`p-2 text-sm ${style} transition-all duration-300 font-manrope rounded-full`}
        aria-expanded={isOpen ? 'true' : 'false'} 
        onClick={() => setIsOpen(!isOpen)} 
        aria-controls='dropdown-content'
@@ -21,7 +25,7 @@ export default function EnquiryForm() {
         if (e.key === 'Escape' && isOpen) setIsOpen(false)
       }}
       >
-    { isOpen ? 'Close Form' : 'Free Quote'}
+    { isOpen ? 'Close Form' : `${text}`}
     </button>
     {isOpen && (
      <div
