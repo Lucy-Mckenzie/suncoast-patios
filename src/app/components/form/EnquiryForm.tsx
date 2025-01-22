@@ -12,17 +12,21 @@ export default function EnquiryForm({ style, text }: ButtonProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-<div className='dropdown dropdown-end relative'>
+<div className='dropdown dropdown-end relative z-20'>
       <button 
        id='dropdown-button'
        tabIndex={0} 
        className={`p-2 text-sm ${style} transition-all duration-300 font-manrope rounded-full`}
        aria-expanded={isOpen ? 'true' : 'false'} 
-       onClick={() => setIsOpen(!isOpen)} 
+       onClick={() => {
+        setIsOpen(!isOpen)
+        document.body.classList.toggle("overflow-hidden", !isOpen)
+        }} 
        aria-controls='dropdown-content'
-        aria-haspopup='true'
+       aria-haspopup='true'
        onKeyDown={(e) => {
         if (e.key === 'Escape' && isOpen) setIsOpen(false)
+        document.body.classList.remove("overflow-hidden")
       }}
       >
     { isOpen ? 'Close Form' : `${text}`}
@@ -34,7 +38,10 @@ export default function EnquiryForm({ style, text }: ButtonProps) {
      role='dialog'
      aria-labelledby='dropdown-title'
      aria-describedby='dropdown-description'
-     onClick={() => setIsOpen(false)}
+     onClick={() => {
+      setIsOpen(false)
+      document.body.classList.remove("overflow-hidden")
+     }}
    >
      <div
        className='relative bg-base-100 text-base-content flex flex-col lg:flex-row rounded-lg shadow-lg lg:w-full overflow-scroll lg:max-w-5xl lg:max-h-full max-h-[90vh] max-w-xs p-6 space-y-6 lg:space-y-0 lg:space-x-6 my-5'

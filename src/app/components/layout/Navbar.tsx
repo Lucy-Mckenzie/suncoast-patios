@@ -13,7 +13,7 @@ export default function Navbar() {
 
 
   return (
-<div className='navbar bg-base-100'>
+<div className='navbar z-10 sticky top-0'>
   <div className='navbar flex items-end'>
   <div className='dropdown'>
       <div 

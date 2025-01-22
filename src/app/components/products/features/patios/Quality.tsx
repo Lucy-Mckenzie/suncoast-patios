@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 
 const photos = [
-'/patios/structure/structure6.webp',
 '/patios/structure/structure.webp',
-'/patios/structure/structure1.webp',
 '/patios/structure/structure2.webp',
 '/patios/structure/structure3.webp',
 '/patios/structure/structure4.webp',
