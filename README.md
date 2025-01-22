@@ -32,15 +32,15 @@ npm run dev
   <li className='mb-4'>
   <strong>Receiving emails from the enquiry form: </strong>
   I considered several approaches before deciding on the best option. The first was Nodemailer, a Node.js library that allows sending emails via SMTP. However, it lacks built-in email analytics and advanced spam protection, which were important to us. My other options were SendGrid and Mailjet, both cloud-based API and SMTP services. I ultimately chose Mailjet because it was the simplest to implement, offering built-in analytics and spam protection.
-    </li>
+    </li><br><br>
     <li className='mb-4'>
   <strong>Learning Next.js, when to load files on the client side:</strong>
   {`Learning Next.js was a really fun part of the process. It's very intuitive and well-documented. However, when starting the project, I encountered errors and had the 'use client' directive (which means it renders on the frontend and makes it difficult for Google crawlers to find) in more files than I'd like to admit. That's when I started focusing on clean code practices, reducing reused code, and splitting larger components into smaller ones that would render on the client side. Overall, I believe Next.js significantly improved my code quality.`}
-    </li>
+    </li><br><br>
       <li className='mb-4'>
         <strong>Managing Spam for enquiry form: </strong>
         I was weighing up different options for this. My first idea was to create a custom solution from scratch. However, this proved to be quite challenging, and due to time constraints, it wasn’t feasible. So, I decided to use a library to help. When choosing between reCAPTCHA and hCaptcha, I found that the steps for both were quite similar, but I ultimately chose hCaptcha because it collects less data than Google’s reCAPTCHA. 
-    </li>
+    </li><br><br>
 </ul>
 
 ## License
