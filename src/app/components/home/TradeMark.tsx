@@ -2,19 +2,24 @@ import React from 'react'
 import Image from 'next/image'
 import EnquiryForm from '../form/EnquiryForm'
 
+const button = {
+  text: 'Free Measure & Quote',
+  style: 'text-black border-black hover:bg-slate-950 hover:text-white hover:border-white transition-all duration-[500ms] ease-in-out rounded-full border' 
+}
+
 export default function TradeMark() {
   return (
-    <div className='flex flex-col items-center text-center bg-base-100 py-10 px-4 rounded-lg'>
-    <h1 className='text-2xl md:text-3xl font-bold font-manrope mb-8'>
+    <div className='flex flex-col items-center text-center bg-base-100 py-20 px-4 rounded-lg'>
+    <h1 className='text-4xl font-manrope mb-8'>
     Official Dealer of Stratco & Ziptrak Outdoor Solutions
     </h1>
     <div className='flex flex-row justify-center items-center gap-8 mb-6'>
       <Image
         src='/logos/outback.png'
         alt='Outback logo'
-        width={350}
-        height={80}
-        className='object-contain'
+        width={300}
+        height={70}
+        className='object-contain rounded-md'
       />
       <Image
         src='/logos/ziptrak.png'
@@ -23,8 +28,15 @@ export default function TradeMark() {
         height={80}
         className='object-contain'
       />
+      <Image
+        src='/logos/kudos.webp'
+        alt='Kudos logo'
+        width={350}
+        height={100}
+        className='object-contain rounded-md'
+      />
     </div>
-  <EnquiryForm />
+ <EnquiryForm text={button.text} style={button.style}/>
   </div>
   
   )

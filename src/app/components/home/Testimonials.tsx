@@ -34,7 +34,7 @@ export default function Reviews() {
     <div className='px-4 mx-auto max-w-8xl sm:mx-6 lg:mx-8 bg-base-200 rounded-lg shadow-md'>
     <div className='flex flex-col items-center justify-center py-20'>
       <div className='max-w-2xl mx-auto text-center'>
-          <h1 className='text-3xl font-bold font-manrope leading-tight sm:text-4xl lg:text-5xl'>Trusted by <span className='text-blue-600'>Hawkes Bay</span> for more than 12+ years </h1>
+          <h1 className='text-3xl font-bold font-manrope leading-tight sm:text-4xl lg:text-5xl'>Trusted by <span className='text-[#005694]'>Hawkes Bay</span> for more than 12+ years </h1>
       </div>
     <div 
     role='region'

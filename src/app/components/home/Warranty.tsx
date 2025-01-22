@@ -9,22 +9,22 @@ export default function Warranty() {
   <Image
       src='/warranty/google.png'
       alt='Installation warranty logo'
-      width={150}
-      height={140}
+      width={80}
+      height={100}
       className='object-contain mx-11'
     />
     <Image
       src='/warranty/warranty3.png'
       alt='Installation warranty logo'
-      width={180}
-      height={140}
+      width={80}
+      height={100}
       className='object-contain mx-11'
     />
     <Image
       src='/warranty/warranty1.png'
       alt='Paint warranty logo'
-      width={100}
-      height={140}
+      width={80}
+      height={100}
       className='object-contain mx-11'
     />
     <Image

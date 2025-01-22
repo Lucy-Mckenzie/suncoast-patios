@@ -5,14 +5,19 @@ import FAQ from '@/app/components/products/FAQProducts'
 import Head from 'next/head'
 import FeaturesBlinds from '@/app/components/products/FeaturesBlinds'
 
-const blindsPhotos: string[] = [
-  '/blinds/blinds3.webp',
-  '/blinds/blinds1.webp',
-  '/blinds/blinds.webp',
-  '/blinds/blinds2.webp',
-  '/blinds/blinds4.webp',
-  '/blinds/blinds5.webp',
+  const blindsPhotos: string[] = [
+    '/blinds/blinds3.webp',
+    '/blinds/blinds1.webp',
+    '/blinds/blinds.webp',
+    '/blinds/blinds2.webp',
+    '/blinds/blinds4.webp',
+    '/blinds/blinds5.webp',
   ]
+
+  const button = {
+    text: 'Get a free quote',
+    style: 'bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-[500ms] ease-in-out border' 
+  }
 
 const faqs = [
   {
@@ -70,7 +75,7 @@ export default function Blinds() {
         </div>
     <FeaturesBlinds />
     <div className='pt-5'>
-    <EnquiryForm />
+    <EnquiryForm text={button.text} style={button.style} />
     </div>
       <div className='pt-5'>
       <h1 className='text-2xl text-center font-manrope mb-6'>

@@ -15,6 +15,11 @@ const louvrePhotos: string[] = [
   '/louvres/louvres6.webp',
   ]
 
+const button = {
+  text: 'Get a free quote',
+  style: 'bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-[500ms] ease-in-out border' 
+}
+
 const faqs = [
   {
     question: 'What is a louvre?',
@@ -68,7 +73,7 @@ export default function Louvres() {
         </div>
         <FeaturesLouvres />
     <div className='pt-5'>
-    <EnquiryForm />
+   <EnquiryForm text={button.text} style={button.style} />
     </div>
     <div className='pt-5'>
       <h1 className='text-2xl text-center font-manrope mb-6'>

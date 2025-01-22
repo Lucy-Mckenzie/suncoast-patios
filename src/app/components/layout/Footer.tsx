@@ -3,6 +3,11 @@ import Link from 'next/link'
 import React from 'react'
 import EnquiryForm from '../form/EnquiryForm'
 
+const button = {
+  text: 'Free Measure & Quote',
+  style: 'bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-[500ms] ease-in-out border' 
+}
+
 export default function Footer() {
   return (
 <footer className='footer bg-base text-base flex flex-col items-center justify-center p-6'>
@@ -10,7 +15,7 @@ export default function Footer() {
     <p className='mt-4 sm:mt-0 text-sm text-center'>
       © {new Date().getFullYear()} Suncoast Patios - All rights reserved.
     </p>
-    <EnquiryForm />
+      <EnquiryForm text={button.text} style={button.style} />
     <Link href='https://www.facebook.com/SuncoastLtd/' target='_blank'  aria-label="Visit Suncoast Ltd's Facebook page">
       <svg
         xmlns='http://www.w3.org/2000/svg'
