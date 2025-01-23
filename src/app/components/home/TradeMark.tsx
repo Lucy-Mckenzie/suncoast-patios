@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import EnquiryForm from '../form/EnquiryForm'
+import Link from 'next/link'
 
 const button = {
   text: 'Free Measure & Quote',
@@ -14,6 +15,7 @@ export default function TradeMark() {
     Official Dealer of Stratco & Ziptrak Outdoor Solutions
     </h1>
     <div className='flex flex-row justify-center items-center gap-8 mb-6'>
+      <Link href='https://www.stratco.co.nz/' rel='noopener' target='_blank'>
       <Image
         src='/logos/outback.png'
         alt='Outback logo'
@@ -21,6 +23,8 @@ export default function TradeMark() {
         height={70}
         className='object-contain rounded-md'
       />
+      </Link>
+      <Link href='https://www.nz.ziptrak.com/en/' rel='noopener' target='_blank'>
       <Image
         src='/logos/ziptrak.png'
         alt='Ziptrak logo'
@@ -28,6 +32,8 @@ export default function TradeMark() {
         height={80}
         className='object-contain'
       />
+      </Link>
+      <Link href='https://kudoslouvres.co.nz/' rel='noopener' target='_blank'>
       <Image
         src='/logos/kudos.webp'
         alt='Kudos logo'
@@ -35,6 +41,7 @@ export default function TradeMark() {
         height={100}
         className='object-contain rounded-md'
       />
+      </Link>
     </div>
  <EnquiryForm text={button.text} style={button.style}/>
   </div>
