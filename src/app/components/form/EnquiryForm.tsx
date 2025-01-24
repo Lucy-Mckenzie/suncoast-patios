@@ -69,7 +69,7 @@ export default function EnquiryForm({ style, text }: ButtonProps) {
       Call us directly:
       </h2>
     <p className='text-content lg:text-lg text-sm'>
-      +64 22 170 9933
+      022 170 9933
       </p>
   </div>
 
