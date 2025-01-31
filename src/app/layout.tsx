@@ -27,6 +27,7 @@ export default function RootLayout({
 }>) {
   return (
   <html lang='en' className={manrope.className}>
+     <meta name="google-site-verification" content="7n7fDJ_obqpCtqblox4csgEm0LJmtHraP_em5gnw8ic" />
     <body>
       <ThemeProvider>
         <ClientThemeWrapper>
