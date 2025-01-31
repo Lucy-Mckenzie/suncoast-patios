@@ -1,7 +1,6 @@
 import { verify } from 'hcaptcha'
 
 const secretKey: string | undefined = process.env.SECRET_HCAPTCHA_KEY!
-console.log("Secret Key:", secretKey)
 
 interface FormData {
   get: (key: string) => string | null;
@@ -27,7 +26,7 @@ export const SubmitForm = async (formData: FormData) => {
       console.error(error.message)
       return { message: 'Verification failed', success: false }
     } else {
-      console.error("Unexpected error:", error)
+      console.error('Unexpected error:', error)
       return { message: 'Verification failed', success: false }
     }
   }

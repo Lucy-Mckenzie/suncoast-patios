@@ -30,108 +30,108 @@ export default function Reviews() {
   }
 
   return (
- <section className='py-10 sm:py-16 lg:py-16'> 
-    <div className='px-4 mx-auto max-w-8xl sm:mx-6 lg:mx-8 bg-base-200 rounded-lg shadow-md'>
-    <div className='flex flex-col items-center justify-center py-20'>
-      <div className='max-w-2xl mx-auto text-center'>
-          <h1 className='text-3xl font-bold font-manrope leading-tight sm:text-4xl lg:text-5xl'>Trusted by <span className='text-[#005694]'>Hawkes Bay</span> for more than 12+ years </h1>
-      </div>
-    <div 
-    role='region'
-    aria-live='polite' 
-    className='grid grid-cols-1 sm:grid-cols-4 gap-4 space-x-2 justify-items-center mx-auto pt-10'>
-        {reviews.slice(0, visibleReviews).map((review) => (
-           <div
-           key={review.id} 
-           className='card bg-base-100 shadow-md rounded-md'>
-          <figure className=''>
-            <Image 
-            src={review.imageSrc}
-            alt={review.alt}
-             width={500} 
-             height={300}
-             className='object-cover h-[12rem]'
-             />
-          </figure>
-          <div className='card-body'>
-            <h2 
-            className='card-title'
-            id={`review-${review.id}-author`}
-            >{review.author}</h2>
-            <div className='card-actions justify-start'>
-            <div className='rating rating-sm' role='radiogroup' aria-labelledby='rating-label'>
-            <span id='rating-label' className='sr-only'>Rating: 5 out of 5 stars</span>
-            <input 
-            type='radio' 
-            name='rating-2'
-            id='star1'
-            className='mask mask-star-2 bg-orange-400  px-2.5'
-            checked readOnly
-            aria-label='Star 1'
-            />
-             <input 
-            type='radio' 
-            name='rating-2'
-            id='star2'
-            className='mask mask-star-2 bg-orange-400  px-2.5'
-            checked readOnly
-            aria-label='Star 2' 
-            />
-              <input 
-            type='radio' 
-            name='rating-2'
-            id='star3'
-            className='mask mask-star-2 bg-orange-400  px-2.5'
-            checked readOnly
-            aria-label='Star 3' 
-            />
-              <input 
-            type='radio' 
-            name='rating-2'
-            id='star4'
-            className='mask mask-star-2 bg-orange-400  px-2.5'
-            checked readOnly
-            aria-label='Star 4' 
-            />
-              <input 
-            type='radio' 
-            name='rating-2'
-            id='star5'
-            className='mask mask-star-2 bg-orange-400 px-2.5'
-            checked readOnly
-            aria-label='Star 5' 
-            />
-            </div>
-            </div>
-            <p
-            id={`review-${review.id}-description`}
-            >{review.description}</p>
+    <section className='py-10 sm:py-16 lg:py-16'> 
+      <div className='px-4 mx-auto max-w-8xl sm:mx-6 lg:mx-8 bg-base-200 rounded-lg shadow-md'>
+        <div className='flex flex-col items-center justify-center py-20'>
+          <div className='max-w-2xl mx-auto text-center'>
+            <h1 className='text-3xl font-bold font-manrope leading-tight sm:text-4xl lg:text-5xl'>Trusted by <span className='text-[#005694]'>Hawkes Bay</span> for more than 12+ years </h1>
+          </div>
+          <div 
+            role='region'
+            aria-live='polite' 
+            className='grid grid-cols-1 sm:grid-cols-4 gap-4 space-x-2 justify-items-center mx-auto pt-10'>
+            {reviews.slice(0, visibleReviews).map((review) => (
+              <div
+                key={review.id} 
+                className='card bg-base-100 shadow-md rounded-md'>
+                <figure className=''>
+                  <Image 
+                    src={review.imageSrc}
+                    alt={review.alt}
+                    width={500} 
+                    height={300}
+                    className='object-cover h-[12rem]'
+                  />
+                </figure>
+                <div className='card-body'>
+                  <h2 
+                    className='card-title'
+                    id={`review-${review.id}-author`}
+                  >{review.author}</h2>
+                  <div className='card-actions justify-start'>
+                    <div className='rating rating-sm' role='radiogroup' aria-labelledby='rating-label'>
+                      <span id='rating-label' className='sr-only'>Rating: 5 out of 5 stars</span>
+                      <input 
+                        type='radio' 
+                        name='rating-2'
+                        id='star1'
+                        className='mask mask-star-2 bg-orange-400  px-2.5'
+                        checked readOnly
+                        aria-label='Star 1'
+                      />
+                      <input 
+                        type='radio' 
+                        name='rating-2'
+                        id='star2'
+                        className='mask mask-star-2 bg-orange-400  px-2.5'
+                        checked readOnly
+                        aria-label='Star 2' 
+                      />
+                      <input 
+                        type='radio' 
+                        name='rating-2'
+                        id='star3'
+                        className='mask mask-star-2 bg-orange-400  px-2.5'
+                        checked readOnly
+                        aria-label='Star 3' 
+                      />
+                      <input 
+                        type='radio' 
+                        name='rating-2'
+                        id='star4'
+                        className='mask mask-star-2 bg-orange-400  px-2.5'
+                        checked readOnly
+                        aria-label='Star 4' 
+                      />
+                      <input 
+                        type='radio' 
+                        name='rating-2'
+                        id='star5'
+                        className='mask mask-star-2 bg-orange-400 px-2.5'
+                        checked readOnly
+                        aria-label='Star 5' 
+                      />
+                    </div>
+                  </div>
+                  <p
+                    id={`review-${review.id}-description`}
+                  >{review.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className='mt-10'>
+            {visibleReviews < reviews.length ? (
+              <button 
+                onClick={showMore}
+                className='btn bg-[#005694] text-base-300'
+                aria-expanded={visibleReviews < reviews.length}
+              >
+            View More
+              </button>
+            ) : (
+              <button 
+                onClick={showLess}
+                className='btn bg-[#005694] text-base-300'
+                aria-expanded={visibleReviews === reviews.length}
+              >
+            View Less
+              </button>
+            )}
           </div>
         </div>
-        ))}
       </div>
-        <div className='mt-10'>
-      {visibleReviews < reviews.length ? (
-        <button 
-        onClick={showMore}
-        className='btn bg-[#005694] text-base-300'
-        aria-expanded={visibleReviews < reviews.length}
-          >
-            View More
-          </button>
-       ) : (
-        <button 
-        onClick={showLess}
-        className='btn bg-[#005694] text-base-300'
-        aria-expanded={visibleReviews === reviews.length}
-          >
-            View Less
-          </button>
-      )}
-      </div>
-    </div>
-    </div>
-</section>
+    </section>
 
   )
 }

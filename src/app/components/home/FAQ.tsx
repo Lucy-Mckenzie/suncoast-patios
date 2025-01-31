@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
@@ -32,33 +33,33 @@ const faqs = [
 
 export default function FAQ() {
   return (
-  <div className='flex flex-col items-center my-20'>
-    <h1 className='text-4xl text-center font-manrope mb-6'>
+    <div className='flex flex-col items-center my-20'>
+      <h1 className='text-4xl text-center font-manrope mb-6'>
       Frequently asked questions
-    </h1>
-    <motion.div className='w-[70%] space-y-4'>
-      {faqs.map((faq, index) => (
-        <motion.div key={index} className='collapse bg-base-200 shadow-md'
-        initial={{ opacity: 0, y: 50 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.3, delay: index * 0.1 }} 
-        >
-          <input type='checkbox'
-           id={`checkbox-${index}`}/>
-          <label 
-          className='collapse-title text-xl font-medium'
-          htmlFor={`checkbox-${index}`}
+      </h1>
+      <motion.div className='w-[70%] space-y-4'>
+        {faqs.map((faq, index) => (
+          <motion.div key={index} className='collapse bg-base-200 shadow-md'
+            initial={{ opacity: 0, y: 50 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.3, delay: index * 0.1 }} 
           >
-            {faq.question}
-          </label>
-          <div className='collapse-content'>
-            <p>{faq.answer}</p>
-          </div>
-        </motion.div>
-      ))}
-    </motion.div>
-  </div>
-)
+            <input type='checkbox'
+              id={`checkbox-${index}`}/>
+            <label 
+              className='collapse-title text-xl font-medium'
+              htmlFor={`checkbox-${index}`}
+            >
+              {faq.question}
+            </label>
+            <div className='collapse-content'>
+              <p>{faq.answer}</p>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  )
 }
 
 

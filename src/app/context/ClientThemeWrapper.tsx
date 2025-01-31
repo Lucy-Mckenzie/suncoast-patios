@@ -6,7 +6,7 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export default function ClientThemeWrapper({children}: ThemeProviderProps) {
+export default function ClientThemeWrapper({ children }: ThemeProviderProps) {
   const context = useContext(ThemeContext)
 
   if (!context) {

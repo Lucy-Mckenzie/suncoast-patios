@@ -65,19 +65,19 @@ export default function Form() {
     }
 
     resetForm()
-}
+  }
 
 
   return (
     <div>
-       <form ref={ref} className='bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'
-       onSubmit={handleSubmit}
-       >
+      <form ref={ref} className='bg-[#FDB626]/60 p-8 rounded-lg space-y-4 shadow-inner'
+        onSubmit={handleSubmit}
+      >
         <div className='form-control mb-3'>
           <label className='label' htmlFor='name'>
             <span className='label-text'>
               Full Name*
-              </span>
+            </span>
           </label>
           <input
             id='name'
@@ -133,18 +133,18 @@ export default function Form() {
           ></textarea>
         </div>
         <div className='form-control mb-3'>
-        <HCaptcha
-        sitekey='639e7b42-77c4-4168-8208-0d7af4a22fea'
-        onVerify={onCaptchaChange}
-        ref={captchaRef}
-        onExpire={onCaptchaExpire}
-      />
+          <HCaptcha
+            sitekey='639e7b42-77c4-4168-8208-0d7af4a22fea'
+            onVerify={onCaptchaChange}
+            ref={captchaRef}
+            onExpire={onCaptchaExpire}
+          />
         </div>
         <div className='form-control'>
           <button 
-          className='btn bg-base text-base hover:bg-base-100 w-[150px] shadow-lg hover:scale-105 font-manrope'
-          type='submit'
-          aria-label='Submit Form'
+            className='btn bg-base text-base hover:bg-base-100 w-[150px] shadow-lg hover:scale-105 font-manrope'
+            type='submit'
+            aria-label='Submit Form'
           >
             Submit
           </button>
@@ -152,9 +152,9 @@ export default function Form() {
       </form>
       {statusMessage && (
         <div 
-        className='mt-4 text-center text-lg font-semibold'
-        role='alert'
-        aria-live='polite'
+          className='mt-4 text-center text-lg font-semibold'
+          role='alert'
+          aria-live='polite'
         >
           {statusMessage}
         </div>

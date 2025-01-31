@@ -5,6 +5,7 @@ import ThemeProvider from './context/ThemeContext'
 import './globals.css'
 import { Manrope } from 'next/font/google'
 import { Metadata } from 'next'
+import React from 'react'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -26,19 +27,19 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-  <html lang='en' className={manrope.className}>
-     <meta name="google-site-verification" content="7n7fDJ_obqpCtqblox4csgEm0LJmtHraP_em5gnw8ic" />
-    <body>
-      <ThemeProvider>
-        <ClientThemeWrapper>
-          <Navbar />
-          <main>
-            {children}
-          </main>
-          <Footer />
-        </ClientThemeWrapper>
-      </ThemeProvider>
-    </body>
-  </html>
+    <html lang='en' className={manrope.className}>
+      <meta name="google-site-verification" content="7n7fDJ_obqpCtqblox4csgEm0LJmtHraP_em5gnw8ic" />
+      <body>
+        <ThemeProvider>
+          <ClientThemeWrapper>
+            <Navbar />
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </ClientThemeWrapper>
+        </ThemeProvider>
+      </body>
+    </html>
   )
 }

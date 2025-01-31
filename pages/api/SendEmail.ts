@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       process.env.MAILJET_API_SECRET!
     );
 
-    const response = await client.post('send', { version: 'v3.1' }).request({
+    await client.post('send', { version: 'v3.1' }).request({
       Messages: [
         {
           From: {
@@ -53,10 +53,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       ],
     })
 
-    console.log('Email sent successfully:', response.body)
     res.status(200).json({ message: 'Email sent successfully' })
-  } catch (error) {
-    console.error('Error sending email:', error);
+  } catch {
     res.status(500).json({ error: 'Failed to send email' })
   }
 }

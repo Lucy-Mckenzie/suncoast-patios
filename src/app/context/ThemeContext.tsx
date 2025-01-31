@@ -11,7 +11,7 @@ interface ThemeContextType {
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
-export default function ThemeProvider({children}: ThemeProviderProps) {
+export default function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setTheme] = useState('light')
   const [mounted, setIsMounted] = useState(false)
 
@@ -29,7 +29,7 @@ export default function ThemeProvider({children}: ThemeProviderProps) {
   }
 
   return (
-    <ThemeContext.Provider value={{theme, changedTheme}}>
+    <ThemeContext.Provider value={{ theme, changedTheme }}>
       {children}
     </ThemeContext.Provider>
   )

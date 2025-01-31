@@ -11,6 +11,15 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "indent": ["error", 2], // Enforce 2-space indentation
+      "quotes": ["error", "single", { "avoidEscape": true }], // Use single quotes
+      "no-console": ["warn"], // Warn when console.log is used
+      "object-curly-spacing": ["error", "always"], // Enforce spaces inside { objects }
+      "array-bracket-spacing": ["error", "never"], // No spaces inside [arrays]
+    },
+  },
 ];
 
 export default eslintConfig;

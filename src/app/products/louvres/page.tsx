@@ -13,7 +13,7 @@ const louvrePhotos: string[] = [
   '/louvres/louvres4.webp',
   '/louvres/louvres5.webp',
   '/louvres/louvres6.webp',
-  ]
+]
 
 const button = {
   text: 'Get a free quote',
@@ -48,44 +48,43 @@ export default function Louvres() {
   return (
     <>
       <Head>
-      <title>Louvres - Suncoast Patios</title>
-      <meta
-        name='description'
-        content='Explore our range of high-quality louvres for enhanced outdoor living spaces.'
-      />
-    </Head>
-    <div className='max-w-[1100px] mx-auto'>
-      <h1 
-      className='text-7xl text-left font-manrope leading-tight tracking-tight mb-1'>
-       Louvre Roofs
-      </h1>
-      <PhotoCarousel photos={louvrePhotos}/>
-    </div>
-    <section className='py-10 bg-base sm:py-16 lg:py-24'>
-    <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>
-        <div className='max-w-2xl mx-auto text-center'>
+        <title>Louvres - Suncoast Patios</title>
+        <meta
+          name='description'
+          content='Explore our range of high-quality louvres for enhanced outdoor living spaces.'
+        />
+      </Head>
+      <div className='max-w-[1100px] mx-auto'>
+        <h1 
+          className='text-7xl text-left font-manrope leading-tight tracking-tight mb-1'>
+        Louvre Roofs
+        </h1>
+        <PhotoCarousel photos={louvrePhotos}/>
+      </div>
+      <section className='py-10 bg-base sm:py-16 lg:py-24'>
+        <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>
+          <div className='max-w-2xl mx-auto text-center'>
             <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
               Stratco Louvre roofs
             </h2>
             <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
               We use Stratco products because they are the best Louvres on market
             </p>
+          </div>
+          <FeaturesLouvres />
+          <div className='pt-5'>
+            <EnquiryForm text={button.text} style={button.style} />
+          </div>
+          <div className='pt-5'>
+            <h1 className='text-2xl text-center font-manrope mb-6'>
+            Frequently Asked Questions
+            </h1>
+            {faqs.map((faq, index) => (
+              <FAQ key={index} question={faq.question} answer={faq.answer} />
+            ))}
+          </div>
         </div>
-        <FeaturesLouvres />
-    <div className='pt-5'>
-   <EnquiryForm text={button.text} style={button.style} />
-    </div>
-    <div className='pt-5'>
-      <h1 className='text-2xl text-center font-manrope mb-6'>
-        Frequently Asked Questions
-      </h1>
-      {faqs.map((faq, index) => (
-    <FAQ key={index} question={faq.question} answer={faq.answer} />
-      ))}
-      </div>
-    </div>
-    </section>
-    
+      </section>
     </>
   )
 }
