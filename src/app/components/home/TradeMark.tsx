@@ -12,7 +12,7 @@ export default function TradeMark() {
   return (
     <div className='flex flex-col items-center text-center bg-base-100 py-20 px-4 rounded-lg'>
       <h1 className='text-4xl font-manrope mb-8'>
-    Official Dealer of Stratco & Ziptrak Outdoor Solutions
+    Authorised Dealer of Stratco & Ziptrak Outdoor Solutions
       </h1>
       <div className='flex flex-row justify-center items-center gap-8 mb-6'>
         <Link href='https://www.stratco.co.nz/' rel='noopener' target='_blank'>

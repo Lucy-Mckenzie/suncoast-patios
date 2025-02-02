@@ -12,11 +12,7 @@ const button = {
 export default function LandingPage() {
 
   return (
-    <motion.div className='relative w-full lg:h-[900px] md:h-[700px] h-[500px] mx-auto rounded-lg overflow-hidden'
-      initial={{ y: 10 }}
-      animate={{ y: [0, 2, 0] }}
-      transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-    >
+    <div className='relative w-full lg:h-[900px] md:h-[700px] h-[500px] mx-auto rounded-lg overflow-hidden'>
       <div className='flex justify-center items-center relative w-full overflow-hidden'>
         <Image
           src='/patios/patios8.webp'
@@ -27,10 +23,10 @@ export default function LandingPage() {
           priority={true}
           className='w-[95%] lg:h-auto object-cover lg:max-h-[750px] md:h-[600px] h-[400px] rounded-lg'
         />
-        <div className='absolute w-[95%] flex items-center justify-center h-full bg-black opacity-30 rounded-md'></div> 
+        <div className='absolute w-[95%] flex items-center justify-center h-full bg-black opacity-50 rounded-md'></div> 
       </div>
       <motion.div className='absolute inset-0 flex flex-col justify-center items-start text-left space-y-4 px-4 ml-20 pt-10'>
-        <motion.h1 className='text-white lg:text-6xl text-4xl font-normal max-w-4xl'
+        <motion.h1 className='text-white lg:text-7xl text-4xl font-semibold max-w-4xl tracking-wide'
           initial="hidden"
           animate="visible"
           variants={{
@@ -39,9 +35,9 @@ export default function LandingPage() {
           }}
           transition={{ duration: 0.5 }}
         >
-          Ultimate Outdoor Living Solutions
+          Ultimate Outdoor Living
         </motion.h1>
-        <motion.h2 className='text-white lg:text-3xl text-xl font-light'
+        <motion.h2 className='text-gray-100 lg:text-2xl text-xl font-light max-w-2xl lg:leading-8'
           initial="hidden"
           animate="visible"
           variants={{
@@ -50,7 +46,7 @@ export default function LandingPage() {
           }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          Bring your outdoor area to life
+          This year we are proud to reach the milestone of ten years of stratco outback installations in Hawkes Bay.
         </motion.h2>
         <motion.div
           initial="hidden"
@@ -73,11 +69,11 @@ export default function LandingPage() {
         }
       >
         <motion.div className='hover:cursor-pointer'
-          animate={{ y: [0, 10, 0] }}
+          animate={{ y: [0, 15, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <h2 className='text-white lg:text-1xl text-lg font-light justify-center flex'>
-          Scroll
+          <h2 className='text-white lg:text-1xl text-lg font-semibold justify-center flex'>
+          SCROLL
           </h2>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -94,6 +90,6 @@ export default function LandingPage() {
           </svg>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   ) 
 }

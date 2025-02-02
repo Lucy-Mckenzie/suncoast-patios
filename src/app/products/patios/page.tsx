@@ -64,6 +64,9 @@ export default function Patios() {
           className='text-7xl text-left leading-tight tracking-tight mb-1'>
        Patio Roofs
         </h1>
+        <p className='text-lg mb-6 max-w-4xl text-slate-500'>
+        Stratco Patio Roofs are ideal for creating a comfortable, weather-protected outdoor living area that you can enjoy year-round. Below are some of the patio roof installations we’ve completed around Hawkes Bay.
+        </p>
         <PhotoCarousel photos={patioPhotos}/>
       </div>
       <section className='py-10 bg-base sm:py-16 lg:py-24'>
@@ -73,7 +76,7 @@ export default function Patios() {
               Stratco Patios
             </h2>
             <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
-              We use Stratco products because they are the best Patios on market
+              We use Stratco products because we believe they are by far the best flat roof available on todays market for New Zealand conditions.
             </p>
           </div>
           <FeaturesPatios />

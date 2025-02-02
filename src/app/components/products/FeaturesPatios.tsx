@@ -9,7 +9,7 @@ import Light from './features/patios/Light'
 
 const patiosData = {
   photo: '/patios/patios5.webp',
-  text: 'Protected by Stratco&apos;s <strong>15 year structural warranty</strong> (conditions apply).'
+  text: 'Protected by Stratco&apos;s <strong>25 year structural warranty</strong> (conditions apply).'
 }
 
 const FeatureComponents: { [key: string]: () => JSX.Element } = {

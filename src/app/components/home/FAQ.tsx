@@ -3,33 +3,35 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+const link = 'https://www.qcard.co.nz/'
+
 const faqs = [
   {
-    question: "What are outdoor louvres, and how do they work?",
+    question: "Do they comply with the NZ building code?",
     answer:
-      "Outdoor louvres are adjustable slats that allow you to control the amount of sunlight, shade, and ventilation in your outdoor space. They can be manually or automatically adjusted to suit the weather conditions.",
+      "Yes! All structures are engineered to meet the New Zealand Building Code.",
   },
   {
-    question: "How do I maintain my louvres and patio structures?",
+    question: "What colours do they come in?",
     answer:
-      "Regular cleaning and inspections are essential to keep your louvres and patio in good condition. We recommend washing them every 6 months and checking for any wear and tear to ensure longevity.",
+      "Stratco provides standard colours that blend in nicely with 95% of existing home colours. The framework can also be powder-coated to match any existing house joinery colours.",
   },
   {
-    question: "Can louvres be installed on existing patios?",
+    question: "How much light comes through?",
     answer:
-      "Yes! Louvres can be added to your existing patio or outdoor structure, providing enhanced protection from the elements while adding a stylish and functional feature to your outdoor space.",
+      "The light panels are designed to allow plenty of natural light to pass through all day long. The 2mm thick polycarbonate light panels are domed to allow rain to wash them clean while offering excellent UV resistance.",
   },
   {
-    question: "Are your louvres and patios weather-resistant?",
+    question: "Are there any payment plans available?",
     answer:
-      "Absolutely! Our louvres and patios are designed to withstand various weather conditions, from strong winds to heavy rain. All of our products are built with high-quality, durable materials to ensure longevity and performance.",
+      `Absolutely! Finance is available through <a href="${link}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Q Card</a> for approved customers.`,
   },
   {
-    question: "How much does it cost to install outdoor louvres and patios?",
+    question: "How much heat comes through?",
     answer:
-      "The cost of installing louvres and patios depends on several factors, including the size, design, and materials. Contact us for a free consultation and quote, and we'll tailor our services to your budget and needs.",
+      "While standard polycarbonate sheeting can allow some heat from the sun to penetrate, the Stratco design effectively blocks heat. In ten years of installing, we have never received a complaint about excessive heat.",
   },
-]
+];
 
 export default function FAQ() {
   return (
@@ -53,7 +55,10 @@ export default function FAQ() {
               {faq.question}
             </label>
             <div className='collapse-content'>
-              <p>{faq.answer}</p>
+              <p
+                className='text-gray-600'
+                dangerouslySetInnerHTML={{ __html: faq.answer }}
+              />
             </div>
           </motion.div>
         ))}

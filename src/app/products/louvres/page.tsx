@@ -57,8 +57,11 @@ export default function Louvres() {
       <div className='max-w-[1100px] mx-auto'>
         <h1 
           className='text-7xl text-left font-manrope leading-tight tracking-tight mb-1'>
-        Louvre Roofs
+          Louvre Roofs
         </h1>
+        <p className='text-lg mb-6 max-w-4xl text-slate-500'>
+        Kudos Louvres are perfect for enhancing airflow, controlling light, and adding a modern touch to your indoor or outdoor spaces. Below are some of the louvre installations we’ve completed around Hawkes Bay.
+        </p>
         <PhotoCarousel photos={louvrePhotos}/>
       </div>
       <section className='py-10 bg-base sm:py-16 lg:py-24'>
@@ -68,7 +71,7 @@ export default function Louvres() {
               Stratco Louvre roofs
             </h2>
             <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
-              We use Stratco products because they are the best Louvres on market
+              We use Kudos Louvres because they are the best Louvres on market
             </p>
           </div>
           <FeaturesLouvres />

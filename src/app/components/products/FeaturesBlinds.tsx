@@ -25,7 +25,7 @@ const FeatureComponents: { [key: string]: () => JSX.Element } = {
 
 const features = [
   { id: 1, name: "Frame Colours",  description: "Check out six of our most popular frame colours to blend seamlessly into your house."  },
-  { id: 2, name: "Fabrics",  description: "Choose from 11 different colours to match or contrast with your existing décor."  },
+  { id: 2, name: "Fabrics",  description: "Choose from 11 different colours to match or contrast with your existing decor."  },
   { id: 3, name: "Warranty", description: "Enjoy peace of mind with our quick and reliable support whenever you need it."  },
   { id: 4, name: "Privacy", description: "Maintain your privacy with innovative designs that let you see out without being seen in."  },
   { id: 5, name: "Weather", description: "Weather-ready blinds that add style and durability to any space, no matter the conditions."  },

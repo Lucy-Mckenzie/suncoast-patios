@@ -21,7 +21,7 @@ export default function Contact() {
             </h1>
             <p 
               className='max-w-xl mx-auto mt-4 text-base leading-relaxed'>
-        To organize a free quote, ask a general question or find out about a product and how it would suit your home
+        To organise a free quote, ask a general question or find out about a product and how it would suit your home
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                   </svg>
                   <p 
                     className='mt-6 text-md font-medium text-base'>
-                    +64 22 170 9933
+                    0 22 170 9933
                   </p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                   </svg>
                   <p
                     className='mt-6 text-md font-medium leading-relaxed text-base'>
-                  Located in Napier, Hawkes Bay
+                  Located in Napier, Hawkes Bay. <br></br> We service Feilding to Gisbourne.
                   </p>
                 </div>
               </div>

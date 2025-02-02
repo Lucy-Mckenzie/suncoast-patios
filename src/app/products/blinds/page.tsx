@@ -59,7 +59,7 @@ export default function Blinds() {
        Outdoor Blinds
         </h1>
         <p className='text-lg mb-6 max-w-4xl text-slate-500'>
-    Outdoor blinds are great for weather protection and privacy to make the most of your outdoor space. Below are some blinds we’ve installed around Hawkes bay
+          Outdoor blinds are great for weather protection and privacy to make the most of your outdoor space. Below are some blinds we&apos;ve installed around Hawkes Bay.
         </p>
         <PhotoCarousel photos={blindsPhotos}/>
       </div>
