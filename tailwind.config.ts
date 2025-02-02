@@ -1,12 +1,12 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 /** @type {import('tailwindcss').Config} */
-import daisyui from "daisyui";
+import daisyui from 'daisyui';
 
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -34,11 +34,11 @@ export default {
     themes: [
       {
         mytheme: {
-          "secondary": "#005694",
+          'secondary': '#005694',
         },
       },
-      "dark",
-      "light",
+      'dark',
+      'light',
     ],
   },
   plugins: [daisyui],
