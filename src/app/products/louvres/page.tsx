@@ -6,13 +6,18 @@ import Head from 'next/head'
 import FeaturesLouvres from '@/app/components/products/FeaturesLouvres'
 
 const louvrePhotos: string[] = [
-  '/louvres/louvres.webp',
-  '/louvres/louvres1.webp',
+  '/louvres/louvres8.webp',
   '/louvres/louvres2.webp',
-  '/louvres/louvres3.webp',
+  '/louvres/louvres12.webp',
   '/louvres/louvres4.webp',
   '/louvres/louvres5.webp',
   '/louvres/louvres6.webp',
+  '/louvres/louvres7.webp',
+  '/louvres/louvres1.webp',
+  '/louvres/louvres9.webp',
+  '/louvres/louvres10.webp',
+  '/louvres/louvres11.webp',
+  '/louvres/louvres3.webp',
 ]
 
 const button = {

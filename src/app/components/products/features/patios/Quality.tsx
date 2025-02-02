@@ -4,8 +4,6 @@ import Image from 'next/image'
 const photos = [
   '/patios/structure/structure.webp',
   '/patios/structure/structure2.webp',
-  '/patios/structure/structure3.webp',
-  '/patios/structure/structure4.webp',
   '/patios/structure/structure7.webp',
   '/patios/structure/structure8.webp',
 ]
@@ -16,7 +14,7 @@ export default function Quality() {
   return (
     <div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
       <div className='relative w-full rounded-md overflow-scroll'>
-        <div className='grid lg:grid-cols-2 grid-rows-3 grid-cols-2 gap-1'>
+        <div className='grid lg:grid-cols-2 grid-rows-2 grid-cols-2 gap-1'>
           {photos.map((photo, index) => (
             <div
               key={index}

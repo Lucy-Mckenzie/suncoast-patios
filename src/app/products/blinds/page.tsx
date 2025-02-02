@@ -6,12 +6,17 @@ import Head from 'next/head'
 import FeaturesBlinds from '@/app/components/products/FeaturesBlinds'
 
 const blindsPhotos: string[] = [
-  '/blinds/blinds3.webp',
-  '/blinds/blinds1.webp',
   '/blinds/blinds.webp',
-  '/blinds/blinds2.webp',
+  '/blinds/blinds7.webp',
+  '/blinds/blinds10.webp',
+  '/blinds/blinds11.webp',
+  '/blinds/blinds12.webp',
+  '/blinds/blinds13.webp',
+  '/blinds/blinds14.webp',
+  '/blinds/blinds15.webp',
   '/blinds/blinds4.webp',
   '/blinds/blinds5.webp',
+  '/blinds/blinds6.webp'
 ]
  
 const button = {

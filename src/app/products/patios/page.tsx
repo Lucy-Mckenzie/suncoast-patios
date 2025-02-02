@@ -6,18 +6,21 @@ import Head from 'next/head'
 import FeaturesPatios from '@/app/components/products/FeaturesPatios'
 
 const patioPhotos: string[] = [
-  '/patios/patios.webp',
   '/patios/patios1.webp',
   '/patios/patios2.webp',
   '/patios/patios3.webp',
   '/patios/patios4.webp',
-  '/patios/patios5.webp',
   '/patios/patios6.webp',
   '/patios/patios7.webp',
-  '/patios/patios8.webp',
   '/patios/patios9.webp',
   '/patios/patios12.webp',
   '/patios/patios13.webp',
+  '/patios/patios14.webp',
+  '/patios/patios15.webp',
+  '/patios/patios16.webp',
+  '/patios/patios17.webp',
+  '/patios/patios18.webp',
+  '/patios/patios.webp',
 ]
 
 const button = {
