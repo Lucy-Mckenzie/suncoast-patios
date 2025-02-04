@@ -27,8 +27,8 @@ export default function LandingPage() {
       </div>
       <motion.div className='absolute inset-0 flex flex-col justify-center items-start text-left space-y-4 px-4 lg:ml-20 md:ml-10 m-5 lg:pt-10'>
         <motion.h1 className='text-white lg:text-7xl text-4xl font-semibold max-w-4xl tracking-wide'
-          initial="hidden"
-          animate="visible"
+          initial='hidden'
+          animate='visible'
           variants={{
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
@@ -38,19 +38,19 @@ export default function LandingPage() {
           Ultimate Outdoor Living
         </motion.h1>
         <motion.h2 className='text-gray-100 lg:text-2xl text-xl font-light max-w-2xl lg:leading-8'
-          initial="hidden"
-          animate="visible"
+          initial='hidden'
+          animate='visible'
           variants={{
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          This year we are proud to reach the milestone of ten years of stratco outback installations in Hawkes Bay.
+          This year we are proud to celebrate the milestone of ten years of Stratco Outback installations in Hawkes Bay.
         </motion.h2>
         <motion.div
-          initial="hidden"
-          animate="visible"
+          initial='hidden'
+          animate='visible'
           variants={{
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
