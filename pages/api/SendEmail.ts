@@ -23,12 +23,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       Messages: [
         {
           From: {
-            Email: 'suncoastpatios@outlook.com', 
+            Email: 'info@suncoastpatios.co.nz', 
             Name: 'Suncoast Patios',
           },
           To: [
             {
-              Email: 'suncoastpatios@outlook.com', 
+              Email: 'info@suncoastpatios.co.nz', 
               Name: 'Admin',
             },
           ],
