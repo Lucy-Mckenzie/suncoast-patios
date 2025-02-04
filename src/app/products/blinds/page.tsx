@@ -58,7 +58,7 @@ export default function Blinds() {
           content='Explore our range of high-quality blinds for enhanced outdoor living spaces.'
         />
       </Head>
-      <div className='max-w-[1100px] mx-auto'>
+      <div className='max-w-[1100px] mx-auto lg:px-0 px-7'>
         <h1 
           className='text-7xl text-left text-slate-800 leading-tight tracking-tight mb-1'>
        Outdoor Blinds

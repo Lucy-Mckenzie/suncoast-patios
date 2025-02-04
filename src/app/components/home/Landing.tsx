@@ -21,11 +21,11 @@ export default function LandingPage() {
           height={700}
           loading='eager'
           priority={true}
-          className='w-[95%] lg:h-auto object-cover lg:max-h-[750px] md:h-[600px] h-[400px] rounded-lg'
+          className='w-[95%] lg:h-auto object-cover lg:max-h-[750px] md:h-[600px] h-[500px] rounded-lg'
         />
         <div className='absolute w-[95%] flex items-center justify-center h-full bg-black opacity-50 rounded-md'></div> 
       </div>
-      <motion.div className='absolute inset-0 flex flex-col justify-center items-start text-left space-y-4 px-4 ml-20 pt-10'>
+      <motion.div className='absolute inset-0 flex flex-col justify-center items-start text-left space-y-4 px-4 lg:ml-20 md:ml-10 m-5 lg:pt-10'>
         <motion.h1 className='text-white lg:text-7xl text-4xl font-semibold max-w-4xl tracking-wide'
           initial="hidden"
           animate="visible"

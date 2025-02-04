@@ -6,7 +6,7 @@ import ToggleTheme from '../home/ToggleTheme'
 
 const button = {
   text: 'Free Quote',
-  style: 'bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-[500ms] ease-in-out border' ,
+  style: 'bg-[#FDB626] text-base-100 hover:bg-[#e09c1f] transition-all duration-[500ms] ease-in-out border text-nowrap lg:text-md text-sm' ,
 }
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'
+            className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow '
             aria-labelledby='dropdown-button' 
           >
             <Link

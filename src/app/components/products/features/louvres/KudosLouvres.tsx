@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 
 const photos = [
-  '/louvres/louvres.webp',
+  '/louvres/louvres6.webp',
   '/louvres/louvres10.webp',
-  '/louvres/louvres12.webp',
   '/louvres/louvres1.webp',
-  '/louvres/louvres13.webp',
-  '/louvres/louvres14.webp',
-  '/louvres/louvres5.webp',
+  '/louvres/louvres4.webp',
+  '/louvres/louvres7.webp',
   '/louvres/louvres9.webp',
+  '/louvres/louvres11.webp',
+  '/louvres/louvres12.webp',
 ]
 
 export default function Kudos() {
@@ -27,7 +27,7 @@ export default function Kudos() {
             >
               <Image
                 src={photo}
-                alt={`Structure of a patio ${index + 1}`}
+                alt={`Louvre demonstration  ${index + 1}`}
                 width={500}
                 height={270}
                 className='rounded-md object-fill max-h-[280px] '

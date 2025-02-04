@@ -14,7 +14,7 @@ export default function Quality() {
   return (
     <div className='relative flex flex-col items-center justify-center w-full h-[550px]'>
       <div className='relative w-full rounded-md overflow-scroll'>
-        <div className='grid lg:grid-cols-2 grid-rows-2 grid-cols-2 gap-1'>
+        <div className='grid lg:grid-cols-2 grid-rows-2 grid-cols-1 gap-1'>
           {photos.map((photo, index) => (
             <div
               key={index}

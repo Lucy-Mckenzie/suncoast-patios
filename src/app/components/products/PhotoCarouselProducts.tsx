@@ -10,7 +10,7 @@ interface PhotoCarouselProps {
 }
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -32,7 +32,7 @@ export default function PhotoCarousel({ photos }: PhotoCarouselProps) {
   }
 
   return (
-    <div className='slider-container relative w-full max-w-[1100px] h-auto md:max-h-[650px] sm:max-h-[400px] mx-auto rounded-md overflow-hidden border border-black'>
+    <div className='slider-container relative w-full max-w-[1100px] mx-auto rounded-md overflow-hidden'>
       <Slider {...settings} ref={sliderRef}>
         {photos.map((photoSrc, index) => (
           <div key={index} className='carousel-item relative w-full'>
@@ -40,8 +40,8 @@ export default function PhotoCarousel({ photos }: PhotoCarouselProps) {
               src={photoSrc}
               alt={`Slide ${index + 1}`}
               width={1200}
-              height={400}
-              className='w-full h-auto object-cover'
+              height={800}
+              className='w-full lg:h-[700px] h-[400px] object-cover rounded-md lg:border border-black'
             />
           </div>
         ))}
@@ -50,13 +50,13 @@ export default function PhotoCarousel({ photos }: PhotoCarouselProps) {
       <div className='absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between'>
         <button
           onClick={handlePrev}
-          className='btn btn-circle p-2 text-lg sm:text-base'
+          className='btn btn-circle'
         >
           ❮
         </button>
         <button
           onClick={handleNext}
-          className='btn btn-circle p-2 text-lg sm:text-base'
+          className='btn btn-circle'
         >
           ❯
         </button>

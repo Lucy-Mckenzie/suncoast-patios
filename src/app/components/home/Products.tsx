@@ -7,11 +7,11 @@ import { motion } from 'framer-motion'
 export default function Products() {
   return (
     <div className='flex flex-col items-center pb-20 space-y-10 overflow-hidden'>
-      <h1 className='text-center font-manrope text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl pb-5'>
+      <h1 className='text-center font-manrope font-bold leading-tight lg:text-7xl text-5xl pb-5 lg:pt-0 pt-10'>
        Outdoor Living Solutions
       </h1>
-      <div className='flex flex-row flex-wrap justify-center space-x-8'>
-        <motion.div className='card bg-base-100 w-96 shadow-md rounded-md'
+      <div className='flex flex-row flex-wrap justify-center items-center lg:space-x-8 space-y-4'>
+        <motion.div className='card bg-base-100 lg:w-96 w-80 shadow-md rounded-md'
           whileHover={{ scale: 1.05 }}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export default function Products() {
               alt='suncoast patios patio'
               width={400}
               height={300}
-              className='rounded-md'
+              className='rounded-md h-50'
             />
           </figure>
           <div className='card-body items-center text-center'>
@@ -45,7 +45,7 @@ export default function Products() {
           </div>
         </motion.div>
 
-        <motion.div className='card bg-base-100 w-96 shadow-md rounded-md'
+        <motion.div className='card bg-base-100 lg:w-96 w-80 shadow-md rounded-md'
           whileHover={{ scale: 1.05 }}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function Products() {
               alt='suncoast patios blinds'
               width={400}
               height={300}
-              className='rounded-md'
+              className='rounded-md h-50'
             />
           </figure>
           <div className='card-body items-center text-center'>
@@ -78,7 +78,7 @@ export default function Products() {
             </div>
           </div>
         </motion.div>
-        <motion.div className='card bg-base-100 w-96 shadow-md rounded-md'
+        <motion.div className='card bg-base-100 lg:w-96 w-80 shadow-md rounded-md'
           whileHover={{ scale: 1.05 }}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ export default function Products() {
               alt='suncoast patios louvre'
               width={400}
               height={300}
-              className='rounded-md'
+              className='rounded-md h-50'
             />
           </figure>
           <div className='card-body items-center text-center'>

@@ -62,7 +62,7 @@ export default function Patios() {
           content='Explore our range of high-quality patios for enhanced outdoor living spaces.'
         />
       </Head>
-      <div className='max-w-[1100px] mx-auto'>
+      <div className='max-w-[1100px] mx-auto lg:px-0 px-7'>
         <h1 
           className='text-7xl text-left leading-tight tracking-tight mb-1'>
        Patio Roofs
