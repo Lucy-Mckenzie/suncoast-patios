@@ -32,6 +32,11 @@ const nextConfig: NextConfig = {
         source: '/pergola-roofs-hawkes-bay',
         destination: '/products/patios',
         permanent: true
+      },
+      {
+        source: '/news/gisborne',
+        destination: '/',
+        permanent: true
       }
     ]
   }
