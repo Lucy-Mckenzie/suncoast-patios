@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/products/flat-patio-roofs',
-        destination: '/products/blinds',
+        destination: '/products/patios',
         permanent: true
       },
       {
