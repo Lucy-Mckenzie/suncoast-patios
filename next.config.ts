@@ -27,6 +27,11 @@ const nextConfig: NextConfig = {
         source: '/products/flat-patio-roofs',
         destination: '/products/blinds',
         permanent: true
+      },
+      {
+        source: '/pergola-roofs-hawkes-bay',
+        destination: '/products/patios',
+        permanent: true
       }
     ]
   }

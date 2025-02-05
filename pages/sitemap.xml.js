@@ -1,4 +1,4 @@
-const URL = 'https://suncoast-patios-4ecd1fa1b515.herokuapp.com'
+const URL = 'https://suncoastpatios.co.nz'
 
 function generateSiteMap() {
   return `<?xml version="1.0" encoding="UTF-8"?>
