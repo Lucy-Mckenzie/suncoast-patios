@@ -23,12 +23,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       Messages: [
         {
           From: {
-            Email: 'suncoastpatios@outlook.com', 
+            Email: 'lucymckenzie62@gmail.com', 
             Name: 'Suncoast Patios',
           },
           To: [
             {
-              Email: 'suncoastpatios@outlook.com', 
+              Email: 'lucymckenzie62@gmail.com', 
               Name: 'Admin',
             },
           ],
@@ -48,6 +48,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           <p>You've received a new enquiry from ${name}.</p>
           <p>Name: ${name}<br>Email: ${email}<br>Message: ${message}</p>
           </body>
+          </html>
         `,
         },
       ],
