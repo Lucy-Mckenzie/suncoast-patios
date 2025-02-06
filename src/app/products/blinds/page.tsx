@@ -2,8 +2,8 @@ import PhotoCarousel from '@/app/components/products/PhotoCarouselProducts'
 import React from 'react'
 import EnquiryForm from '@/app/components/form/EnquiryForm'
 import FAQ from '@/app/components/products/FAQProducts'
-import Head from 'next/head'
 import FeaturesBlinds from '@/app/components/products/FeaturesBlinds'
+import { Metadata } from 'next'
 
 const blindsPhotos: string[] = [
   '/blinds/blinds.webp',
@@ -47,17 +47,17 @@ const faqs = [
   }
 ]
 
+export const generateMetadata = (): Metadata => {
+  return {
+    title: 'Blinds',
+    description: 'Explore our range of high-quality blinds for enhanced outdoor living spaces.'
+  }
+}
+
 export default function Blinds() {
 
   return (
     <>
-      <Head>
-        <title>Blinds - Suncoast Patios</title>
-        <meta
-          name='description'
-          content='Explore our range of high-quality blinds for enhanced outdoor living spaces.'
-        />
-      </Head>
       <div className='max-w-[1100px] mx-auto lg:px-0 px-7'>
         <h1 
           className='text-7xl text-left text-slate-800 leading-tight tracking-tight mb-1'>

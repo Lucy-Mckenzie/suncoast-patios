@@ -2,8 +2,8 @@ import PhotoCarousel from '@/app/components/products/PhotoCarouselProducts'
 import React from 'react'
 import EnquiryForm from '@/app/components/form/EnquiryForm'
 import FAQ from '@/app/components/products/FAQProducts'
-import Head from 'next/head'
 import FeaturesLouvres from '@/app/components/products/FeaturesLouvres'
+import { Metadata } from 'next'
 
 const louvrePhotos: string[] = [
   '/louvres/louvres8.webp',
@@ -48,17 +48,18 @@ const faqs = [
   }
 ]
 
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: 'Louvres',
+    description: 'Explore our range of high-quality louvres for enhanced outdoor living spaces.'
+  }
+}
+
 export default function Louvres() {
 
   return (
     <>
-      <Head>
-        <title>Louvres - Suncoast Patios</title>
-        <meta
-          name='description'
-          content='Explore our range of high-quality louvres for enhanced outdoor living spaces.'
-        />
-      </Head>
       <div className='max-w-[1100px] mx-auto lg:px-0 px-7'>
         <h1 
           className='text-7xl text-left font-manrope leading-tight tracking-tight mb-1'>

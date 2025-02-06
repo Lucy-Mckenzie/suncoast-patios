@@ -8,7 +8,7 @@ import KudosLouvres from './features/louvres/KudosLouvres'
 import RainSensor from './features/louvres/RainSensor'
 
 const louvresData = {
-  photo: '/louvres/louvres13.webp',
+  photo: '/louvres/louvres11.webp',
   text: 'Protected by Stratco&apos;s <strong>25 year structural warranty</strong>, and a 10 year paint finish warranty. (conditions apply).'
 }
 

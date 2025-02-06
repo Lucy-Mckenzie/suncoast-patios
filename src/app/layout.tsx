@@ -15,10 +15,10 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: {
     default: 'Suncoast Patios',
-    template: '%s - Suncoast Patios',
+    template: '%s | Suncoast Patios',
   },
   description:
-  'Transform your outdoor spaces with Suncoast Patios Ltd, serving Hawkes Bay and Gisborne. Specialising in high-quality patio roofs, louvre roofs, and outdoor blinds, we provide Stratco and Ziptrak solutions for year-round comfort and style. Enhance your outdoor living today!'
+  'Transform your outdoor spaces with Suncoast Patios Ltd, serving Hawkes Bay and Gisborne. Specialising in high-quality patio roofs, louvre roofs, and outdoor blinds, we provide Stratco and Ziptrak outdoor solutions for year-round comfort and style. Enhance your outdoor living today!'
 }
 
 export default function RootLayout({
