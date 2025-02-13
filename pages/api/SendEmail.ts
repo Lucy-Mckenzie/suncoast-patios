@@ -46,7 +46,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           <body>
           <h1>Quote Enquiry</h1>
           <p>You've received a new enquiry from ${name}.</p>
-          <p>Name: ${name}<br>Email: ${email}<br>Message: ${message}</p>
+          <p>Name: ${name}<br>Email: ${email}<br>Number: ${number}<br>Message: ${message}</p>
           </body>
           </html>
         `,
