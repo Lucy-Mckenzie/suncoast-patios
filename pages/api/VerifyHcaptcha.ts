@@ -23,10 +23,8 @@ export const SubmitForm = async (formData: FormData) => {
     return { message: 'Success', success: true }
   } catch (error: unknown) {
     if (error instanceof Error) {
-      console.error(error.message)
       return { message: 'Verification failed', success: false }
     } else {
-      console.error('Unexpected error:', error)
       return { message: 'Verification failed', success: false }
     }
   }
