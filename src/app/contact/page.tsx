@@ -1,6 +1,9 @@
 import React from 'react'
 import Form from '../components/form/Form'
 import { Metadata } from 'next'
+import Patios from '../components/home/products/Patios'
+import Blinds from '../components/home/products/Blinds'
+import Louvres from '../components/home/products/Louvres'
 
 export const generateMetadata = (): Metadata => {
   return {
@@ -81,6 +84,14 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <h1 className='text-2xl text-center mt-10 font-semibold'>
+          Continue browsing..
+      </h1>
+      <div className='flex flex-row mt-10 mb-20 items-center justify-center space-x-8'>
+        <Patios />
+        <Blinds />
+        <Louvres />
+      </div>
     </>
   )
 }

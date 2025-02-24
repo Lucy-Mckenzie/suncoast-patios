@@ -80,7 +80,7 @@ export default function Patios() {
             <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
               Stratco Patios
             </h2>
-            <p className='mx-auto my-4 text-base leading-relaxed font-semibold text-lg'>
+            <p className='mx-auto my-4 leading-relaxed font-semibold text-lg'>
               We use Stratco products because we believe they are by far the best flat roof available on todays market for New Zealand conditions.
             </p>
           </div>

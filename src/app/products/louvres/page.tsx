@@ -78,7 +78,7 @@ export default function Louvres() {
             <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
               Stratco Louvre roofs
             </h2>
-            <p className='mx-auto my-4 text-base leading-relaxed font-semibold text-lg'>
+            <p className='mx-auto my-4 leading-relaxed font-semibold text-lg'>
               We use Kudos Louvres because they are the best Louvres on market
             </p>
           </div>

@@ -59,11 +59,10 @@ export default function Form() {
       } else {
         setStatusMessage(result.error || 'An error occurred.')
       }
-    } catch (error) {
-      console.error('Error submitting form:', error)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (e) {
       setStatusMessage('Failed to submit the form.')
     }
-
     resetForm()
   }
 
