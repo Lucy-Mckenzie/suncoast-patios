@@ -4,6 +4,8 @@ import EnquiryForm from '@/app/components/form/EnquiryForm'
 import FAQ from '@/app/components/products/FAQProducts'
 import FeaturesLouvres from '@/app/components/products/FeaturesLouvres'
 import { Metadata } from 'next'
+import Patios from '@/app/components/home/products/Patios'
+import Blinds from '@/app/components/home/products/Blinds'
 
 const louvrePhotos: string[] = [
   '/louvres/louvres8.webp',
@@ -66,7 +68,7 @@ export default function Louvres() {
           Louvre Roofs
         </h1>
         <p className='text-lg mb-6 max-w-4xl text-slate-500'>
-        Kudos Louvres are perfect for enhancing airflow, controlling light, and adding a modern touch to your indoor or outdoor spaces. Below are some of the louvre installations we’ve completed around Hawkes Bay.
+          Kudos Louvres are perfect for enhancing airflow, controlling light, and adding a modern touch to your indoor or outdoor spaces. Below are some of the louvre installations we’ve completed around Hawkes Bay.
         </p>
         <PhotoCarousel photos={louvrePhotos}/>
       </div>
@@ -76,7 +78,7 @@ export default function Louvres() {
             <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
               Stratco Louvre roofs
             </h2>
-            <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
+            <p className='mx-auto my-4 text-base leading-relaxed font-semibold text-lg'>
               We use Kudos Louvres because they are the best Louvres on market
             </p>
           </div>
@@ -84,9 +86,16 @@ export default function Louvres() {
           <div className='pt-5'>
             <EnquiryForm text={button.text} style={button.style} />
           </div>
-          <div className='pt-5'>
+          <h1 className='text-2xl text-center mt-10 font-semibold'>
+            Check out our other products
+          </h1>
+          <div className='flex flex-row my-10 items-center justify-center space-x-8'>
+            <Blinds />
+            <Patios />
+          </div>
+          <div className='pt-10'>
             <h1 className='text-2xl text-center font-manrope mb-6'>
-            Frequently Asked Questions
+              Frequently Asked Questions
             </h1>
             {faqs.map((faq, index) => (
               <FAQ key={index} question={faq.question} answer={faq.answer} />

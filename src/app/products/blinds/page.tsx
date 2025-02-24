@@ -4,6 +4,8 @@ import EnquiryForm from '@/app/components/form/EnquiryForm'
 import FAQ from '@/app/components/products/FAQProducts'
 import FeaturesBlinds from '@/app/components/products/FeaturesBlinds'
 import { Metadata } from 'next'
+import Louvres from '@/app/components/home/products/Louvres'
+import Patios from '@/app/components/home/products/Patios'
 
 const blindsPhotos: string[] = [
   '/blinds/blinds.webp',
@@ -74,7 +76,7 @@ export default function Blinds() {
             <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
               Stratco Blinds
             </h2>
-            <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
+            <p className='mx-auto my-4 text-base leading-relaxed font-semibold text-lg'>
               We use Stratco blinds because they are the best outdoor blinds on the market
             </p>
           </div>
@@ -82,7 +84,14 @@ export default function Blinds() {
           <div className='pt-5'>
             <EnquiryForm text={button.text} style={button.style} />
           </div>
-          <div className='pt-5'>
+          <h1 className='text-2xl text-center mt-10 font-semibold'>
+            Check out our other products
+          </h1>
+          <div className='flex flex-row my-10 items-center justify-center space-x-8'>
+            <Louvres />
+            <Patios />
+          </div>
+          <div className='pt-10'>
             <h1 className='text-2xl text-center font-manrope mb-6'>
               Frequently Asked Questions
             </h1>

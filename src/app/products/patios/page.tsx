@@ -4,6 +4,8 @@ import EnquiryForm from '@/app/components/form/EnquiryForm'
 import FAQ from '@/app/components/products/FAQProducts'
 import FeaturesPatios from '@/app/components/products/FeaturesPatios'
 import { Metadata } from 'next'
+import Louvres from '@/app/components/home/products/Louvres'
+import Blinds from '@/app/components/home/products/Blinds'
 
 const patioPhotos: string[] = [
   '/patios/patios1.webp',
@@ -65,10 +67,10 @@ export default function Patios() {
       <div className='max-w-[1100px] mx-auto lg:px-0 px-7'>
         <h1 
           className='text-7xl text-left leading-tight tracking-tight mb-1'>
-       Patio Roofs
+          Patio Roofs
         </h1>
         <p className='text-lg mb-6 max-w-4xl text-slate-500'>
-        Stratco Patio Roofs are ideal for creating a comfortable, weather-protected outdoor living area that you can enjoy year-round. Below are some of the patio roof installations we’ve completed around Hawkes Bay.
+          Stratco Patio Roofs are ideal for creating a comfortable, weather-protected outdoor living area that you can enjoy year-round. Below are some of the patio roof installations we’ve completed around Hawkes Bay.
         </p>
         <PhotoCarousel photos={patioPhotos}/>
       </div>
@@ -78,7 +80,7 @@ export default function Patios() {
             <h2 className='text-3xl font-bold leading-tight text-base-content sm:text-4xl lg:text-5xl'>
               Stratco Patios
             </h2>
-            <p className='max-w-xl mx-auto my-4 text-base leading-relaxed'>
+            <p className='mx-auto my-4 text-base leading-relaxed font-semibold text-lg'>
               We use Stratco products because we believe they are by far the best flat roof available on todays market for New Zealand conditions.
             </p>
           </div>
@@ -86,9 +88,16 @@ export default function Patios() {
           <div className='pt-5'>
             <EnquiryForm text={button.text} style={button.style} />
           </div>
-          <div className='pt-5'>
+          <h1 className='text-2xl text-center mt-10 font-semibold'>
+            Check out our other products
+          </h1>
+          <div className='flex flex-row my-10 items-center justify-center space-x-8'>
+            <Blinds />
+            <Louvres />
+          </div>
+          <div className='pt-10'>
             <h1 className='text-2xl text-center font-manrope mb-6'>
-        Frequently Asked Questions
+              Frequently Asked Questions
             </h1>
             {faqs.map((faq, index) => (
               <FAQ key={index} question={faq.question} answer={faq.answer} />
@@ -96,7 +105,6 @@ export default function Patios() {
           </div>
         </div>
       </section>
-    
     </>
   )
 }
