@@ -14,7 +14,7 @@ export default function TradeMark() {
       <h1 className='text-4xl font-manrope mb-8'>
     Authorised Dealer of Stratco & Ziptrak Outdoor Solutions
       </h1>
-      <div className='flex flex-row justify-center items-center gap-8 mb-6'>
+      <div className='flex lg:flex-row flex-col justify-center items-center gap-8 mb-6'>
         <Link href='https://www.stratco.co.nz/' rel='noopener' target='_blank'>
           <Image
             src='/logos/outback.png'

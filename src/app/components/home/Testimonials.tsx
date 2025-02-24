@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 
 type Review = {
@@ -11,127 +11,63 @@ type Review = {
 }
 
 const reviews: Review[] = [
-  { id: 1, imageSrc: '/patios/patios6.webp', alt: 'A beautiful patio', author: 'Tanya Upritchard', description: 'Absolutely awesome service from quoting right through to the completion of the job.  I have used Suncoast Patios 4 times (blinds and patios), and each time they have exceeded my expectations,  friendly, super professional,  great workmanship, and fantastic after sales service. Highly recommended.' },
-  { id: 2, imageSrc: '/louvres/louvres.webp', alt: 'Lourves located at Roberts', author: 'Robert Miller', description: 'Suncoast Patio covered our new deck with a fixed patio a couple weeks before promised. This enabled us to enjoy our new covered deck for Christmas day. They went over and beyond to deliver and it looks amazing.  Thanks so much. I would highly recommend.' },
-  { id: 3, imageSrc: '/blinds/blinds4.webp', alt: 'Blinds in action', author: 'John Walker', description: 'I couldn’t be happier with the work done by Suncoast Patios! From the initial consultation to the final installation, the team was professional and attentive to every detail. I’ve had both a patio and louvres installed, and each time the quality and service were exceptional. Highly recommend them for anyone looking to enhance their outdoor space.' },
-  { id: 4, imageSrc: '/louvres/louvres3.webp', alt: 'A spacious patio', author: 'Emily Roberts', description: 'The service from Suncoast Patios was nothing short of amazing! They went above and beyond to ensure we were happy with our new louvres and patio. The team was always polite, punctual, and professional throughout the entire process. The finished product looks stunning, and we’ve received so many compliments from friends and family. Highly recommend their services!' },
-  { id: 5, imageSrc: '/patios/patios3.webp', alt: 'A patio', author: 'Alex Kay', description: 'Suncoast Patios has done a fantastic job on our new outdoor space! From the first meeting to the final install, the communication was clear, the team was friendly, and the attention to detail was second to none. We’re so happy with the results and would gladly recommend them to anyone looking for quality work and excellent customer service.' },
+  { id: 1, imageSrc: '/logos/Tanya.png', alt: 'A beautiful patio', author: 'Tanya Upritchard', description: 'Absolutely awesome service from quoting right through to the completion of the job.  I have used Suncoast Patios 4 times (blinds and patios), and each time they have exceeded my expectations,  friendly, super professional,  great workmanship, and fantastic after sales service. Highly recommended.' },
+  { id: 2, imageSrc: '/logos/Robert.png', alt: 'Lourves located at Roberts', author: 'Robert Miller', description: 'Suncoast Patios covered our new deck with a fixed patio a couple weeks before promised. This enabled us to enjoy our new covered deck for Christmas day. They went over and beyond to deliver and it looks amazing.  Thanks so much. I would highly recommend.' },
 ]
 
 export default function Reviews() {
-  const [visibleReviews, setVisibleReviews] = useState(4)
-
-  const showMore = () => {
-    setVisibleReviews(reviews.length)
-  }
-
-  const showLess = () => {
-    setVisibleReviews(4)
-  }
 
   return (
-    <section className='py-10 sm:py-16 lg:py-16'> 
-      <div className='px-4 mx-auto max-w-8xl sm:mx-6 lg:mx-8 bg-base-200 rounded-lg shadow-md'>
-        <div className='flex flex-col items-center justify-center py-20'>
-          <div className='max-w-2xl mx-auto text-center'>
-            <h1 className='text-3xl font-bold font-manrope leading-tight sm:text-4xl lg:text-5xl'>Trusted by <span className='text-[#005694]'>Hawkes Bay</span> for more than 10+ years </h1>
-          </div>
-          <div 
-            role='region'
-            aria-live='polite' 
-            className='grid grid-cols-1 sm:grid-cols-4 gap-4 space-x-2 justify-items-center mx-auto pt-10'>
-            {reviews.slice(0, visibleReviews).map((review) => (
-              <div
-                key={review.id} 
-                className='card bg-base-100 shadow-md rounded-md'>
-                <figure className=''>
-                  <Image 
-                    src={review.imageSrc}
-                    alt={review.alt}
-                    width={500} 
-                    height={300}
-                    className='object-cover h-[12rem]'
-                  />
-                </figure>
-                <div className='card-body'>
-                  <h2 
-                    className='card-title'
-                    id={`review-${review.id}-author`}
-                  >{review.author}</h2>
-                  <div className='card-actions justify-start'>
-                    <div className='rating rating-sm' role='radiogroup' aria-labelledby='rating-label'>
-                      <span id='rating-label' className='sr-only'>Rating: 5 out of 5 stars</span>
-                      <input 
-                        type='radio' 
-                        name='rating-2'
-                        id='star1'
-                        className='mask mask-star-2 bg-orange-400  px-2.5'
-                        checked readOnly
-                        aria-label='Star 1'
-                      />
-                      <input 
-                        type='radio' 
-                        name='rating-2'
-                        id='star2'
-                        className='mask mask-star-2 bg-orange-400  px-2.5'
-                        checked readOnly
-                        aria-label='Star 2' 
-                      />
-                      <input 
-                        type='radio' 
-                        name='rating-2'
-                        id='star3'
-                        className='mask mask-star-2 bg-orange-400  px-2.5'
-                        checked readOnly
-                        aria-label='Star 3' 
-                      />
-                      <input 
-                        type='radio' 
-                        name='rating-2'
-                        id='star4'
-                        className='mask mask-star-2 bg-orange-400  px-2.5'
-                        checked readOnly
-                        aria-label='Star 4' 
-                      />
-                      <input 
-                        type='radio' 
-                        name='rating-2'
-                        id='star5'
-                        className='mask mask-star-2 bg-orange-400 px-2.5'
-                        checked readOnly
-                        aria-label='Star 5' 
-                      />
-                    </div>
-                  </div>
-                  <p
-                    id={`review-${review.id}-description`}
-                  >{review.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className='mt-10'>
-            {visibleReviews < reviews.length ? (
-              <button 
-                onClick={showMore}
-                className='btn bg-[#005694] text-base-300'
-                aria-expanded={visibleReviews < reviews.length}
-              >
-            View More
-              </button>
-            ) : (
-              <button 
-                onClick={showLess}
-                className='btn bg-[#005694] text-base-300'
-                aria-expanded={visibleReviews === reviews.length}
-              >
-            View Less
-              </button>
-            )}
-          </div>
-        </div>
+    <div className='px-4 py-10 sm:mx-6 lg:mx-8 bg-base-200 rounded-lg shadow-md flex flex-col'>
+      <div className='max-w-2xl mx-auto text-center'>
+        <h1 className='text-2xl'>
+          TESTIMONIALS
+        </h1>
+        <h2 className='text-3xl font-bold font-manrope leading-tight sm:text-4xl lg:text-5xl pb-16'>
+          Trusted by <span className='text-[#005694]'>Hawkes Bay</span> for more than 10+ years 
+        </h2>
       </div>
-    </section>
-
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto justify-center space-y-8 lg:space-y-0'>
+        {reviews.map((review, index) => (
+          <div key={index} className='relative flex items-center bg-[#FFC41F]/30 rounded-lg shadow-md text-black flex-col py-5 px-12 text-center'>
+            <div className='absolute -top-10'>
+              <Image 
+                className='w-20 h-20 p-1 object-contain rounded-full shrink-0'
+                src={review.imageSrc}
+                alt={`Review from ${review.alt}`}
+                width={40}
+                height={40}
+              />
+            </div>
+            <div className='card-actions justify-start'>
+              <div className='rating rating-sm' role='radiogroup' aria-labelledby='rating-label'>
+                <span id='rating-label' className='sr-only'>
+                  Rating: 5 out of 5 stars
+                </span>
+                {[...Array(5)].map((_, index) => (
+                  <input 
+                    key={index}
+                    type='radio' 
+                    name='rating-2'
+                    id={`Star ${index + 1}`}
+                    className='mask mask-star-2 bg-orange-400 px-2.5 py-8'
+                    checked readOnly
+                    aria-label={`Star ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div> 
+            <h1 className='text-2xl pb-3'>
+              {review.author}
+            </h1>
+            <h2 className='text-lg'>
+              {review.description}
+            </h2>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
+
+

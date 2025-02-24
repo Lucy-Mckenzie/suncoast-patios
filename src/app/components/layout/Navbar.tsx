@@ -43,7 +43,7 @@ export default function Navbar() {
             <Link
               href='/contact' 
               className='transition'>
-        Contact Us
+              Contact Us
             </Link>
             <li>
               <summary>Products</summary>
@@ -76,7 +76,7 @@ export default function Navbar() {
       </div>
 
       <div className='navbar-end flex items-center lg:space-x-4 space-x-2'>
-        <div className=' hidden lg:flex'>
+        <div className='hidden lg:flex'>
           <ul className='menu menu-horizontal px-1'>
             <li>
               <details>
@@ -100,7 +100,7 @@ export default function Navbar() {
               <Link
                 href='/contact' 
                 className='transition'>
-      Contact Us
+                Contact Us
               </Link>
             </li>
           </ul>
