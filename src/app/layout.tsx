@@ -6,6 +6,7 @@ import './globals.css'
 import { Manrope } from 'next/font/google'
 import { Metadata } from 'next'
 import React from 'react'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -35,6 +36,7 @@ export default function RootLayout({
             <Navbar />
             <main>
               {children}
+              <GoogleAnalytics gaId="G-YGMY099QWP" />
             </main>
             <Footer />
           </ClientThemeWrapper>
