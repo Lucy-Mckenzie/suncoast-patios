@@ -29,7 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className={manrope.className}>
-      <meta name="google-site-verification" content="7n7fDJ_obqpCtqblox4csgEm0LJmtHraP_em5gnw8ic" />
+      <head>
+        <meta name="google-site-verification" content="7n7fDJ_obqpCtqblox4csgEm0LJmtHraP_em5gnw8ic" />
+        {/* Preconnect & DNS Prefetch for Google Tag Manager */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      </head>
       <body>
         <ThemeProvider>
           <ClientThemeWrapper>

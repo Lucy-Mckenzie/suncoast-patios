@@ -16,11 +16,11 @@ export default function LandingPage() {
       <div className='flex justify-center items-center relative w-full overflow-hidden'>
         <Image
           src='/patios/patios8.webp'
-          alt='landing photo'
-          width={1100}
-          height={700}
+          alt='A stunning Patio roof providing optimal shadding.'
+          width={900}
+          height={800}
           loading='eager'
-          priority={true}
+          priority
           className='w-[95%] lg:h-auto object-cover lg:max-h-[750px] md:h-[600px] h-[500px] rounded-lg'
         />
         <div className='absolute w-[95%] flex items-center justify-center h-full bg-black opacity-50 rounded-md'></div> 
