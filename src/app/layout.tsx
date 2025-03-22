@@ -7,6 +7,7 @@ import { Manrope } from 'next/font/google'
 import { Metadata } from 'next'
 import React from 'react'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -42,6 +43,7 @@ export default function RootLayout({
             <main>
               {children}
               <GoogleAnalytics gaId="G-YGMY099QWP" />
+              <SpeedInsights />
             </main>
             <Footer />
           </ClientThemeWrapper>
