@@ -29,7 +29,7 @@ export default function Reviews() {
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto justify-center space-y-8 lg:space-y-0'>
         {reviews.map((review, index) => (
-          <div key={index} className='relative flex items-center bg-[#FFC41F]/30 rounded-lg shadow-md text-black flex-col py-5 px-12 text-center'>
+          <div key={index} className='relative flex items-center bg-[#FFC41F]/30 rounded-lg shadow-md text-content flex-col py-5 px-12 text-center'>
             <div className='absolute -top-10'>
               <Image 
                 className='w-20 h-20 p-1 object-contain rounded-full shrink-0'

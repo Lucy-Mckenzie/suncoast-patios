@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const button = {
   text: 'Free Measure & Quote',
-  style: 'text-black border-black hover:bg-slate-950 hover:text-white hover:border-white transition-all duration-[500ms] ease-in-out rounded-full border' 
+  style: 'text-content border-content hover:bg-base-300 hover:text-content hover:border-base-300 transition-all duration-[500ms] ease-in-out rounded-full border' 
 }
 
 export default function TradeMark() {
