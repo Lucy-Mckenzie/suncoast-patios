@@ -11,7 +11,7 @@ const blindsPhotos: string[] = [
   '/blinds/blinds.webp',
   '/blinds/blinds7.webp',
   '/blinds/blinds10.webp',
-  '/blinds/blinds11.webp',
+  '/blinds/blinds11.webp',git 
   '/blinds/blinds12.webp',
   '/blinds/blinds13.webp',
   '/blinds/blinds14.webp',
